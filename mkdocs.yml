@@ -1,1 +1,6 @@
-
+nav:
+- Home: 'index.md'
+- Preparation:
+    - 'Non-trivial preparation': 'week_01.md'
+- About:
+    - 'Release Notes': 'release-notes.md'
