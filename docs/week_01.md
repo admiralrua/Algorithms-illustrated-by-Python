@@ -62,9 +62,13 @@ This is a simple footnote,[^a] and here's a longer one.[^B]
 has the rendered output as:
 
 This is a simple footnote,[^a] and here's a longer one.[^B]
+
 [^a]: The first footnote.
+
 [^B]: The second one with multiple paragraphs.
+
     Indent paragraphs to include them in the footnote.
+    
     Add as many paragraphs as you like.
 
 
