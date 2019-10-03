@@ -1,5 +1,3 @@
-# Week 01: Non-trivial preparation
-
 ## Store what you learn with Markdown
 
 Markdown is a markup-style language which makes writting technical documents conveniently.
