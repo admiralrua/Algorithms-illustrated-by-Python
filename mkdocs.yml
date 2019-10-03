@@ -6,3 +6,4 @@ pages:
     - 'Non-trivial preparation': 'week_01.md'
 - About:
     - 'Release Notes': 'release-notes.md'
+theme: readthedocs
