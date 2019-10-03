@@ -42,6 +42,7 @@ We can organize items into ordered or unordered lists.
 
 #### Ordered lists
 To create an ordered list, add line items with numbers followed by periods. The numbers don’t have to be in numerical order, but the list should start with the number one.
+
 1. first
 1. second
 1. third
