@@ -36,3 +36,23 @@ To insert a formula, we actually need to insert the latex-interpretation of the 
 After receiving a latex code for our formular, we just need to put it inside the pair $$...$$ to make it visible in your mardown document.
 
 $$\sum_{n=1}^{10}\left( x^{n} + \frac{x}{n} \right)$$
+
+### Lists
+We can organize items into ordered or unordered lists. 
+
+#### Ordered lists
+To create an ordered list, add line items with numbers followed by periods. The numbers don’t have to be in numerical order, but the list should start with the number one.
+1. first
+1. second
+1. third
+
+#### Unordered lists
+To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in front of line items. Indent one or more items to create a nested list.
+- first
+    * first first
+    * first second 
+        + first second third
+- second
+- third
+
+
