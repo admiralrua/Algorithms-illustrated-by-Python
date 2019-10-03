@@ -78,7 +78,32 @@ To add an image, add an exclamation mark \(!\), followed by alt text in brackets
 ![Where i currently work](../.gitbook/assets/rhdhv.jpg)
 
 ### Insert links
-To create a link, enclose the link text in brackets (e.g., [Introduction for Markdown]) and then follow it immediately with the URL in parentheses (e.g., (https://www.markdownguide.org/)), i.e.:
+To create a link, enclose the link text in brackets (e.g., [from this link]) and then follow it immediately with the URL in parentheses (e.g., (https://www.markdownguide.org/)):
 
-I learn Markdown [in this link](https://www.markdownguide.org/)
+I learn Markdown [from this link](https://www.markdownguide.org/)
 
+You can optionally add a title for a link by enclosing it in parentheses after the URL. This will appear as a tooltip when the user hovers over the link, e.g.:
+
+I learn Markdown [from this link](https://www.markdownguide.org/ "I found it extremely helpful.")
+
+To quickly turn a URL or email address into a link, enclose it in angle brackets (\<).
+<https://github.com/admiralrua/Algorithms-illustrated-by-Python>
+<ntchi1983@gmail.com>
+
+### Insert tables
+To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column. You can optionally add pipes on either end of the table. Noted that cell widths can vary and the rendered output still looks the same. You can align text in the columns to the left, right, or center by adding a colon (:) to the left, right, or on both side of the hyphens within the header row.
+
+For example, this code block
+```
+| Syntax      | Description | Testing text |
+| ----------- | ----------- | ------------ |
+| :---        | :---:       | ---:    | 
+| Header      | Title       | Ahihi   |
+| Paragraph   | Text        | Alo ola |
+```
+will result in:
+| Syntax      | Description | Testing text |
+| ----------- | ----------- | ------------ |
+| :---        | :---:       | ---:    | 
+| Header      | Title       | Ahihi   |
+| Paragraph   | Text        | Alo ola |
