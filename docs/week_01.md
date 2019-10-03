@@ -103,7 +103,7 @@ For example, this code block
 ```
 will result in:
 | Syntax      | Description | Testing text |
-| ----------- | ----------- | ------------ |
 | :---        | :---:       | ---:    | 
+| ----------- | ----------- | --------|
 | Header      | Title       | Ahihi   |
 | Paragraph   | Text        | Alo ola |
