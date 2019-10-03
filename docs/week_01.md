@@ -10,7 +10,7 @@ Header can be made using different numbers of \#-symbol, i.e. \# or \#\# or \#\#
 
 ### Styling
 
-To italicize text, add one asterisk or underscore before and after a _word_ or _phrase_.
+To italicize text, add one asterisk (\*) or underscore (\_) before and after a _word_ or _phrase_.
 
 To bold text, add two asterisks or underscores before and after a **word** or **phrase**.
 
@@ -45,7 +45,8 @@ To create an unordered list, add dashes \(-\), asterisks \(\*\), or plus signs \
 * first
   * first first
   * first second 
-    * first second third
+    * first second first
+    * first second second
 * second
 * third
 
@@ -75,4 +76,9 @@ $$\sum_{n=1}^{10}\left( x^{n} + \frac{x}{n} \right)$$
 To add an image, add an exclamation mark \(!\), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title after the URL in the parentheses.
 
 ![Where i currently work](../.gitbook/assets/rhdhv.jpg)
+
+### Insert links
+To create a link, enclose the link text in brackets (e.g., [Introduction for Markdown]) and then follow it immediately with the URL in parentheses (e.g., (https://www.markdownguide.org/)), i.e.:
+
+I learn Markdown [in this link](https://www.markdownguide.org/)
 
