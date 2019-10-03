@@ -55,4 +55,7 @@ To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in
 - second
 - third
 
+### Insert images
+To add an image, add an exclamation mark (!), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title after the URL in the parentheses.
 
+![Where i work](rhdhv.jpg)
