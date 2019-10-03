@@ -1,15 +1,14 @@
 # Non-trivial preparation
 
 ## Markdown for quick-writting
-
 Markdown is a markup-style language which makes writting technical documents conveniently.
 
-### Make a header
 
+### Make a header
 Header can be made using different numbers of \#-symbol, i.e. \# or \#\# or \#\#\# and so on.
 
-### Styling
 
+### Styling
 To italicize text, add one asterisk (\*) or underscore (\_) before and after a _word_ or _phrase_.
 
 To bold text, add two asterisks or underscores before and after a **word** or **phrase**.
@@ -26,12 +25,11 @@ Blockquotes can be nested. Add a &gt;&gt; in front of the paragraph you want to 
 >
 > > They said @\#$%&, and it is not what we want to be corrected in the contract.
 
-### Lists
 
+### Lists
 We can organize items into ordered or unordered lists.
 
 #### Ordered lists
-
 To create an ordered list, add line items with numbers followed by periods. The numbers don’t have to be in numerical order, but the list should start with the number one.
 
 1. first
@@ -39,7 +37,6 @@ To create an ordered list, add line items with numbers followed by periods. The 
 3. third
 
 #### Unordered lists
-
 To create an unordered list, add dashes \(-\), asterisks \(\*\), or plus signs \(+\) in front of line items. Indent one or more items to create a nested list.
 
 * first
@@ -50,8 +47,27 @@ To create an unordered list, add dashes \(-\), asterisks \(\*\), or plus signs \
 * second
 * third
 
-### Insert a code
 
+### Footnotes
+To create a footnote reference, add a caret and an identifier inside brackets (e.g. [^1]). Identifiers can be numbers or words, but they can’t contain spaces or tabs. Identifiers only correlate the footnote reference with the footnote itself — in the output, footnotes are numbered sequentially. We don’t have to put footnotes at the end of the document. 
+
+This code block:
+```
+This is a simple footnote,[^a] and here's a longer one.[^B]
+[^a]: The first footnote.
+[^B]: The second one with multiple paragraphs.
+    Indent paragraphs to include them in the footnote.
+    Add as many paragraphs as you like.
+```
+has the rendered output as:
+This is a simple footnote,[^a] and here's a longer one.[^B]
+[^a]: The first footnote.
+[^B]: The second one with multiple paragraphs.
+    Indent paragraphs to include them in the footnote.
+    Add as many paragraphs as you like.
+
+
+### Insert a code
 We can use the pair \`\` to highlight a code or a code block.
 
 For example, if we want to highly `variable = 9` we can just use a pair of \`. But for a code block, we need a pair of \`\`\` as follows:
@@ -61,21 +77,25 @@ for i in range(10):
     print(i)
 ```
 
-To define the above code block is Python-code, we need to put `python` right after the first block of \`\`\`.
+Markdown supports syntax highlighting for code blocks. This feature allows us to add color highlighting for whatever language our code was written in. To add syntax highlighting, specify a language next to the tick marks before the code block. In the aformentioned example, the above code block is Python-code, therefore, we need to put `python` right after the first block of \`\`\`.
+
 
 ### Insert a mathematical formula
-
 To insert a formula, we actually need to insert the latex-interpretation of the formula. This can be done easily online with tool such as [https://www.codecogs.com/latex/eqneditor.php](https://www.codecogs.com/latex/eqneditor.php).
 
-After receiving a latex code for our formular, we just need to put it inside the pair $$...$$ to make it visible in your mardown document.
-
+After receiving a latex code for our formular, we just need to put it inside the pair $$...$$ to make it visible in your mardown document. This code block:
+```
+$$\sum_{n=1}^{10}\left( x^{n} + \frac{x}{n} \right)$$
+```
+result in:
 $$\sum_{n=1}^{10}\left( x^{n} + \frac{x}{n} \right)$$
 
-### Insert images
 
+### Insert images
 To add an image, add an exclamation mark \(!\), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title after the URL in the parentheses.
 
 ![Where i currently work](../.gitbook/assets/rhdhv.jpg)
+
 
 ### Insert links
 To create a link, enclose the link text in brackets (e.g., [from this link]) and then follow it immediately with the URL in parentheses (e.g., (https://www.markdownguide.org/)):
@@ -90,13 +110,13 @@ To quickly turn a URL or email address into a link, enclose it in angle brackets
 <https://github.com/admiralrua/Algorithms-illustrated-by-Python>
 <ntchi1983@gmail.com>
 
+
 ### Insert tables
 To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column. You can optionally add pipes on either end of the table. Noted that cell widths can vary and the rendered output still looks the same. You can align text in the columns to the left, right, or center by adding a colon (:) to the left, right, or on both side of the hyphens within the header row.
 
 For example, this code block
 ```
 | Syntax      | Description | Testing text |
-| ----------- | ----------- | ------------ |
 | :---        | :---:       | ---:    | 
 | Header      | Title       | Ahihi   |
 | Paragraph   | Text        | Alo ola |
@@ -104,6 +124,7 @@ For example, this code block
 will result in:
 | Syntax      | Description | Testing text |
 | :---        | :---:       | ---:    | 
-| ----------- | ----------- | --------|
 | Header      | Title       | Ahihi   |
 | Paragraph   | Text        | Alo ola |
+
+You can format the text within tables. For example, you can add links, code (words or phrases in tick marks (\`) only, not code blocks), and emphasis. You can’t add headings, blockquotes, lists, horizontal rules, images, or HTML tags.
