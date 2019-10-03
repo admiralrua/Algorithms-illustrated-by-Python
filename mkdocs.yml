@@ -1,8 +1,8 @@
 site_name: Algorithms illustrated by Python
 site_author: ctn-admiralrua
 pages:
-- 'Home': 'index.md'
-- 'Preparation':
+- Home: 'index.md'
+- Preparation:
     - 'Non-trivial preparation': 'week_01.md'
-- 'About':
+- About:
     - 'Release Notes': 'release-notes.md'
