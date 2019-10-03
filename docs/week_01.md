@@ -1,6 +1,12 @@
-## Store what you learn with Markdown
+# Non-trivial preparation
+
+## Markdown for quick-writting
 
 Markdown is a markup-style language which makes writting technical documents conveniently.
+
+### Make a header
+
+Header can be made using different numbers of \#-symbol, i.e. \# or \#\# or \#\#\# and so on.
 
 ### Styling
 
@@ -19,31 +25,6 @@ Blockquotes can be nested. Add a &gt;&gt; in front of the paragraph you want to 
 > We said that:
 >
 > > They said @\#$%&, and it is not what we want to be corrected in the contract.
-
-### Make a header
-
-Header can be made using different numbers of \#-symbol, i.e. \# or \#\# or \#\#\# and so on.
-
-### Insert a code
-
-We can use the pair \`\` to highlight a code or a code block.
-
-For example, if we want to highly `variable = 9` we can just use a pair of \`. But for a code block, we need a pair of \`\`\` as follows:
-
-```python
-for i in range(10):
-    print(i)
-```
-
-To define the above code block is Python-code, we need to put `python` right after the first block of \`\`\`.
-
-### Insert a mathematical formula
-
-To insert a formula, we actually need to insert the latex-interpretation of the formula. This can be done easily online with tool such as [https://www.codecogs.com/latex/eqneditor.php](https://www.codecogs.com/latex/eqneditor.php).
-
-After receiving a latex code for our formular, we just need to put it inside the pair $$...$$ to make it visible in your mardown document.
-
-$$\sum_{n=1}^{10}\left( x^{n} + \frac{x}{n} \right)$$
 
 ### Lists
 
@@ -67,6 +48,27 @@ To create an unordered list, add dashes \(-\), asterisks \(\*\), or plus signs \
     * first second third
 * second
 * third
+
+### Insert a code
+
+We can use the pair \`\` to highlight a code or a code block.
+
+For example, if we want to highly `variable = 9` we can just use a pair of \`. But for a code block, we need a pair of \`\`\` as follows:
+
+```python
+for i in range(10):
+    print(i)
+```
+
+To define the above code block is Python-code, we need to put `python` right after the first block of \`\`\`.
+
+### Insert a mathematical formula
+
+To insert a formula, we actually need to insert the latex-interpretation of the formula. This can be done easily online with tool such as [https://www.codecogs.com/latex/eqneditor.php](https://www.codecogs.com/latex/eqneditor.php).
+
+After receiving a latex code for our formular, we just need to put it inside the pair $$...$$ to make it visible in your mardown document.
+
+$$\sum_{n=1}^{10}\left( x^{n} + \frac{x}{n} \right)$$
 
 ### Insert images
 
