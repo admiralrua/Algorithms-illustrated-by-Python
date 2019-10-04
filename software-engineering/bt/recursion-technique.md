@@ -14,6 +14,7 @@ import sys
 sys.setrecursionlimit(1000000)
 ```
 
+
 ## Examples
 The traditional examples for recursion are to calculate:
 - the factorial $$n!$$
@@ -61,3 +62,17 @@ The iterative solution executes much faster, especially for the Fibonacci proble
       return memo[n]
   ```    
 If we check the time elapsed, it turns out that the memorisation technique is even faster than the iterative solution. 
+
+
+## Problems for practice
+There are a couple of problems for practicing, it would be nice to come up with both naive, iterative and memorisation solutions for those. I should admit that I only work the naive solution out for several problems down there.
+- Find the maximum odd divisor of a positive number. 
+- Count the number of digit of a number.
+- Find the first or largest digit of a number.
+- Find the maximum divisor of two numbers with the value up to $10^5$.
+- Find the largest prime number in a list of up to $10^5$ elements.
+- Calculate the sum of even numbers in a list of up to $10^5$ elements.
+- Solve the Hanoi's tower problem and estimate the time complexity to understand why it is mentioned quite often as a **typical** recursive problem. A nice iterative solution exists [here](https://en.wikipedia.org/wiki/Tower_of_Hanoi#Iterative_solution). 
+- The list in [G4G](https://www.geeksforgeeks.org/recursion-practice-problems-solutions/) gives you a set of problems for practice with recursion on different types of data structures.
+
+In general, the recursive method is really powerful one, especially if the memorization technique can be combined. 
