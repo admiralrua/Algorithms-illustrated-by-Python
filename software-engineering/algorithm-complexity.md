@@ -102,3 +102,5 @@ Here is a table prepared by Dr. Jeyakesavan Veerasamy to illustrate the real-lif
 |  $$10^6$$  |  1.0 $$\mu$$s  |  3.0 $$\mu$$s     |  10 ms         |  30 ms              |  1.7 m         |              |
 |  $$10^7$$  |  1.0 $$\mu$$s  |  3.5 $$\mu$$s     |  100 ms        |  350 ms             |  2.8 h         |              |
 |  $$10^8$$  |  1.0 $$\mu$$s  |  4.0 $$\mu$$s     |  1 s           |  4 s                |  11.7 d        |              |
+
+From this table, you can understand why a solution with $$O(2^n)$$, i.e. the naive recursive solution for the Hanoi's tower problem, is not accepted because of the executable time grows too fast in comparison with the size of the problem. 
