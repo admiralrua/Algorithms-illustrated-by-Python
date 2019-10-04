@@ -24,5 +24,5 @@ n = 100000
 print(quicksort([random.randint(0, n//1.5) for _ in range(n)]))
 ```
 
-I took this code \[from here\]\([http://cs231n.github.io/python-numpy-tutorial/](http://cs231n.github.io/python-numpy-tutorial/}{here}) "A really good brief of Python"\), and you can find many nice interesting topics there as well.
+I took this code [from here](http://cs231n.github.io/python-numpy-tutorial/ "A really good brief of Python"), and you can find many nice interesting topics there as well.
 
