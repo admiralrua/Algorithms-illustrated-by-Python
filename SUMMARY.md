@@ -10,7 +10,7 @@
   * [Basic techniques](software-engineering/bt/README.md)
     * [Recursion technique](software-engineering/bt/recursion-technique.md)
     * [Two-pointer technique](software-engineering/bt/two-pointer-technique.md)
-  * [Sorting and Searching](software-engineering/ss/README.md)
+  * [Searching](software-engineering/ss/README.md)
     * [Binary search](software-engineering/ss/binary-search.md)
     * [Ternary search](software-engineering/ss/ternary-search.md)
   * [Graphs](software-engineering/graphs.md)
