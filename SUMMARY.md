@@ -7,10 +7,10 @@
   * [Algorithm complexity](ntrivial-preparation/algorithm-complexity.md)
 * [Software Engineering](software-engineering/README.md)
   * [Data structures](software-engineering/data-structures.md)
-  * [Basic techniques]
+  * [Basic techniques](software-engineering/README_bt.md)
     * [Recursion technique](software-engineering/recursion-technique.md)
     * [Two-pointer technique](software-engineering/two-pointer-technique.md)
-  * [Sorting and Searching]
+  * [Sorting and Searching](software-engineering/README_ss.md)
     * [Binary search](software-engineering/binary-search.md)
     * [Ternary search](software-engineering/ternary-search.md)
     * [Genetic algorithm \(GA\)](software-engineering/genetic-algorithm-ga.md)
