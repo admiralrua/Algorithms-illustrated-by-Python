@@ -5,9 +5,9 @@ In this part, I would like to briefly present data structures and algorithms mai
 I learn from different resources
 
 1. [Introduction to Algorithms](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
-2. [cp-algorithms](https://cp-algorithms.com/)
 3. [Design and analysis of algorithms](http://www.personal.kent.edu/~rmuhamma/Algorithms/algorithm.html)
 4. [Analysis of Algorithms](http://www8.cs.umu.se/kurser/TDBAfl/VT06/algorithms/LEC/LECTURES/ALL.HTM)
+2. [cp-algorithms](https://cp-algorithms.com/)
 5. [G4G algorithms](https://www.geeksforgeeks.org/greedy-algorithms/)
 
 and then practice with problems from several diffrent coding pages. The places to practice can be named as follows:
