@@ -12,14 +12,15 @@ I learn from different resources
 
 and then practice with problems from several diffrent coding pages. The places to practice can be named as follows:
 
-1. [codechef](https://www.codechef.com/)
-2. [codeforces](https://codeforces.com/)
-3. [hackerearth](https://www.hackerearth.com/challenges/)
-4. [hackerrank](https://www.hackerrank.com/)
+1. [cc codechef](https://www.codechef.com/)
+2. [cf codeforces](https://codeforces.com/)
+3. [he hackerearth](https://www.hackerearth.com/challenges/)
+4. [hr hackerrank](https://www.hackerrank.com/)
 5. [kattis](https://open.kattis.com/)
+1. [lightoj](http://lightoj.com/index.php)
 6. [spoj](https://www.spoj.com/)
 7. [timus](http://acm.timus.ru/)
-8. [\(uva\) onlinejudge](https://onlinejudge.org/index.php)
+8. [uva onlinejudge](https://onlinejudge.org/index.php)
 
 It should be noted that several pages do not fully supported Python therefore you can easily get **TLE** error there \(time limit excess\).
 
