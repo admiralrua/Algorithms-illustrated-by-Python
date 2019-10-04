@@ -1,7 +1,3 @@
----
-description: 'Python is really convenient :)'
----
-
 # Python programming language
 
 ## Brief introduction
