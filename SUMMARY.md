@@ -19,7 +19,7 @@
   * [Differentiation and Optimization](further-preparation/differentiation-and-optimization.md)
   * [Linear algebra](further-preparation/linear-algebra.md)
   * [Multivariate calculus](further-preparation/multivariate-calculus.md)
-  * [Statistics and Probability](further-preparation/statistics-and-probability.md)
+  * [Probability and Statistics](further-preparation/probability-and-statistics.md)
   * [Principal component analysis](further-preparation/principal-component-analysis.md)
   * [Python](further-preparation/python/README.md)
     * [Nympy](further-preparation/python/nympy.md)
