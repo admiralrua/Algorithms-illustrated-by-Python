@@ -17,10 +17,10 @@ and then practice with problems from several diffrent coding pages. The places t
 3. [he hackerearth](https://www.hackerearth.com/challenges/)
 4. [hr hackerrank](https://www.hackerrank.com/)
 5. [kattis](https://open.kattis.com/)
-1. [lightoj](http://lightoj.com/index.php)
-6. [spoj](https://www.spoj.com/)
-7. [timus](http://acm.timus.ru/)
-8. [uva onlinejudge](https://onlinejudge.org/index.php)
+6. [lightoj](http://lightoj.com/index.php)
+7. [spoj](https://www.spoj.com/)
+8. [timus](http://acm.timus.ru/)
+9. [uva onlinejudge](https://onlinejudge.org/index.php)
 
 It should be noted that several pages do not fully supported Python therefore you can easily get **TLE** error there \(time limit excess\).
 
