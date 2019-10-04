@@ -89,7 +89,7 @@ Please practice with the following codes:
 Here is a table prepared by Dr. Jeyakesavan Veerasamy to illustrate the real-life time elapsed based on the time complexity of a code and the magnitude of data involved:
 
 |  $$n$$     |  $$O(1)$$      |  $$O(\log_2 n)$$  |  $$O(n)$$      |  $$O(n \log_2 n)$$  |  $$O(n^2)$$    |  $$O(2^n)$$  |
-|  --------  |  ------------  |  ---------------  |  ------------  |  -----------------  |  ------------  |  ----------  | 
+|  :------:  |  :------:      |  :------:         |  :------:      |  :------:           |  :------:      |  :------:    | 
 |  100       |  1.0 $$\mu$$s  |  1.0 $$\mu$$s     |  1.0 $$\mu$$s  |  1.0 $$\mu$$s       |  1.0 $$\mu$$s  |  1 $$\mu$$s  |
 |  110       |  1.0 $$\mu$$s  |                   |                |                     |  1.2 $$\mu$$s  |  1 ms        |
 |  120       |  1.0 $$\mu$$s  |                   |                |                     |  1.4 $$\mu$$s  |  1 s         |
