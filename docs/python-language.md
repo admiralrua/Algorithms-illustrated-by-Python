@@ -5,5 +5,5 @@ description: >-
   express ideas conveniently in a very short time.
 ---
 
-# Python language
+# Python programming language
 
