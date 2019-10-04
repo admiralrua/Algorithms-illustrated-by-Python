@@ -69,19 +69,36 @@ Please practice with the following codes:
           j *= 2
   ```
 - Which loop finishes first ?
-```python
-for i in range(n):
-```
-```python
-for i in range(0,n,2):
-```
-```python
-i = 1
-while (i <= n):
-    i *= 2
-```
-```python    
-i = n
-while (i > -1):
-    i //= 2 
-```    
+  ```python
+  for i in range(n):
+  ```
+  ```python
+  for i in range(0,n,2):
+  ```
+  ```python
+  i = 1
+  while (i <= n):
+      i *= 2
+  ```
+  ```python    
+  i = n
+  while (i > -1):
+      i //= 2 
+  ```    
+
+Here is a table prepared by Dr. Jeyakesavan Veerasamy to illustrate the real-life time elapsed based on the time complexity of a code and the magnitude of data involved:
+|  $n$     |  $O(1)$      |  $O(\log_2 n)$  |  $O(n)$      |  $O(n \log_2 n)$  |  $O(n^2)$    |  $O(2^n)$  |
+------------------------------------------------------------------------------------------------------------
+|  100     |  1.0 $\mu$s  |  1.0 $\mu$s     |  1.0 $\mu$s  |  1.0 $\mu$s       |  1.0 $\mu$s  |  1 $\mu$s  |
+|  110     |  1.0 $\mu$s  |                 |              |                   |  1.2 $\mu$s  |  1 ms      |
+|  120     |  1.0 $\mu$s  |                 |              |                   |  1.4 $\mu$s  |  1 s       |
+|  130     |  1.0 $\mu$s  |                 |              |                   |  1.7 $\mu$s  |  18 m      |
+|  140     |  1.0 $\mu$s  |                 |              |                   |  2.0 $\mu$s  |  13 d      |
+|  150     |  1.0 $\mu$s  |                 |              |                   |  2.3 $\mu$s  |  37 y      |
+------------------------------------------------------------------------------------------------------------
+|  $10^3$  |  1.0 $\mu$s  |  1.5 $\mu$s     |  10 $\mu$s   |  15 $\mu$s        |  100 $\mu$s  |            |
+|  $10^4$  |  1.0 $\mu$s  |  2.0 $\mu$s     |  100 $\mu$s  |  200 $\mu$s       |  10 ms       |            |
+|  $10^5$  |  1.0 $\mu$s  |  2.5 $\mu$s     |  1 ms        |  2.5 ms           |  1 s         |            |
+|  $10^6$  |  1.0 $\mu$s  |  3.0 $\mu$s     |  10 ms       |  30 ms            |  1.7 m       |            |
+|  $10^7$  |  1.0 $\mu$s  |  3.5 $\mu$s     |  100 ms      |  350 ms           |  2.8 h       |            |
+|  $10^8$  |  1.0 $\mu$s  |  4.0 $\mu$s     |  1 s         |  4 s              |  11.7 d      |            |
