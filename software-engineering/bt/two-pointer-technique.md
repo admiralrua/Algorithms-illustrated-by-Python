@@ -193,6 +193,8 @@ Mixing of the two techniques above is employed sometimes to search for the optim
 In some problems, the dimension of the output is pre-defined, only one pointer is required and the other is just imaginary. This technique is sometimes call sliding-window. A typical example for the problem which can be solved by this technique is as follows: given an array length $$n$$ of numbers, find the maximum value of the sum of $$k$$ _consecutive_ numbers. In this problem, we need only one pointer to run from the beginning position to the position $$n-k$$-th. When the pointer is at position $$i$$, the sum is updated by subtracting the $$i$$-th number and adding the $$i+k$$-th number. The following code illustrates what we just discussed here:
 
 ```python
+import random
+
 n, k = 10000, 24
 a    = [random.randint(0,n) for _ in range(n)]
 ksum = sum(a[0:k])
