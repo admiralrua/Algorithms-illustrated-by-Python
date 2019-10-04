@@ -1,4 +1,4 @@
-# Brief on data structures
+# Data structures
 
 There are four basic built-in container types in Python:
  - **List** is a collection which is ordered and changeable; duplicate members.
