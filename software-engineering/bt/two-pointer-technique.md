@@ -148,6 +148,7 @@ A typical problem to illustrate for this technique can be stated as followings: 
 - if $$a[le] + a[ri] == t$$: found a pair;
 - if $$a[le] + a[ri] < t$$, move $$le$$ to the right; otherwise, as $$a[le] + a[ri] > t$$, move $$ri$$ to the left.
 - the following code print out all possible pair of integers in the array:
+
 ```python
 import random
 
