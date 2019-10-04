@@ -1,0 +1,2 @@
+# Ternary search
+
