@@ -89,45 +89,45 @@ def last_Node_of_Cycle(self, head):
 
 Another typical example to illustrate the two-pointer technique is the merging algorithm in the Merge Sort method which maintains $$O(n \log_2 n)$$ in the worst case. The merging algorithm merges two sorted arrays into one array which should also be sorted; therefore, we actually need two pointers running in each array to choose an element of which array to be added into the new array. Please take a look into the code here:
 - Merging algorithm
-```python
-def merge(aL, aR):
-    aS, nL, nR, i, j = [], len(aL), len(aR), 0, 0
-    
-    while (i < nL) and (j < nR):
-        if (aL[i] < aR[j]):
-            aS.append(aL[i])
-            i    += 1
-        else:
-            aS.append(aR[j])
-            j    += 1
-            
-    for i in range(i,nL):
-        aS.append(aL[i])
-        
-    for j in range(j,nR):
-        aS.append(aR[j])
-        
-    return aS
-```
+  ```python
+  def merge(aL, aR):
+      aS, nL, nR, i, j = [], len(aL), len(aR), 0, 0
+      
+      while (i < nL) and (j < nR):
+          if (aL[i] < aR[j]):
+              aS.append(aL[i])
+              i    += 1
+          else:
+              aS.append(aR[j])
+              j    += 1
+              
+      for i in range(i,nL):
+          aS.append(aL[i])
+          
+      for j in range(j,nR):
+          aS.append(aR[j])
+          
+      return aS
+  ```
 - Merge Sort 
-```python
-def mergeSort(a):
-    n  = len(a)-1
-    
-    if (n == 0):
-        return a
-    
-    nL = int(n/2)
-    
-    aL = a[0:nL+1]
-    aR = a[nL+1:n+1]
-    
-    aL = mergeSort(aL)
-    aR = mergeSort(aR)
-    
-    a = merge(aL, aR)
-    return a 
-```
+  ```python
+  def mergeSort(a):
+      n  = len(a)-1
+      
+      if (n == 0):
+          return a
+      
+      nL = int(n/2)
+      
+      aL = a[0:nL+1]
+      aR = a[nL+1:n+1]
+      
+      aL = mergeSort(aL)
+      aR = mergeSort(aR)
+      
+      a = merge(aL, aR)
+      return a 
+  ```
 
 
 ### Problems for practice
@@ -148,36 +148,35 @@ A typical problem to illustrate for this technique can be stated as followings: 
 - if $$a[le] + a[ri] == t$$: found a pair;
 - if $$a[le] + a[ri] < t$$, move $$le$$ to the right; otherwise, as $$a[le] + a[ri] > t$$, move $$ri$$ to the left.
 - the following code print out all possible pair of integers in the array:
-
-```python
-import random
-
-n, t = 1000, 800
-a = [random.randint(0,n) for _ in range(n)]
-a.sort()
-k = []
-
-le, ri = 0, n-1
-while (le < ri):
-    x = a[le] + a[ri]
-    
-    if (x == t):
-        k.append([le, ri])
-        if (a[le] == a[le+1]):
-            le += 1
-        elif (a[ri] == a[ri-1]):
-            ri -= 1
-        else:
-            le += 1
-            ri -= 1
-    elif (x < t):
-        le += 1
-    else:
-        ri -= 1
-
-for v in k:
-    print(v[0], v[1])
-```
+  ```python
+  import random
+  
+  n, t = 1000, 800
+  a = [random.randint(0,n) for _ in range(n)]
+  a.sort()
+  k = []
+  
+  le, ri = 0, n-1
+  while (le < ri):
+      x = a[le] + a[ri]
+      
+      if (x == t):
+          k.append([le, ri])
+          if (a[le] == a[le+1]):
+              le += 1
+          elif (a[ri] == a[ri-1]):
+              ri -= 1
+          else:
+              le += 1
+              ri -= 1
+      elif (x < t):
+          le += 1
+      else:
+          ri -= 1
+  
+  for v in k:
+      print(v[0], v[1])
+  ```
 
 
 ### Problems for practice
