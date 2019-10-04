@@ -70,11 +70,11 @@ then reference it as:
 <a name="fn01">1</a>: This is a fake footnote.
 ```
 
-We are referring to a fake footnote [1](day_000.md#fn01) and another one [3](day_000.md#fn02).
+We are referring to a fake footnote [1](non-trivial.md#fn01) and another one [3](non-trivial.md#fn02).
 
-[1](day_000.md): This is a fake footnote.
+[1](non-trivial.md): This is a fake footnote.
 
-[3](day_000.md): This is another fake footnote.
+[3](non-trivial.md): This is another fake footnote.
 
 ## Task Lists
 
