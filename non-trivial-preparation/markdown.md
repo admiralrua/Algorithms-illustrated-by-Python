@@ -18,7 +18,7 @@ To bold text, add two asterisks or underscores before and after a **word** or **
 
 To emphasize text with bold and italics at the same time, add three asterisks or underscores before and after a _**word**_ or _**phrase**_.
 
-To strikethrough words, use two tilde symbols \(~~\) ~~before and after~~ the words.
+To strikethrough words, use two tilde symbols \(\~~\) ~~before and after~~ the words.
 
 To create a blockquote, add a &gt; in front of a paragraph to create something like this:
 
