@@ -1,8 +1,0 @@
-site_name: Algorithms illustrated by Python
-site_author: ctn-admiralrua
-pages:
-- Preparation:
-    - 'Non-trivial preparation': 'day_001.md'
-- About:
-    - 'Release Notes': 'release-notes.md'
-theme: readthedocs
