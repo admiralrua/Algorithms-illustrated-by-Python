@@ -96,10 +96,10 @@ Another typical example to illustrate the two-pointer technique is the merging a
       while (i < nL) and (j < nR):
           if (aL[i] < aR[j]):
               aS.append(aL[i])
-              i    += 1
+              i += 1
           else:
               aS.append(aR[j])
-              j    += 1
+              j += 1
               
       for i in range(i,nL):
           aS.append(aL[i])
@@ -113,19 +113,16 @@ Another typical example to illustrate the two-pointer technique is the merging a
   ```python
   def mergeSort(a):
       n  = len(a)-1
-      
       if (n == 0):
           return a
       
       nL = int(n/2)
-      
       aL = a[0:nL+1]
       aR = a[nL+1:n+1]
-      
       aL = mergeSort(aL)
       aR = mergeSort(aR)
       
-      a = merge(aL, aR)
+      a  = merge(aL, aR)
       return a 
   ```
 
@@ -152,9 +149,9 @@ A typical problem to illustrate for this technique can be stated as followings: 
   import random
   
   n, t = 1000, 800
-  a = [random.randint(0,n) for _ in range(n)]
+  a    = [random.randint(0,n) for _ in range(n)]
+  k    = []
   a.sort()
-  k = []
   
   le, ri = 0, n-1
   while (le < ri):
