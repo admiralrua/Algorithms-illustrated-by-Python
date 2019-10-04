@@ -1,9 +1,3 @@
----
-description: >-
-  Markdown is a markup-style language which makes writing technical documents
-  conveniently.
----
-
 # Markdown for documentation
 
 Markdown is a markup-style language which makes writing technical documents conveniently.
