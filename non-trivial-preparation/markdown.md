@@ -6,6 +6,8 @@ description: >-
 
 # Markdown for documentation
 
+Markdown is a markup-style language which makes writing technical documents conveniently.
+
 ## Make a header
 
 Header can be made using different numbers of \#-symbol, i.e. \# or \#\# or \#\#\# and so on.
@@ -18,7 +20,7 @@ To bold text, add two asterisks or underscores before and after a **word** or **
 
 To emphasize text with bold and italics at the same time, add three asterisks or underscores before and after a _**word**_ or _**phrase**_.
 
-To strikethrough words, use two tilde symbols \(\~~\) ~~before and after~~ the words.
+To strikethrough words, use two tilde symbols \(~~\) ~~before and after~~ the words.
 
 To create a blockquote, add a &gt; in front of a paragraph to create something like this:
 
@@ -70,11 +72,11 @@ then reference it as:
 <a name="fn01">1</a>: This is a fake footnote.
 ```
 
-We are referring to a fake footnote [1](non-trivial.md#fn01) and another one [3](non-trivial.md#fn02).
+We are referring to a fake footnote [1](https://github.com/admiralrua/Algorithms-illustrated-by-Python/tree/26fa1ff2fc37ed0960bd09f7f410a4e9b9b73ea8/non-trivial-preparation/non-trivial.md#fn01) and another one [3](https://github.com/admiralrua/Algorithms-illustrated-by-Python/tree/26fa1ff2fc37ed0960bd09f7f410a4e9b9b73ea8/non-trivial-preparation/non-trivial.md#fn02).
 
-[1](non-trivial.md): This is a fake footnote.
+[1](https://github.com/admiralrua/Algorithms-illustrated-by-Python/tree/26fa1ff2fc37ed0960bd09f7f410a4e9b9b73ea8/non-trivial-preparation/non-trivial.md): This is a fake footnote.
 
-[3](non-trivial.md): This is another fake footnote.
+[3](https://github.com/admiralrua/Algorithms-illustrated-by-Python/tree/26fa1ff2fc37ed0960bd09f7f410a4e9b9b73ea8/non-trivial-preparation/non-trivial.md): This is another fake footnote.
 
 ## Task Lists
 
