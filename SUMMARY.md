@@ -6,7 +6,6 @@
   * [Python language](docs/python-language.md)
   * [Nympy](docs/nympy.md)
   * [Matplotlib](docs/matplotlib.md)
-  * [Release note](docs/release-notes.md)
 * [Software Engineering](software-engineering/README.md)
   * [Data structures](software-engineering/data-structures.md)
   * [Algorithm complexity](software-engineering/algorithm-complexity.md)
