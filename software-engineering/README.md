@@ -6,8 +6,8 @@ I learn from different resources
 1. [Introduction to Algorithms](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
 1. [cp-algorithms](https://cp-algorithms.com/)
 1. [Design and analysis of algorithms](http://www.personal.kent.edu/~rmuhamma/Algorithms/algorithm.html)
-1. [G4G algorithms](https://www.geeksforgeeks.org/greedy-algorithms/)
 1. [Analysis of Algorithms](http://www8.cs.umu.se/kurser/TDBAfl/VT06/algorithms/LEC/LECTURES/ALL.HTM)
+1. [G4G algorithms](https://www.geeksforgeeks.org/greedy-algorithms/)
 
 and then practice with problems from several diffrent coding pages. The places to practice can be named as follows:
 
