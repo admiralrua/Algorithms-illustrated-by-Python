@@ -7,6 +7,7 @@
 * [Software Engineering](software-engineering/README.md)
   * [Algorithm complexity](software-engineering/algorithm-complexity.md)
   * [Data structures](software-engineering/data-structures/README.md)
+    * [Basic data structures](software-engineering/data-structures/basic.md)
     * [Stack and Queue](software-engineering/data-structures/stack-and-queue.md)
     * [Heap](software-engineering/data-structures/heap.md)
     * [Binary search tree](software-engineering/data-structures/binary-search-tree.md)
