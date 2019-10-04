@@ -23,5 +23,6 @@
   * [Principal component analysis](further-preparation/principal-component-analysis.md)
   * [Nympy](further-preparation/nympy.md)
   * [Matplotlib](further-preparation/matplotlib.md)
+  * [Pandas](further-preparation/pandas.md)
 * [Machine learning](machine-learning.md)
 
