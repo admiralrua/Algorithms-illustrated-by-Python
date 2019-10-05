@@ -11,7 +11,7 @@ Besides, some data structured as **Linked-list**, **Stacks**, **Queue** are also
 
 * **Heap**
 * **Binary search tree**
-* **Red-Black** tree
+* **Red-Black tree**
 * **Trie**
 
 And of course we should mention **Data abstraction** as well, its extension is Object-Oriented Programming mindset which seems to be really convenient but also, sometimes, quite vague. You can find numerous good and comprehensive references about OOP online.
