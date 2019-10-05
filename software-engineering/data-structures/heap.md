@@ -14,7 +14,7 @@ Binary heaps can be represented in a very space-efficient way as follows: (1) th
 
 |  Item          |  Zero-based array  |  One-based array |
 |  Current item  |  $$i$              |  $$i$$           |
-|  Left-child    |  $$2\*i$$          |  $$2*i+1$$       |
+|  Left-child    |  $$2*i$$           |  $$2*i+1$$       |
 |  Right-child   |  $$2*i+1$$         |  $$2*i+2$$       |
 |  Parent        |  $$i//2$$          |  $$(i-1)//2$$    | 
 
