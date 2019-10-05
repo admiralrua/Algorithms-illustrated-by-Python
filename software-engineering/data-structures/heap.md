@@ -13,6 +13,7 @@ Heaps are usually implemented in an array. After an element is inserted into or 
 Binary heaps can be represented in a very space-efficient way as follows: (1) the first element will contain the root; (2) the next two elements of the array contain its children;  (3) the next four contain the four children of the two child nodes, etc. There are four basic formulae for this type of storage:
 
 |  Item          |  Zero-based array  |  One-based array |
+|  ---           |  ---               |  ---             |
 |  Current item  |  $$i$$             |  $$i$$           |
 |  Left-child    |  $$2*i$$           |  $$2*i+1$$       |
 |  Right-child   |  $$2*i+1$$         |  $$2*i+2$$       |
