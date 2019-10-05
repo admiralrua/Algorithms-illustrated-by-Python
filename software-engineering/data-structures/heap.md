@@ -119,7 +119,7 @@ The nice thing about implementing your own heap library is that you can understa
   print(tmp)
   ```
   
-  - Similar example but using heapq now
+- Similar example but using heapq now
   
   ```python
   from heapq import heapify, heappush, heappop
@@ -135,7 +135,7 @@ The nice thing about implementing your own heap library is that you can understa
   print(tmp)
   ```
   
-  Please note that **heapq** by default implements the _min-heap_. If you want to have a _max-heap_, you can either change the sign of the value or create a new class and define operator __lt__ for its object.
+- Please note that **heapq** by default implements the _min-heap_. If you want to have a _max-heap_, you can either change the sign of the value or create a new class and define operator __lt__ for its object.
   
   ```python
   class maxHeap:
