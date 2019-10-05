@@ -120,6 +120,7 @@ The nice thing about implementing your own heap library is that you can understa
   ```
   
   - Similar example but using heapq now
+  
   ```python
   from heapq import heapify, heappush, heappop
   tmp = [0, 2, 4, 6, 10, 12, 1, 5, 7, 9, 11, 13]
@@ -135,6 +136,7 @@ The nice thing about implementing your own heap library is that you can understa
   ```
   
   Please note that **heapq** by default implements the _min-heap_. If you want to have a _max-heap_, you can either change the sign of the value or create a new class and define operator __lt__ for its object.
+  
   ```python
   class maxHeap:
 	    def __init__(self, value):
