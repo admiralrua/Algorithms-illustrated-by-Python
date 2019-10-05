@@ -11,7 +11,7 @@
 
 The graph theory has important applications in Critical path analysis, Social psychology, Matrix theory, Set theory, Topology, Group theory, Molecular chemistry, and Searching.
 
-A [graph](https://en.wikipedia.org/wiki/Graph_(abstract_data_type)) data structure consists of a finite set of **vertices** (**V**, also called nodes or points), together with a set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph. These pairs are known as **edges** (**E**, also called links or lines), and for a directed graph are also known as arrows. A graph data structure may also associate to each edge some value, such as a symbolic label or a numeric attribute (cost, capacity, length, etc.).
+A [graph](https://en.wikipedia.org/wiki/Graph_\(abstract_data_type\)) data structure consists of a finite set of **vertices** (**V**, also called nodes or points), together with a set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph. These pairs are known as **edges** (**E**, also called links or lines), and for a directed graph are also known as arrows. A graph data structure may also associate to each edge some value, such as a symbolic label or a numeric attribute (cost, capacity, length, etc.).
 
 There are several ways to classify a graph being named as:
 - Based on simplicity:
