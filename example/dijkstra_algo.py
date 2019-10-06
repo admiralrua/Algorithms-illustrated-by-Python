@@ -22,8 +22,8 @@ def Dijkstra(graph, sta):
     while (len(visit) != 0):
         v_here = heappop(visit)
         
-        ind = v_here[0]
-        dis = v_here[1]
+        ind = v_here[1]
+        dis = v_here[0]
         
         for v_next in graph[ind]:
             ind_n = v_next[0]
@@ -32,7 +32,7 @@ def Dijkstra(graph, sta):
             if (dis + dis_n < dist[ind_n]):
                 dist[ind_n] = dis + dis_n
                 path[ind_n] = ind
-                heappush(visit, (ind_n, dist[ind_n]))
+                heappush(visit, (dist[ind_n], ind_n))
         
 
 if (__name__ == "__main__"):        

@@ -28,11 +28,11 @@ To keep track of progress, breadth-first-search colors each vertex. Each vertex 
 - **color**[$$u$$] = 2 or black - for the _fully explored_ state.
 
 
-The **BFS(graph,** _sta_ **)** algorithm develops a breadth-first search tree with the source vertex, $$sta$$, as its root. The parent or predecessor of any other vertex in the tree is the vertex from which it was first discovered. For each vertex, $$v$$, the parent of $$v$$ is placed in the variable **path**[$$v$$]. Another variable, **dist**[$$v$$], computed by BFS contains the number of tree edges on the path from $$sta$$ to $$v$$. The breadth-first search uses a FIFO queue, **visit**, to store gray vertices. 
+The **BFS(graph,** _sta_ **)** algorithm develops a breadth-first search tree with the source vertex, _sta_, as its root. The parent or predecessor of any other vertex in the tree is the vertex from which it was first discovered. For each vertex, $$v$$, the parent of $$v$$ is placed in the variable **path**[$$v$$]. Another variable, **dist**[$$v$$], computed by BFS contains the number of tree edges on the path from $$sta$$ to $$v$$. The breadth-first search uses a FIFO queue, **visit**, to store gray vertices. 
 
 **Reserve for an image**
 
-BFS builds a tree called a breadth-first-tree containing all vertices reachable from _sta_. The set of edges in the tree (called tree edges) contain \(**path**[_fin_], _fin_\) for all $$fin$$ where **path**[_fin_] $$\neq$$ _None_. If _fin_ is reachable from _sta_ then there is a unique path of tree edges from $$sta$$ to _fin_. 
+BFS builds a tree called a breadth-first-tree containing all vertices reachable from _sta_. The set of edges in the tree (called tree edges) contain \(**path**[_fin_], _fin_\) for all _fin_ where **path**[_fin_] $$\neq$$ _None_. If _fin_ is reachable from _sta_ then there is a unique path of tree edges from _sta_ to _fin_. 
 
 **Reserve for an image**
 
@@ -134,12 +134,12 @@ Further notes (fine-tuning later):
 
 ### Problems for practice
 The following problems from different sources can be used to practice the BFS algorithm:
-- [hr Shortest reach](https://www.hackerrank.com/challenges/bfsshortreach/problem)
+- [cf C0580 Kefa and park](https://codeforces.com/problemset/problem/580/C)
 - [he Key generation](https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/practice-problems/algorithm/dhoom-4/)
-- [spoj Validate the maze](https://www.spoj.com/problems/MAKEMAZE/)
+- [hr Shortest reach](https://www.hackerrank.com/challenges/bfsshortreach/problem)
 - [lightoj Guilty prince](https://vjudge.net/problem/LightOJ-1012)
 - [spoj Slick](https://www.spoj.com/problems/UCV2013H/)
-- [cf C0580 Kefa and park](https://codeforces.com/problemset/problem/580/C)
+- [spoj Validate the maze](https://www.spoj.com/problems/MAKEMAZE/)
 
 
 ## Depth-first search \(DFS\) algorithm
@@ -148,9 +148,9 @@ Depth-first search \(DFS\) is an algorithm for traversing or searching tree or g
 
 
 ### Algorithm
-The strategy followed by depth-first search is, as its name implies, to search _deeper_ in the graph whenever possible. Depth-first search selects a source vertex $u$, then traverses the graph by considering an arbitrary edge $$\(u, v\)$$ from the current vertex $u$. If the edge $$\(u, v\)$$ leads to a visited vertex $$v$$, then backs down to the vertex $$u$$. On the other hand, if edge $$\(u, v\)$$ leads us to an unvisited vertex, then paints the vertex $$v$$ and make it our current vertex, and repeat the above computation. Sooner or later, we will get to a _dead end_, meaning all the edges from our current vertex $$u$$ takes us to painted vertices. Because of this strategy, a LIFO stack **visit** is employed to maintain the focus on deepening the path. 
+The strategy followed by depth-first search is, as its name implies, to search _deeper_ in the graph whenever possible. Depth-first search selects a source vertex $$u$$, then traverses the graph by considering an arbitrary edge $$(u, v)$$ from the current vertex $$u$$. If the edge $$(u, v)$$ leads to a visited vertex $$v$$, then backs down to the vertex $$u$$. On the other hand, if edge $$(u, v)$$ leads us to an unvisited vertex, then paints the vertex $$v$$ and make it our current vertex, and repeat the above computation. Sooner or later, we will get to a _dead end_, meaning all the edges from our current vertex $$u$$ takes us to painted vertices. Because of this strategy, a LIFO stack **visit** is employed to maintain the focus on deepening the path. 
 
-Similar to BFS, DFS also colors each vertex to keep track of progress by a _color_ variable, **colo**. DFS time-stams each vertex when its color is changed; when it is visited for the first time - white to gray - the time is recorded in **dist**, whereas, when it is fully discovered - gray to black - the time is recorded in **full** \(this operation is more conveniently performed in an recursive approach\). The path from one vertex to others can also be traced back through **path**. 
+Similar to BFS, DFS also colors each vertex to keep track of progress by a _color_ variable, **color**. DFS time-stams each vertex when its color is changed; when it is visited for the first time - white to gray - the time is recorded in **dist**, whereas, when it is fully discovered - gray to black - the time is recorded in **full** \(this operation is more conveniently performed in an recursive approach\). The path from one vertex to others can also be traced back through **path**. 
 
 **Reserve for an image**
 
@@ -227,11 +227,11 @@ Noted: please redo this example by hand to fully understand the path of each imp
 
 ### Problems for practice
 The following problems from different sources can be used to practice the DFS algorithm:
-- [spoj The last shot](https://www.spoj.com/problems/LASTSHOT/)
-- [spoj Prayatna](https://www.spoj.com/problems/CAM5/)
-- [spoj Bishu and his girlfriend](https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/bishu-and-his-girlfriend/)
 - [cf Lakes in Berland](https://codeforces.com/problemset/problem/723/D) 
 - [spoj ALL IZZ WELL](https://www.spoj.com/problems/ALLIZWEL/)
+- [spoj Bishu and his girlfriend](https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/bishu-and-his-girlfriend/)
+- [spoj Prayatna](https://www.spoj.com/problems/CAM5/)
+- [spoj The last shot](https://www.spoj.com/problems/LASTSHOT/)
 - [uri Dudu service maker](https://www.urionlinejudge.com.br/judge/en/problems/view/1610)
 
 
