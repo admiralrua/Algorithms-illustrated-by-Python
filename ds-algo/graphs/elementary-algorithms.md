@@ -18,76 +18,17 @@ Breadth-first search can be used to solve many problems in graph theory, for exa
 - Partitioning of the vertices into subsets that have the same distance from a given root vertex.
 
 
-### Algorithm
+### Algorithm and Implementation
 Intuitively, the basic idea of the breath-first search is this: send a wave out from source, $$sta$$; the wave hits all vertices at one-depth level from $$sta$$; from there, the wave hits all vertices at two-depth level from $$sta$$; etc. A FIFO queue **visit** is employed to maintain the wavefront: $$v$$ is in **visit** if and only if wave has hit $$v$$ but has not come out of $$v$$ yet.
+
 
 To keep track of progress, breadth-first-search colors each vertex. Each vertex of the graph has one of three states, and, correspondingly, the state of a vertex, $$u$$, is stored in a _color_ variable as follows:
 - **color**[$$u$$] = 0 or white - for the _undiscovered_ state,
 - **color**[$$u$$] = 1 or gray - for the _discovered but not fully explored_ state, and
 - **color**[$$u$$] = 2 or black - for the _fully explored_ state.
 
-The **BFS(V, E, sta)** algorithm develops a breadth-first search tree with the source vertex, $$sta$$, as its root. The parent or predecessor of any other vertex in the tree is the vertex from which it was first discovered. For each vertex, $$v$$, the parent of $$v$$ is placed in the variable **path**[$$v$$]. Another variable, **dist**[$$v$$], computed by BFS contains the number of tree edges on the path from $$sta$$ to $$v$$. The breadth-first search uses a FIFO queue, **visit**, to store gray vertices.
 
-```
-\caption{\textbf{BFS(V, E, sta)} \label{bfs}}
-\Begin{
-   \tcc*[r]{initialisation, this can be done outside the function as well}
-   \For{each $u$ in \textbf{V}}{
-      \textbf{color}[$u$] = white  \\
-      \textbf{dist}[$u$]  = INF    \\
-      \textbf{path}[$u$]  = None   \\
-   }
-   \vspace{\baselineskip}
-   
-   \textbf{color}[$sta$] = gray                 \tcc*[r]{source vertext discovered} 
-   \textbf{dist}[$sta$]  = 0                    \tcc*[r]{initialise} 
-   \textbf{path}[$sta$]  = None                 \tcc*[r]{initialise} 
-   \textbf{visit} $\rightarrow$ \{\}            \tcc*[r]{create an empty queue} 
-   ENQUEUE(\textbf{visit}, $sta$)               \tcc*[r]{put a vertex in a queue} 
-   \vspace{\baselineskip}
-   
-   \While{\textbf{visit} is not empty}{
-      $u$ $\leftarrow$ DEQUEUE(\textbf{visit}) \\
-      \For{each $v$ in adjacent to $u$}{
-         \If{\textbf{color}[$v$] $\leftarrow$ white}{
-            \textbf{color}[$v$] = gray                   \tcc*[r]{source vertext discovered} 
-            \textbf{dist}[$v$]  = dist[$u$]+1            \tcc*[r]{initialise} 
-            \textbf{path}[$v$]  = $u$                    \tcc*[r]{initialise} 
-            ENQUEUE(\textbf{visit}, $v$)           
-         }
-      }
-      \textbf{color}[$u$] = black     
-   }   
-}
-```
-
-BFS builds a tree called a breadth-first-tree containing all vertices reachable from $$sta$$. The set of edges in the tree (called tree edges) contain \(**path**[$$fin$$], $$fin$$\) for all $$fin$$ where path[$$fin$$] $$\neq$$ None. If $$fin$$ is reachable from $$sta$$ then there is a unique path of tree edges from $$sta$$ to $$fin$$. **Path\_finder(V, sta, fin)** prints the vertices along that path.
-
-\begin{algorithm}[H]
-\caption{**Path\_finder(V, sta, fin)} \label{bfs_path}}
-\Begin{
-   \uIf{$$fin$$ = $$sta$$}{
-      print($$sta$$)
-   }
-   \uElseIf{**path}[$$fin$$] = None}{
-      print(No path from $$sta$$ to $$fin$$)   
-   }
-   \Else{
-      **BFS\_Path(V, sta, **path}[$$fin$$])} \\
-      print $$fin$$
-   }
-}
-\end{algorithm}
-
-Complexity of the BFS algorithm can be analysed as follows:
-- The while-loop in BFS is executed at most V times; the reason is that every vertex is enqueued at most once. So, we have $$O(V)$$. 
-- The for-loop inside the while-loop is executed at most E times if **G** is a directed graph or 2E times if **G** is undirected; the reason is that every vertex is dequeued at most once and we examine \($$u$$, $$v$$\) only when $$u$$ is dequeued. Therefore, every edge examined at most once if directed, at most twice if undirected. So, we have $$O(E)$$.
-- Consequently, the total running time for breadth-first search traversal is $$O(V+E)$$.
-- **Path\_finder(V, sta, fin)** has the complexity of $$O(V)$$.
-
-
-### Implementation
-Naive implementation of BFS in Python can be done as follows:
+The **BFS(graph, sta)** algorithm develops a breadth-first search tree with the source vertex, $$sta$$, as its root. The parent or predecessor of any other vertex in the tree is the vertex from which it was first discovered. For each vertex, $$v$$, the parent of $$v$$ is placed in the variable **path**[$$v$$]. Another variable, **dist**[$$v$$], computed by BFS contains the number of tree edges on the path from $$sta$$ to $$v$$. The breadth-first search uses a FIFO queue, **visit**, to store gray vertices. Naive implementation of BFS in Python can be done as follows:
 
 - Breadth-first search algorithm
     ```python
@@ -113,9 +54,12 @@ Naive implementation of BFS in Python can be done as follows:
             color[vh] = 1
     ```
 
+
+BFS builds a tree called a breadth-first-tree containing all vertices reachable from $$sta$$. The set of edges in the tree (called tree edges) contain \(**path**[$$fin$$], $$fin$$\) for all $$fin$$ where **path**[$$fin$$] $$\neq$$ _None_. If $$fin$$ is reachable from $$sta$$ then there is a unique path of tree edges from $$sta$$ to $$fin$$. The following codes print the vertices along that path, one is written in an iterative version and another is an recursive version. 
+
 - Path finding ITERATIVE-version
   ```python
-  def Path_iter(path, sta, fin):
+  def Path_finder_iter(path, sta, fin):
       road = []
       
       if (fin == sta):
@@ -139,7 +83,7 @@ Naive implementation of BFS in Python can be done as follows:
 
 - Path finding RECURSIVE-version
   ```python
-  def Path_recu(path, sta, fin):
+  def Path_finder_recu(path, sta, fin):
   	if (fin == sta):
   		print(fin, end = ' ')
   	elif (path[fin] == -1):
@@ -166,9 +110,17 @@ Naive implementation of BFS in Python can be done as follows:
   
   graph = graph_01
   BFS(graph, sta)
-  Path_iter(path, sta, fin)   # 0 -> 3 -> 2 -> 5 -> 6
-  Path_recu(path, sta, fin)   # 0 -> 3 -> 2 -> 5 -> 6
+  Path_finder_iter(path, sta, fin)   # 0 -> 3 -> 2 -> 5 -> 6
+  Path_finder_recu(path, sta, fin)   # 0 -> 3 -> 2 -> 5 -> 6
   ```
+
+
+Complexity of the BFS algorithm can be analysed as follows:
+- The while-loop in BFS is executed at most V times; the reason is that every vertex is enqueued at most once. So, we have $$O(V)$$. 
+- The for-loop inside the while-loop is executed at most E times if **G** is a directed graph or 2E times if **G** is undirected; the reason is that every vertex is dequeued at most once and we examine \($$u$$, $$v$$\) only when $$u$$ is dequeued. Therefore, every edge examined at most once if directed, at most twice if undirected. So, we have $$O(E)$$.
+- Consequently, the total running time for breadth-first search traversal is $$O(V+E)$$.
+- **Path\_finder(V, sta, fin)** has the complexity of $$O(V)$$.
+
 
 Further notes (fine-tuning later):
 - collections.deque is an alternative implementation of unbounded queues with fast atomic append() and popleft() operations that do not require locking;
