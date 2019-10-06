@@ -1,4 +1,4 @@
-# Software Engineering
+# Data structures and Algorithms
 
 In this part, I would like to briefly present data structures and algorithms mainly used in software engineering. Uhm, more precisely, they are for Interview Code.
 

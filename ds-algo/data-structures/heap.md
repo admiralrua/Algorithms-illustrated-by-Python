@@ -2,7 +2,7 @@
 
 ## Briefing
 
-A [heap](https://en.wikipedia.org/wiki/Heap_(data_structure)) is a specialized tree-based data structure which is essentially an almost complete tree that satisfies the **heap** property: in _a max heap_, for any given node $$C$$, if $$P$$ is a parent node of $$C$$, then the key \(the value\) of $$P$$ is greater than or equal to the key of $$C$$. In _a min heap_, the key of $$P$$ is less than or equal to the key of $$C$$. The node at the _top_ of the heap \(with no parents\) is called the _root_ node.
+A \[heap\]\([https://en.wikipedia.org/wiki/Heap\_\(data\_structure](https://en.wikipedia.org/wiki/Heap_%28data_structure)\)\) is a specialized tree-based data structure which is essentially an almost complete tree that satisfies the **heap** property: in _a max heap_, for any given node $$C$$, if $$P$$ is a parent node of $$C$$, then the key \(the value\) of $$P$$ is greater than or equal to the key of $$C$$. In _a min heap_, the key of $$P$$ is less than or equal to the key of $$C$$. The node at the _top_ of the heap \(with no parents\) is called the _root_ node.
 
 ![Example of a max-heap](../../.gitbook/assets/image%20%281%29.png)
 
@@ -25,22 +25,22 @@ Binary heaps can be represented in a very space-efficient way as follows: \(1\) 
 
 Some basic operations related to the binary heap can be listed as follows:
 
-- Build a heap from a list, $$O(n)$$;
-- Find a minimum/maximum element in a heap, $$O(1)$$; 
-- Add an element to a heap, $$O(\log n)$$;
-- Delete an element in a heap - actually only the first element, $$O(\log n)$$, or the last element, $$O(1)$$.
+* Build a heap from a list, $$O(n)$$;
+* Find a minimum/maximum element in a heap, $$O(1)$$; 
+* Add an element to a heap, $$O(\log n)$$;
+* Delete an element in a heap - actually only the first element, $$O(\log n)$$, or the last element, $$O(1)$$.
 
 ## Implementation
 
 You have multiple choices \(in Python\) to complete heap's operations:
 
-- Implement by yourself - not necessarily but most likely, the slowest solution;
-- Use the built-in [priority queue](https://docs.python.org/3/library/queue.html?highlight=priority%20queue) platform, rather fast but not convenient for debugging; 
-- Use the built-in [heapq](https://docs.python.org/3.7/library/heapq.html) library, the fastest solution and also convenient for debugging since the heap is stored as a conventional list.
+* Implement by yourself - not necessarily but most likely, the slowest solution;
+* Use the built-in [priority queue](https://docs.python.org/3/library/queue.html?highlight=priority%20queue) platform, rather fast but not convenient for debugging; 
+* Use the built-in [heapq](https://docs.python.org/3.7/library/heapq.html) library, the fastest solution and also convenient for debugging since the heap is stored as a conventional list.
 
 The nice thing about implementing your own heap library is that you can understand it a little bit better and you can do something like delete a random element in a heap. A naive implementation of such operations is as follows \(the removal of an arbitrary element is left as a homework\):
 
-- Correctly place an element in a heap
+* Correctly place an element in a heap
 
   ```python
   def minmax_Heapify(i, heap, opt):
@@ -63,7 +63,7 @@ The nice thing about implementing your own heap library is that you can understa
           minmax_Heapify(here, heap, opt)
   ```
 
-- Add an element to a heap
+* Add an element to a heap
 
   ```python
   def pushHeap(value, heap, opt):
@@ -77,7 +77,7 @@ The nice thing about implementing your own heap library is that you can understa
           i = (i-1)//2
   ```
 
-- Build a heap
+* Build a heap
 
   ```python
   def buildHeap(n, heap, opt):
@@ -85,7 +85,7 @@ The nice thing about implementing your own heap library is that you can understa
           minmax_Heapify(i, heap, opt)
   ```
 
-- Delete the first element of a heap
+* Delete the first element of a heap
 
   ```python
   def popHeap(heap, opt):
@@ -101,7 +101,7 @@ The nice thing about implementing your own heap library is that you can understa
           minmax_Heapify(0, heap, opt)
   ```
 
-- Example with a heap
+* Example with a heap
 
   ```python
   opt  = 'min'
@@ -118,33 +118,33 @@ The nice thing about implementing your own heap library is that you can understa
   popHeap(tmp, opt) 
   print(tmp)
   ```
-  
-- Similar example but using heapq now
-  
+
+* Similar example but using heapq now
+
   ```python
   from heapq import heapify, heappush, heappop
   tmp = [0, 2, 4, 6, 10, 12, 1, 5, 7, 9, 11, 13]
   heapify(tmp)
   print(tmp)
-  
+
   heappush(tmp, 3)
   heappush(tmp, 8)
   print(tmp)
-  
+
   heappop(tmp)
   print(tmp)
   ```
-  
-- Please note that **heapq** by default implements the _min-heap_. If you want to have a _max-heap_, you can either change the sign of the value or create a new class and define operator \_\_lt\_\_ for its object.
-  
+
+* Please note that **heapq** by default implements the _min-heap_. If you want to have a _max-heap_, you can either change the sign of the value or create a new class and define operator \_\_lt\_\_ for its object.
+
   ```python
   class maxHeap:
-	    def __init__(self, value):
-	    	self.value = value
-        
-	    def __lt__(self, other):
-	    	return self.value > other.value
-      
+        def __init__(self, value):
+            self.value = value
+
+        def __lt__(self, other):
+            return self.value > other.value
+
   maxtmp = []
   for x in tmp:
       heappush(maxtmp, maxHeap(x))

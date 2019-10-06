@@ -1,4 +1,4 @@
-# Graphs
+# Graph
 
 ## Introduction
 
