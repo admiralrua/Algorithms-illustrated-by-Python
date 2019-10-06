@@ -43,7 +43,7 @@ The traditional examples for recursion are to calculate:
 
 Obvious disadvantages of recursion are: \(1\) recursive calls are inefficient as they take up a lot of memory and time; \(2\) recursive functions are hard to debug. However, for a small problem, recursive functions make the code look concise. Sometimes, one can easily find an iterative solution for the problem although the recursive solution looks more like the mathematical definition.
 
-* the factorial $n!$ - iterative solution
+* the factorial $$n!$$ - iterative solution
 
   ```python
   def fact_iter(n):
@@ -84,7 +84,7 @@ There are a couple of problems for practicing, it would be nice to come up with 
 * Find the maximum odd divisor of a positive number. 
 * Count the number of digit of a number.
 * Find the first or largest digit of a number.
-* Find the maximum divisor of two numbers with the value up to $10^5$.
+* Find the maximum divisor of two numbers with the value up to $$10^5$$.
 * Find the largest prime number in a list of up to $$10^5$$ elements.
 * Calculate the sum of even numbers in a list of up to $$10^5$$ elements.
 * Solve the Hanoi's tower problem and estimate the time complexity to understand why it is mentioned quite often as a **typical** recursive problem. A nice iterative solution exists [here](https://en.wikipedia.org/wiki/Tower_of_Hanoi#Iterative_solution). 

@@ -2,7 +2,7 @@
 
 ## Briefing
 
-A \[heap\]\([https://en.wikipedia.org/wiki/Heap\_\(data\_structure](https://en.wikipedia.org/wiki/Heap_%28data_structure)\)\) is a specialized tree-based data structure which is essentially an almost complete tree that satisfies the **heap** property: in _a max heap_, for any given node $$C$$, if $$P$$ is a parent node of $$C$$, then the key \(the value\) of $$P$$ is greater than or equal to the key of $$C$$. In _a min heap_, the key of $$P$$ is less than or equal to the key of $$C$$. The node at the _top_ of the heap \(with no parents\) is called the _root_ node.
+A [heap](https://en.wikipedia.org/wiki/Heap_(data_structure) is a specialized tree-based data structure which is essentially an almost complete tree that satisfies the **heap** property: in _a max heap_, for any given node $$C$$, if $$P$$ is a parent node of $$C$$, then the key \(the value\) of $$P$$ is greater than or equal to the key of $$C$$. In _a min heap_, the key of $$P$$ is less than or equal to the key of $$C$$. The node at the _top_ of the heap \(with no parents\) is called the _root_ node.
 
 ![Example of a max-heap](../../.gitbook/assets/image%20%281%29.png)
 
