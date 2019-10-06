@@ -28,7 +28,7 @@ To keep track of progress, breadth-first-search colors each vertex. Each vertex 
 
 The **BFS(V, E, sta)** algorithm develops a breadth-first search tree with the source vertex, $$sta$$, as its root. The parent or predecessor of any other vertex in the tree is the vertex from which it was first discovered. For each vertex, $$v$$, the parent of $$v$$ is placed in the variable **path**[$$v$$]. Another variable, **dist**[$$v$$], computed by BFS contains the number of tree edges on the path from $$sta$$ to $$v$$. The breadth-first search uses a FIFO queue, **visit**, to store gray vertices.
 
-\begin{algorithm}[H]
+```
 \caption{\textbf{BFS(V, E, sta)} \label{bfs}}
 \Begin{
    \tcc*[r]{initialisation, this can be done outside the function as well}
@@ -59,7 +59,7 @@ The **BFS(V, E, sta)** algorithm develops a breadth-first search tree with the s
       \textbf{color}[$u$] = black     
    }   
 }
-\end{algorithm}
+```
 
 BFS builds a tree called a breadth-first-tree containing all vertices reachable from $$sta$$. The set of edges in the tree (called tree edges) contain \(**path**[$$fin$$], $$fin$$\) for all $$fin$$ where path[$$fin$$] $$\neq$$ None. If $$fin$$ is reachable from $$sta$$ then there is a unique path of tree edges from $$sta$$ to $$fin$$. **Path\_finder(V, sta, fin)** prints the vertices along that path.
 
