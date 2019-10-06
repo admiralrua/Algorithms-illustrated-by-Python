@@ -160,7 +160,6 @@ It can be seen that the DFS algorithm \(iterative-version\) is almost identical 
 ### Implementation
 Naive implementation of DFS in Python can be done as follows:
 - Depth-first search algorithm, ITERATIVE-version
-\inputpython{example/dfs_algo.py}{14}{30}
   ```python
   def DFS_iter(graph, sta):
       color[sta] = 0

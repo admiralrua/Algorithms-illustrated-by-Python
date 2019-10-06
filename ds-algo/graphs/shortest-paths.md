@@ -2,7 +2,7 @@
 
 ## Dijkstra algorithm \(single-source\)
 ### Briefing
-[Dijkstra algorithm](https://en.wikipedia.org/wiki/Dijkstra's_algorithm) is an algorithm to find the shortest paths from one nodes to all other nodes in a graph with non-negative weights.
+[Dijkstra algorithm](https://en.wikipedia.org/wiki/Dijkstra's\_algorithm) is an algorithm to find the shortest paths from one nodes to all other nodes in a graph with non-negative weights.
 
 
 ### Algorithm
@@ -61,7 +61,7 @@ Naive implementation of Dijkstra algorithm in Python can be done as follows:
   
   visit = Dijkstra(graph, sta)
   print(dist[fin])                   # 6
-  Path_iter(path, sta, fin)          # 0 -> 1 -> 3 -> 2 -> 5 -> 4
+  Path_finder_iter(path, sta, fin)   # 0 -> 1 -> 3 -> 2 -> 5 -> 4
   ```
 
 
