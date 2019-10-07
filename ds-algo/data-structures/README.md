@@ -11,3 +11,4 @@ Besides, some data structures as **Stacks**, **Queue** are also very powerful an
 
 And of course we should mention **Data abstraction** as well, its extension is Object-Oriented Programming mindset which seems to be really convenient but also, sometimes, quite vague. You can find numerous good and comprehensive references about OOP online, therefore, **Data abstraction** is not presented here anymore.
 
+A comprehensive review of popular data structures in practice can be found [here](https://en.wikipedia.org/wiki/List_of_data_structures).
