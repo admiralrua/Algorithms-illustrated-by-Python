@@ -30,11 +30,11 @@ To keep track of progress, breadth-first-search colors each vertex. Each vertex 
 
 The **BFS(graph,** _sta_ **)** algorithm develops a breadth-first search tree with the source vertex, _sta_, as its root. The parent or predecessor of any other vertex in the tree is the vertex from which it was first discovered. For each vertex, $$v$$, the parent of $$v$$ is placed in the variable **path**[$$v$$]. Another variable, **dist**[$$v$$], computed by BFS contains the number of tree edges on the path from $$sta$$ to $$v$$. The breadth-first search uses a FIFO queue, **visit**, to store gray vertices. 
 
-**Reserve for an image**
+![Breadth-first search algorithm](../../.gitbook/assets/bfs.png)
 
 BFS builds a tree called a breadth-first-tree containing all vertices reachable from _sta_. The set of edges in the tree (called tree edges) contain \(**path**[_fin_], _fin_\) for all _fin_ where **path**[_fin_] $$\neq$$ _None_. If _fin_ is reachable from _sta_ then there is a unique path of tree edges from _sta_ to _fin_. 
 
-**Reserve for an image**
+![Path finding](../../.gitbook/assets/path_finder.png)
 
 Complexity of the BFS algorithm can be analysed as follows:
 - The while-loop in BFS is executed at most V times; the reason is that every vertex is enqueued at most once. So, we have $$O(V)$$. 
@@ -152,7 +152,9 @@ The strategy followed by depth-first search is, as its name implies, to search _
 
 Similar to BFS, DFS also colors each vertex to keep track of progress by a _color_ variable, **color**. DFS time-stams each vertex when its color is changed; when it is visited for the first time - white to gray - the time is recorded in **dist**, whereas, when it is fully discovered - gray to black - the time is recorded in **full** \(this operation is more conveniently performed in an recursive approach\). The path from one vertex to others can also be traced back through **path**. 
 
-**Reserve for an image**
+![Depth-first search algorithm - Iterative version](../../.gitbook/assets/dfs_iter.png)
+
+![Depth-first search algorithm - Recursive version](../../.gitbook/assets/dfs_recu.png)
 
 It can be seen that the DFS algorithm \(iterative-version\) is almost identical to that of BFS, except that the STACK structure is employed instead of the QUEUE one in order to maintain the deepening priority. There are two approach to implement DFS, iterative and recursive, and one should better familiarise with both methods to solve different types of problems. The problems in the next section will illustrate the usefulness of both methods. Lastly, the path along two connected vertices can also be traced back with **Path\_finder(V,** _sta_ **,** _fin_ **)**.  
 

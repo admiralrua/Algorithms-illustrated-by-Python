@@ -10,8 +10,7 @@ Dijkstra algorithm uses a greedy strategy in the sense that it always choose the
 
 The general implementation has the complexity of $$O(V^2)$$. However, if the priority queue or the binary heap is employed, the complexity reduces to $$O(E \log V)$$
 
-
-**Reserve for an image**
+![Dijkstra algorithm](../../.gitbook/assets/dijkstra.png)
 
 The path from one vertex to all other vertices (if they are connected) can be traced back with **Path\_finder(V,** _sta_ **,** _fin_ **)** based on the **path** array; similarly, the cost can be taken directly from the **dist** array.
 
@@ -93,8 +92,7 @@ The following problems from different sources can be used to practice the Dijkst
 ### Algorithm
 Bellman–Ford–Moore algorithm ...
 
-
-**Reserve for an image**
+![Bellman–Ford–Moore algorithm](../../.gitbook/assets/bfm.png)
 
 
 ### Implementation
@@ -154,7 +152,7 @@ The following problems from different sources can be used to practice the Bellma
 ### Algorithm
 Roy-Floyd-Warshall algorithm ...
 
-**Reserve for an image**
+![Roy-Floyd-Warshall algorithm](../../.gitbook/assets/rfw.png)
 
 
 ### Implementation
