@@ -7,7 +7,9 @@ A [stack](https://en.wikipedia.org/wiki/Stack_\(abstract_data_type\)) is an abst
 - push, which adds an element to the collection, and
 - pop, which removes the most recently added element that was not yet removed.
 
-![Example of a stack](../../.gitbook/assets/stack.png)
+| ![](../../.gitbook/assets/stack_push.png)  | ![](../../.gitbook/assets/stack_pop.png)  |
+| Pushing | Poping |
+| :---: | :---: |
 
 The order in which elements come off a stack gives rise to its alternative name, **LIFO** _\(last in, first out\)_. The push and pop operations occur only at one end of the structure, referred to as the top of the stack. This makes it possible to implement a stack as a **singly linked list** and a pointer to the top element. A stack may be implemented to have a bounded capacity. If the stack is full and does not contain enough space to accept an entity to be pushed, the stack is then considered to be in an overflow state. The pop operation removes an item from the top of the stack.
 
