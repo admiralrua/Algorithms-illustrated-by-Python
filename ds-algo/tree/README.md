@@ -6,3 +6,4 @@ One of the very powerful family type of data structures is [**Tree**](https://en
 * **Binary search tree**
 * **Red-Black tree**
 * **Trie**
+
