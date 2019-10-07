@@ -45,7 +45,7 @@ To illustrate the usage of stack, let solve the [Reverse Polish Notation](https:
 | ---   | ---    |
 | $$(a+(b*c))$$ | $$abc*+$$ |
 | $$((a+b)*(z+x))$$ | $$ab+zx+*$$ |
-| $$((a+t)*((b+(a+c))^(c+d)))$$ | $$at+bac++cd+^*$$ |
+| $$((a+t)*((b+(a+c))\^(c+d)))$$ | $$at+bac++cd+^*$$ |
 
 The solution of this problem can be summarized as follows:
 
