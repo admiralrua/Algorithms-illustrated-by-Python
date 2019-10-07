@@ -2,11 +2,5 @@
 
 ## Prim algorithm
 
-
 ## Kruskal algorithm
-
-
-
-
-
 
