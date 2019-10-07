@@ -6,7 +6,7 @@ Actually, for quite many years, I forgot how fascinate I was when I first touche
 
 This note reflects what I am studying on Computer Science.
 
-[^1]: "A proof-of-concept tool for Automation Jetty Design in the maritime field."
+[^1]: A proof-of-concept tool for Automation Jetty Design in the maritime field.
 
-[^2]: "More information about these courses can be found [here](http://bigocoding.com/)" 
+[^2]: More information about these courses can be found [here](http://bigocoding.com/).
 
