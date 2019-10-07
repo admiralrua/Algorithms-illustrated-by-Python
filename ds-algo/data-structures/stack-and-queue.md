@@ -62,14 +62,16 @@ Python code for this problem is:
   		    elif (ch != '('):
   			      stack.append(ch)
   str = '((a+t)*((b+(a+c))^(c+d)))'
-  transform(str)
+  transform(str)   # Output: at+bac++cd+^*
   ```
 
 ### Problem for practice
 Please practice with the following problems:
 
-* [Spoj Mass of molecule](https://www.spoj.com/problems/MMASS)
-* [Spoj Street parade](https://www.spoj.com/problems/STPAR)
+* [g4g Stockspan](https://www.geeksforgeeks.org/the-stock-span-problem/)
+* [hr Balanced brackets](https://www.hackerrank.com/challenges/ctci-balanced-brackets/problem)
+* [spoj Mass of molecule](https://www.spoj.com/problems/MMASS)
+* [spoj Street parade](https://www.spoj.com/problems/STPAR)
 
 
 ## Queue
