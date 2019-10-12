@@ -1,4 +1,5 @@
 # Step to interview in a hightech company
+This section will give a brief introduction of steps to get hired in a it-technology company:
 
 1. Resume 
 1. DS & Algo preparation for Interview Coding
