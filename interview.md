@@ -1,4 +1,4 @@
-Step to interview in a hightech company
+# Step to interview in a hightech company
 
 1. Resume 
 1. DS & Algo preparation for Interview Coding
@@ -22,6 +22,11 @@ Remember to count the time elapsed until you finish the problem. During a real i
 There are several ways to do this:
 
 - directly apply in the website of a company interested -> successful rate of 0.01% due to so many perfect-CV from India or China, they have a team to buildup that kind of CV.
-- join competitive programming contests of such company, this method is quite good because the top-100 is actually soldier of fortune so the company normally will perform an interview for top-1000 or top-10000.
-   - [google](https://codingcompetitions.withgoogle.com/codejam)
-   - [facebook](https://www.facebook.com/hackercup/contest)
+- join competitive programming contests of such company, this method is quite good because the top-100 is actually soldier of fortune so the company normally will perform an interview for top-1000 or top-10000 -> successful rate of 50%.
+   - [google](https://codingcompetitions.withgoogle.com/codejam);
+   - [facebook](https://www.facebook.com/hackercup/contest);
+   - [codechef](https://www.codechef.com/) summarises all kinds of contests.
+- referral from someone ([Big-O center](http://bigocoding.com/) reserves 10 slots for its member every year from September to November).
+   - English: TOEFL 100 iBT, IELTS 7.5.
+   - Online survey & test: one-tme submission only. 
+
