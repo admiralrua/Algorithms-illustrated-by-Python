@@ -1,19 +1,27 @@
 Step to interview in a hightech company
+
 1. Resume 
 1. DS & Algo preparation for Interview Coding
-1. aaa
+1. Submit an application
 1. aaa
 1. aaa
 1. aaa
 
 # Resume
-A perfect guideline for an attractive RESUME
-[good advice](https://www.careercup.com/resume/)
+A perfect guideline for an attractive RESUME can be found [here.](https://www.careercup.com/resume/)
 
 # DS & Algo preparation for Interview Coding
 There are several good recommendations to tackle this task:
+
 - [interviewbit](https://www.interviewbit.com/practice/) -> practice atleast 200 problems here
 - [leetcode](https://leetcode.com/problemset) -> practice atleast 300 problems here
 
 Remember to count the time elapsed until you finish the problem. During a real interview, you should finish a task within a limited time. 
 
+# Submit an application
+There are several ways to do this:
+
+- directly apply in the website of a company interested -> successful rate of 0.01% due to so many perfect-CV from India or China, they have a team to buildup that kind of CV.
+- join competitive programming contests of such company, this method is quite good because the top-100 is actually soldier of fortune so the company normally will perform an interview for top-1000 or top-10000.
+   - [google](https://codingcompetitions.withgoogle.com/codejam)
+   - [facebook](https://www.facebook.com/hackercup/contest)
