@@ -33,9 +33,9 @@ def makeSet(size):
 
 
 ### findSet
-**findSet**\(_u_\) returns the representative (also called leader) of the set that contains the element _u_. This representative is an element of its corresponding set which is selected in each set by the data structure itself (and can change over time, namely after **unionSet** calls).
+**findSet**$$(u)$$ returns the representative (also called leader) of the set that contains the element $$u$$. This representative is an element of its corresponding set which is selected in each set by the data structure itself (and can change over time, namely after **unionSet** calls).
 
-A naive implementation of **findSet**\(_u_\) simply climb the parent of the vertex _u_ until reaching the root. 
+A naive implementation of **findSet**$$(u)$$ simply climb the parent of the vertex $$u$$ until reaching the root. 
 
 ```python
 def findSet(u):
@@ -44,9 +44,9 @@ def findSet(u):
     return u
 ```
 
-However this implementation is inefficient, i.e. with trees degenerate into long chains, **findSet**\(_u_\) can take $$O(n)$$ time. 
+However this implementation is inefficient, i.e. with trees degenerate into long chains, **findSet**$$(u)$$ can take $$O(n)$$ time. 
 
-The **findSet** operation can be optimised in the way that the path from \(_u_\) to _root_ is not incrementally shortened as in the naive implementation. There are three types of optimisation, namely:
+The **findSet** operation can be optimised in the way that the path from $$u$$ to _root_ is not incrementally shortened as in the naive implementation. There are three types of optimisation, namely:
 
 - **path compression**: every node points to the root whenever **findSet** is used on it.
   ```python
@@ -73,5 +73,5 @@ The **findSet** operation can be optimised in the way that the path from \(_u_\)
 
 
 ### unionSet
-**unionSet**\(_u_,_v_\) merges the two specified sets, the set in which the element _u_ is located, and the set in which the element _v_ is located.
+**unionSet**$$(u,v)$$ merges the two specified sets, the set in which the element $$u$$ is located, and the set in which the element $$v$$is located.
 
