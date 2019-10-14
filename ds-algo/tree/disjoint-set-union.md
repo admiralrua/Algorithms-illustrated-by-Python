@@ -16,7 +16,7 @@ An example of classifying loops of friends (middle and right) connected to each 
 ## Operations and implementations
 A disjoint-set forest consists of a number of elements each of which stores an _identification number_, a _parent pointer_, and, in efficient algorithms, either a _size_ or a _rank_ value. Forests can be represented compactly in memory as arrays in which parents are indicated by their array index. A root of a disjoint-set forest is a vertex having the parent as itself.
 
-There are two, actually three including the initialisation, operations of a disjoin-set: makeSet, findSet and unionSet.
+There are two, actually three including the initialisation, [operations](https://cp-algorithms.com/data_structures/disjoint_set_union.html) of a disjoin-set: makeSet, findSet and unionSet.
 
 ### makeSet
 ** makeSet** makes a new set by creating a new element with a unique _id_, a _rank_ of 0, a _size_ of 1 and a parent pointer to itself.
@@ -73,5 +73,67 @@ The **findSet** operation can be optimised in the way that the path from $$u$$ t
 
 
 ### unionSet
-**unionSet**$$(u,v)$$ merges the two specified sets, the set in which the element $$u$$ is located, and the set in which the element $$v$$is located.
+**unionSet**$$(u,v)$$ merges the two specified sets, the set in which the element $$u$$ is located, and the set in which the element $$v$$is located. **unionSet** uses **findSet** to determine the roots of the trees $$u$$ and $$v$$ belong to. If the roots are distinct, the trees are combined by attaching the root of one to the root of the other. 
+
+The naive implementation simply always makes $$v$$ a child of $$u$$ (the second tree is attached to the first one) but then the height of the trees can grow as $$O(n)$$ as happening with **findSet**.
+```python
+def unionSet(u, v):
+    up = findSet(u)
+    vp = findSet(v)   
+    
+    if (up != vp):
+        parent[v] = u
+```
+
+To optimise the **unionSet** operation, we will change which tree gets attached to the other one. The most two popular approaches are: (1) based on the depth of the tree _rank_ or, more precisely, the upper bound on the tree depth, because the depth will get smaller when applying path compression; and (2) based on the size of the tree _size_. The essence of optimization in both approaches is actually similar the tree with the lower rank is attached to the one with the bigger rank.
+
+- based on the depth of the tree _rank_
+  ```python
+  def unionSet(u, v):
+      up = findSet(u)
+      vp = findSet(v)   
+      
+      # u, v are already in the same set
+      if (up == vp):
+          return
+      
+      # u, v are not in the same set -> merging
+      if (ranks[up] < ranks[vp]):
+          up, vp = vp, up
+          
+      parent[vp] = up
+      if (ranks[up] == ranks[vp]):
+          ranks[up] += 1  
+  ```
+
+- based on the size of the tree _size_
+```python
+def unionSet(u, v):
+    up = findSet(u)
+    vp = findSet(v)   
+    
+    # u, v are already in the same set
+    if (up == vp):
+        return
+    
+    # u, v are not in the same set -> merging
+    if (sizes[up] < sizes[vp]):
+        up, vp = vp, up
+        
+    parent[vp] = up
+    sizes[up] += sizes[vp]
+```
+
+The convenience of following the union by size is that, at the end, we can know how large each independent set is in $$sizes[root]$$, i.e. the following code for the example in the figure above shows:
+```python
+n, m = map(int, input().split())
+makeSet(n)
+for i in range(m):
+    u, v = map(int, input().split())
+    unionSet_size(u,v)
+    
+OUTPUT: sizes = [1, 7, 1, 1, 1, 1, 1, 1, 1, 3, 1]
+```
+
+
 
