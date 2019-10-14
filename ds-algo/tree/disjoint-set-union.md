@@ -44,6 +44,16 @@ def findSet(u):
     return u
 ```
 
+or iterative-version:
+
+```python
+def findSet(u):
+    while (u != parent[u]):
+        u = parent[u]       
+    return u
+```
+
+
 However this implementation is inefficient, i.e. with trees degenerate into long chains, **findSet**$$(u)$$ can take $$O(n)$$ time. 
 
 The **findSet** operation can be optimised in the way that the path from $$u$$ to _root_ is not incrementally shortened as in the naive implementation. There are three types of optimisation, namely:
