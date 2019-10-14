@@ -47,4 +47,4 @@
   * [Logistic regression](machine-learning/logistic-regression.md)
   * [Classification](machine-learning/classification.md)
   * [Clustering](machine-learning/clustering.md)
-
+* [Coding interview](interview.md)
