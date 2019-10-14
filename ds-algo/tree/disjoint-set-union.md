@@ -132,8 +132,20 @@ for i in range(m):
     u, v = map(int, input().split())
     unionSet_size(u,v)
     
-OUTPUT: sizes = [1, 7, 1, 1, 1, 1, 1, 1, 1, 3, 1]
+# OUTPUT: sizes = [1, 7, 1, 1, 1, 1, 1, 1, 1, 3, 1]
 ```
 
 
+## Problems for practice
+The following problems from different sources can be used to practice the disjoint-set data structure:
 
+- [cf Cthulhu](https://codeforces.com/problemset/problem/103/B)
+- [cf Ice skating](https://codeforces.com/problemset/problem/217/A)
+- [uva Forests](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1168)
+- [uva Friends](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1549)
+- [uva Graph connectivity](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=400)
+- [uva War](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1099)
+- [timus Anansi's cobweb](http://acm.timus.ru/problem.aspx?space=1&num=1671)
+- [cf Roads not only in Berland](https://codeforces.com/contest/25/problem/D)
+- [spoj Strange food chain](https://www.spoj.com/problems/CHAIN/)
+- [spoj Colorful array](https://www.spoj.com/problems/CLFLARR/)
