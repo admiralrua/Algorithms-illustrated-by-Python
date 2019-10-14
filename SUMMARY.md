@@ -21,9 +21,10 @@
     * [Binary search tree](ds-algo/searching/binary-search-tree.md)
   * [Tree](ds-algo/tree/README.md)
     * [Heap](ds-algo/tree/heap.md)
+    * [Trie](ds-algo/tree/trie.md)
+    * [Disjoint Set Union](ds-algo/tree/disjoint-set-union.md)
     * [Binary search tree](ds-algo/tree/binary-search-tree.md)
     * [Red-Black tree](ds-algo/tree/red-black-tree.md)
-    * [Trie](ds-algo/tree/trie.md)
   * [Graph](ds-algo/graphs/README.md)
     * [Elementary algorithms](ds-algo/graphs/elementary-algorithms.md)
     * [Shortest paths](ds-algo/graphs/shortest-paths.md)
@@ -48,3 +49,4 @@
   * [Classification](machine-learning/classification.md)
   * [Clustering](machine-learning/clustering.md)
 * [Coding interview](interview.md)
+
