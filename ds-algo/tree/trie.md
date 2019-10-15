@@ -105,7 +105,7 @@ The following problems are helful to let yourself be familiar with the trie data
 
 * [he Search engine](https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/search-engine/description/)
 * [lightoj DNA prefix](https://vjudge.net/problem/LightOJ-1224)
-* []()
-* []()
+* [lightoj Consistency checker](https://vjudge.net/problem/LightOJ-1129)
+* [hr Contacts](https://www.hackerrank.com/challenges/contacts/problem)
 * []()
 * []()
