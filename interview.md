@@ -71,10 +71,12 @@ Compare to the level of programmers in codeforces, the correlations between the 
 
 ![Coding level in Codeforces](.gitbook/assets/level.png)
 
-* Blue: cyan
-* Singapore: purple
-* European/America: yellow
-* TopDEV: red
+| Class            | Color       | Point     |
+| ---              | ---         | ---       |
+| Blue             | cyan        | 1400-1600 |
+| Singapore        | purple      | 1900-2100 |
+| European/America | yellow      | 2100-2300 |
+| TopDEV           | strong pink | 2400-2600 |
 
 
 ## Where to head for
