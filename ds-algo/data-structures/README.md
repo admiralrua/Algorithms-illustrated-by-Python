@@ -1,4 +1,4 @@
-# Data structures
+# Basic data structures
 
 There are four basic built-in container types in Python:
 

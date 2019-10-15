@@ -3,7 +3,7 @@ header-includes:
   - '\usepackage[ruled,vlined,linesnumbered]{algorithm2e}'
 ---
 
-# Elementary algorithms
+# Graph traversal
 
 ## Breadth-first search \(BFS\) algorithm
 
@@ -247,12 +247,4 @@ The following problems from different sources can be used to practice the DFS al
 * [spoj Prayatna](https://www.spoj.com/problems/CAM5/)
 * [spoj The last shot](https://www.spoj.com/problems/LASTSHOT/)
 * [uri Dudu service maker](https://www.urionlinejudge.com.br/judge/en/problems/view/1610)
-
-## Topological sort
-
-Later :\)
-
-## Strongly-connected components
-
-Later :\)
 

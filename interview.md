@@ -3,17 +3,17 @@
 This section will give a brief introduction of steps to get hired in a it-technology company:
 
 1. Resume 
-2. DS & Algo preparation for Interview Coding
+2. Data structure & Algorithm preparation
 3. Submit an application
-4. aaa
-5. aaa
-6. aaa
+4. Mock interview
+5. VISA application
+6. Procedure of interview
 
 ## Resume
 
 A perfect guideline for an attractive RESUME can be found [here.](https://www.careercup.com/resume/)
 
-## DS & Algo preparation for Interview Coding
+## Data structure & Algorithm preparation
 
 There are several good recommendations to tackle this task:
 
@@ -48,9 +48,9 @@ Tips:
 * do about 20 interviews 
 * provide feedbacks as details as possible.
 
-## VISA
+## VISA application
 
-[good website for reference](https://www.myvisajobs.com/)
+A good webiste with good details and tips for working visa application can be found [here.](https://www.myvisajobs.com/)
 
 ## Procedure of interview
 
@@ -68,12 +68,21 @@ There are many round of interview:
 
 ## Level:
 
-Compare to codechef:
+Compare to the level of programmers in codeforces, the correlations between the capability required to work in different countries/regions are:
 
-* Singapore: purple
-* European/America: yellow
-* TopDEV: red
-* Blue: cyan
+![Coding level in Codeforces](.gitbook/assets/level.png)
 
-[**Two-sigma**](https://www.twosigma.com/)
+| Class | Color | Point |
+| :--- | :--- | :--- |
+| Blue | cyan | 1400-1600 |
+| Singapore | purple | 1900-2100 |
+| European/America | yellow | 2100-2300 |
+| TopDEV | strong pink | 2400-2600 |
+
+## Where to head for
+
+* [**Two-sigma**](https://www.twosigma.com/)
+* [**World Quant** Vietnam](https://www.weareworldquant.com/en/careers/)
+* [**Anduin Transactions** Vietnam](https://www.anduintransact.com/)
+* quantitative jobs search in Vietnam
 

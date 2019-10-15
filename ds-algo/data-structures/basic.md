@@ -1,4 +1,4 @@
-# Basic data structures
+# Fundamentals
 
 ## List
 

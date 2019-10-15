@@ -1,4 +1,4 @@
-# Graph
+# Graph \[DS\]
 
 [Graph theory](https://en.wikipedia.org/wiki/Graph_theory) is an area of mathematics that deals with, at least, the following types of problems:
 
