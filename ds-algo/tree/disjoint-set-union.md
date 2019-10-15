@@ -35,7 +35,7 @@ def makeSet(size):
 ### findSet
 **findSet**$$(u)$$ returns the representative (also called leader) of the set that contains the element $$u$$. This representative is an element of its corresponding set which is selected in each set by the data structure itself (and can change over time, namely after **unionSet** calls).
 
-A naive implementation of **findSet**$$(u)$$ simply climb the parent of the vertex $$u$$ until reaching the root. 
+A naive implementation of **findSet**$$(u)$$ simply climb the parent of the vertex $$u$$ until reaching the root, the implementation can be in recursive version as follows: 
 
 ```python
 def findSet(u):
@@ -43,6 +43,16 @@ def findSet(u):
         u = findSet(parent[u])       
     return u
 ```
+
+or iterative-version:
+
+```python
+def findSet(u):
+    while (u != parent[u]):
+        u = parent[u]       
+    return u
+```
+
 
 However this implementation is inefficient, i.e. with trees degenerate into long chains, **findSet**$$(u)$$ can take $$O(n)$$ time. 
 
