@@ -77,4 +77,6 @@ Compare to the level of programmers in codeforces, the correlations between the 
 * TopDEV: red
 
 [**Two-sigma**](https://www.twosigma.com/)
+[**World Quant** Vietnam](https://www.weareworldquant.com/en/careers/)
+[**Anduin Transactions** Vietnam](https://www.anduintransact.com/)
 
