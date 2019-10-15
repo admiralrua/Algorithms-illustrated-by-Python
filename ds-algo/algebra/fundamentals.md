@@ -1,5 +1,5 @@
 # Fundamentals
-Reserved ^_^
+[Reserved ^\_^](https://cp-algorithms.com/)
 
 ## Binary exponentiation
 
