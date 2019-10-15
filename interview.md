@@ -69,6 +69,7 @@ There are many round of interview:
 ## Level:
 Compare to the level of programmers in codeforces, the correlations between the capability required to work in different countries/regions are:
 
+![Coding level in Codeforces](../../.gitbook/assets/level.png)
 
 * Blue: cyan
 * Singapore: purple
