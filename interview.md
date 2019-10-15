@@ -78,8 +78,6 @@ Compare to the level of programmers in codeforces, the correlations between the 
 | European/America | yellow      | 2100-2300 |
 | TopDEV           | strong pink | 2400-2600 |
 
-Table: Coding level in Codeforces
-
 
 ## Where to head for
 - [**Two-sigma**](https://www.twosigma.com/)
