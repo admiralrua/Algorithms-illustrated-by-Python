@@ -1,20 +1,19 @@
 # Coding interview
-
 This section will give a brief introduction of steps to get hired in a it-technology company:
 
 1. Resume 
-2. DS & Algo preparation for Interview Coding
+2. Data structure & Algorithm preparation
 3. Submit an application
-4. aaa
-5. aaa
-6. aaa
+4. Mock interview
+5. VISA application
+6. Procedure of interview
+
 
 ## Resume
-
 A perfect guideline for an attractive RESUME can be found [here.](https://www.careercup.com/resume/)
 
-## DS & Algo preparation for Interview Coding
 
+## Data structure & Algorithm preparation
 There are several good recommendations to tackle this task:
 
 * [interviewbit](https://www.interviewbit.com/practice/) -&gt; practice atleast 200 problems here
@@ -22,8 +21,8 @@ There are several good recommendations to tackle this task:
 
 Remember to count the time elapsed until you finish the problem. During a real interview, you should finish a task within a limited time.
 
-## Submit an application
 
+## Submit an application
 There are several ways to do this:
 
 * directly apply in the website of a company interested -&gt; successful rate of 0.01% due to so many perfect-CV from India or China, they have a team to buildup that kind of CV.
@@ -35,8 +34,8 @@ There are several ways to do this:
   * English: TOEFL 100 iBT, IELTS 7.5.
   * Online survey & test: one-tme submission only. 
 
-## Mock interview
 
+## Mock interview
 Several of the best site to practice a mock interview.
 
 * [pramp](https://www.pramp.com/)
@@ -48,12 +47,12 @@ Tips:
 * do about 20 interviews 
 * provide feedbacks as details as possible.
 
-## VISA
 
-[good website for reference](https://www.myvisajobs.com/)
+## VISA application
+A good webiste with good details and tips for working visa application can be found [here.](https://www.myvisajobs.com/)
+
 
 ## Procedure of interview
-
 There are many round of interview:
 
 * Round 1: for both Internship and Full-time, phone interview about 45', 1 to 2 questions with a difficulty equals to A and B of Div. 2 contest \(cf\) -&gt; data structures and algorithms.
@@ -66,14 +65,15 @@ There are many round of interview:
 * Apple only: round 7 to 12 interview with different people, different team. 
 * Matching team: passed, enquiry from different teams. This round may last in 3 months. Without 3 months, if there is no team for matching -&gt; failed.
 
+
 ## Level:
+Compare to the level of programmers in codeforces, the correlations between the capability required to work in different countries/regions are:
 
-Compare to codechef:
 
+* Blue: cyan
 * Singapore: purple
 * European/America: yellow
 * TopDEV: red
-* Blue: cyan
 
 [**Two-sigma**](https://www.twosigma.com/)
 
