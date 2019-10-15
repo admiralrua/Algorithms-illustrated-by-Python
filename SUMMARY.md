@@ -31,7 +31,7 @@
     * [Two-pointer technique](ds-algo/tech/two-pointer-technique.md)
     * [\_notyet\_ Greedy algorithm](ds-algo/tech/greedy-algorithm.md)
     * [\_notyet\_ Dynamic programming](ds-algo/tech/dynamic-programming.md)
-  * [\_notyet\_Sorting](ds-algo/sorting.md)
+  * [\_notyet\_ Sorting](ds-algo/sorting.md)
   * [Searching](ds-algo/searching/README.md)
     * [Binary search](ds-algo/searching/binary-search.md)
     * [Ternary search](ds-algo/searching/ternary-search.md)
