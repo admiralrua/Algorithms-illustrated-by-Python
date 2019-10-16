@@ -154,10 +154,11 @@ The nice thing about implementing your own heap library is that you can understa
 
 The following problems from different sources can be used to practice the binary heap data structure:
 
-* [cc Restaurant rating](https://www.codechef.com/problems/RRATING)
+* [cc Restaurant rating](https://www.codechef.com/problems/RRATING) <sup>[Hint 01](#hint01)</sup>
 * [he Monk and multiplication](https://www.hackerearth.com/practice/data-structures/trees/heapspriority-queues/practice-problems/algorithm/monk-and-multiplication/)
 * [he Roy and trending topics](https://www.hackerearth.com/practice/data-structures/trees/heapspriority-queues/practice-problems/algorithm/roy-and-trending-topics-1/)
 * [hr Qheap](https://www.hackerrank.com/challenges/qheap1/problem)
 * [uva Add-all](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1895)
 * [spoj Promotion](https://www.spoj.com/problems/PRO/)
 
+<a name="hint01">Hint 01</a>: This is a hint for the problem.
