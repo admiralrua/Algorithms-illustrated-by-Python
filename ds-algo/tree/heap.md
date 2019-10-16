@@ -154,11 +154,11 @@ The nice thing about implementing your own heap library is that you can understa
 
 The following problems from different sources can be used to practice the binary heap data structure:
 
-* [cc Restaurant rating](https://www.codechef.com/problems/RRATING) <sup>[Hint 01](#hint01)</sup>
+* [cc Restaurant rating](https://www.codechef.com/problems/RRATING) <sup>[Hint](#hint01)</sup>
 * [he Monk and multiplication](https://www.hackerearth.com/practice/data-structures/trees/heapspriority-queues/practice-problems/algorithm/monk-and-multiplication/)
 * [he Roy and trending topics](https://www.hackerearth.com/practice/data-structures/trees/heapspriority-queues/practice-problems/algorithm/roy-and-trending-topics-1/)
 * [hr Qheap](https://www.hackerrank.com/challenges/qheap1/problem)
 * [uva Add-all](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1895)
 * [spoj Promotion](https://www.spoj.com/problems/PRO/)
 
-<a name="hint01">Hint 01</a>: This is a hint for the problem.
+<a name="hint01">Hint</a>: The normal sorting approach definitely leads to a TLE solution. To solve this problem, you actually need two heaps to reduce the time complexity. A min-heap to store top 3 positive reviews; a max-heap to store the remaining interview. When a new review is received, it will be pushed into a min- or max-heap depending on its score. Moreoever, when the total number of review is divisible by 3, the heaps should also be updated too. 
