@@ -12,7 +12,6 @@ This note reflects what I am studying on Computer Science.
 
 
 # Table of contents
-
 * [Preface](README.md)
 * [Non-trivial preparation](non-trivial-preparation/README.md)
   * [Markdown for documentation](non-trivial-preparation/markdown.md)
