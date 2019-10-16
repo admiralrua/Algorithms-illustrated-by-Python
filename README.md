@@ -1,4 +1,4 @@
-# Initial page
+# Preface
 
 I am an civil engineer who have a great passion for Computer Science.
 
@@ -6,9 +6,14 @@ Actually, for quite many years, I forgot how fascinate I was when I first touche
 
 This note reflects what I am studying on Computer Science.
 
+[\[1\]](./): A proof-of-concept tool for Automation Jetty Design in the maritime field.
+
+[\[2\]](./): More information about these courses can be found [here](http://bigocoding.com/). Those courses are highly recommended, not only becasue of their contents and a practical and highly illustrative approach they are delivered, but also because you will have supports from highly trained and enthuastic TAs to have a smooth start with DS & Algo.  
+
+
 # Table of contents
 
-* [Initial page](README.md)
+* [Preface](README.md)
 * [Non-trivial preparation](non-trivial-preparation/README.md)
   * [Markdown for documentation](non-trivial-preparation/markdown.md)
   * [Python programming language](non-trivial-preparation/python-language.md)
@@ -64,9 +69,4 @@ This note reflects what I am studying on Computer Science.
   * [Classification](machine-learning/classification.md)
   * [Clustering](machine-learning/clustering.md)
 * [Coding interview](interview.md)
-
-
-[\[1\]](./): A proof-of-concept tool for Automation Jetty Design in the maritime field.
-
-[\[2\]](./): More information about these courses can be found [here](http://bigocoding.com/). Those courses are highly recommended, not only becasue of their contents and a practical and highly illustrative approach they are delivered, but also because you will have supports from highly trained and enthuastic TAs to have a smooth start with DS & Algo.  
 
