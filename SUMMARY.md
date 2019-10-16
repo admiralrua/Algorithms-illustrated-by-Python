@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Preface](README.md)
 * [Non-trivial preparation](non-trivial-preparation/README.md)
   * [Markdown for documentation](non-trivial-preparation/markdown.md)
   * [Python programming language](non-trivial-preparation/python-language.md)
