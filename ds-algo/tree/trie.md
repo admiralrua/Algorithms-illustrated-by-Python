@@ -83,7 +83,7 @@ def trie_delete(root, st, level, length):
         del root.child[ch]
         root.child[ch] = None
 
-    return Flag
+    return flag
 ```
 
 ### Printing
@@ -107,5 +107,5 @@ The following problems are helful to let yourself be familiar with the trie data
 * [lightoj DNA prefix](https://vjudge.net/problem/LightOJ-1224)
 * [lightoj Consistency checker](https://vjudge.net/problem/LightOJ-1129)
 * [hr Contacts](https://www.hackerrank.com/challenges/contacts/problem)
-* []()
-* []()
+* [hr No Prefix Set](https://www.hackerrank.com/challenges/no-prefix-set/problem)
+* [icp Diccionario Portunol](https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=3803)
