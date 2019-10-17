@@ -170,4 +170,5 @@ The following problems from different sources can be used to practice the disjoi
   * [cf Roads not only in Berland](https://codeforces.com/contest/25/problem/D)
   * [spoj Strange food chain](https://www.spoj.com/problems/CHAIN/)
   * [spoj Colorful array](https://www.spoj.com/problems/CLFLARR/)
+  * [hr Merging communities](https://www.hackerrank.com/challenges/merging-communities/problem)
 
