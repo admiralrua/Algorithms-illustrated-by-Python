@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Preface](README.md)
-* [Non-trivial preparation](non-trivial-preparation/README.md)
+* [Preparation 1st](non-trivial-preparation/README.md)
   * [Markdown for documentation](non-trivial-preparation/markdown.md)
   * [Python programming language](non-trivial-preparation/python-language.md)
 * [Data structures and Algorithms](ds-algo/README.md)
@@ -36,7 +36,7 @@
     * [Binary search](ds-algo/searching/binary-search.md)
     * [Ternary search](ds-algo/searching/ternary-search.md)
     * [\_notyet\_ Binary search tree](ds-algo/searching/binary-search-tree.md)
-* [\_notyet\_ Further preparation](further-preparation/README.md)
+* [\_notyet\_ Preparation 02](further-preparation/README.md)
   * [Python](further-preparation/python/README.md)
     * [Nympy](further-preparation/python/nympy.md)
     * [Matplotlib](further-preparation/python/matplotlib.md)
