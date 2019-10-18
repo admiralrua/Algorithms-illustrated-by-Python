@@ -21,7 +21,7 @@ There are two, actually three including the initialisation, [operations](https:/
 
 ### makeSet
 
- **makeSet** makes a new set by creating a new element with a unique _id_, a _rank_ of 0, a _size_ of 1 and a parent pointer to itself.
+**makeSet** makes a new set by creating a new element with a unique _id_, a _rank_ of 0, a _size_ of 1 and a parent pointer to itself.
 
 The following code initialises a disjoint-set:
 
@@ -165,7 +165,7 @@ The following problems from different sources can be used to practice the disjoi
 * [uva Friends](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1549)
 * [uva Graph connectivity](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=400)
 * [uva War](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1099)
-* (not yet solved)
+* \(not yet solved\)
   * [timus Anansi's cobweb](http://acm.timus.ru/problem.aspx?space=1&num=1671)
   * [cf Roads not only in Berland](https://codeforces.com/contest/25/problem/D)
   * [spoj Strange food chain](https://www.spoj.com/problems/CHAIN/)

@@ -9,7 +9,7 @@ This section will give a brief introduction of steps to get hired in a it-techno
 5. VISA application
 6. Procedure of interview
 
-The content of this section is summarised from a class in [BigO-coding](http://bigocoding.com/). You can have more insights on this topic and also valuable advises there. 
+The content of this section is summarised from a class in [BigO-coding](http://bigocoding.com/). You can have more insights on this topic and also valuable advises there.
 
 ## Resume
 

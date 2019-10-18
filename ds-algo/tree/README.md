@@ -9,3 +9,4 @@ Some other data structures which may not exactly be a **tree** but can be consid
 * **Disjoint Set Union**
 * **Binary search tree**
 * **Red-Black tree**
+

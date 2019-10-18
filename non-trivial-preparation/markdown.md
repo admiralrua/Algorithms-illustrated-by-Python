@@ -131,7 +131,7 @@ I learn Markdown [from this link](https://www.markdownguide.org/)
 
 You can optionally add a title for a link by enclosing it in parentheses after the URL. This will appear as a tooltip when the user hovers over the link, e.g.:
 
-I learn Markdown [from this link](https://www.markdownguide.org/ "Study Markdown here ^_^")
+I learn Markdown [from this link](https://www.markdownguide.org/)
 
 To quickly turn a URL or email address into a link, enclose it in angle brackets \(\&lt;\).
 
