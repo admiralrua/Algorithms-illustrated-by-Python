@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Preface](README.md)
-* [Preparation 1st](non-trivial-preparation/README.md)
+* [Preparation 01](non-trivial-preparation/README.md)
   * [Markdown for documentation](non-trivial-preparation/markdown.md)
   * [Python programming language](non-trivial-preparation/python-language.md)
 * [Data structures and Algorithms](ds-algo/README.md)
