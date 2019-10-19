@@ -80,12 +80,29 @@ This is the third preparation including basic algorithms for DS and ML. If you a
 
 Now we come to Machine Learning.
 
-* [\_notyet\_ Machine learning](machine-learning/)
+* [\_notyet\_ Machine learning](machine-learning/README.md)
   * [Introduction](machine-learning/introduction.md)
-  * [Linear regression](machine-learning/regression-algorithms/linear-regression.md)
-  * [Logistic regression](machine-learning/regression-algorithms/logistic-regression.md)
-  * [Classification](machine-learning/classification.md)
-  * [Clustering](machine-learning/clustering-algorithms/clustering.md)
+  * [Regression algorithms](machine-learning/regression-algorithms/README.md)
+    * [Linear regression](machine-learning/regression-algorithms/linear-regression.md)
+    * [Logistic regression](machine-learning/regression-algorithms/logistic-regression.md)
+  * [Instance-based algorthims](machine-learning/instance-based-algorthims/README.md)
+    * [K-nearest neighbors](machine-learning/instance-based-algorthims/k-nearest-neighbors.md)
+  * [Clustering algorithms](machine-learning/clustering-algorithms/README.md)
+    * [K-means](machine-learning/clustering-algorithms/clustering.md)
+  * [Decision tree](machine-learning/classification.md)
+  * [Support vector machine](machine-learning/support-vector-machine.md)
+  * [Bayesian algorithms](machine-learning/bayesian-algorithms/README.md)
+    * [Naïve Bayes](machine-learning/bayesian-algorithms/naive-bayes.md)
+  * [Artificial neural networks](machine-learning/artificial-neural-networks/README.md)
+    * [FFNNs](machine-learning/artificial-neural-networks/ffnns.md)
+  * [Deep learning](machine-learning/deep-learning/README.md)
+    * [CNNs](machine-learning/deep-learning/cnns.md)
+    * [RNNs](machine-learning/deep-learning/rnns.md)
+  * [Dimensionality reduction](machine-learning/dimensionality-reduction-algorithms/README.md)
+    * [Principal component analysis](machine-learning/dimensionality-reduction-algorithms/principal-component-analysis.md)
+  * [Ensemble algorithms](machine-learning/ensemble-algorithms/README.md)
+    * [Random forest](machine-learning/ensemble-algorithms/random-forest.md)
+    * [Gradient boosting](machine-learning/ensemble-algorithms/gradient-boosting-algorithms.md)
 
 Finally, tips and tricks for Coding Interview.
 
