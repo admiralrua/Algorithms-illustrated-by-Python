@@ -1,10 +1,10 @@
 # Introduction
 
-A nice article listing the 10 best ML algorithms for Beginners can be found \[here\]\([https://www.dataquest.io/blog/top-10-machine-learning-algorithms-for-beginners/](https://www.dataquest.io/blog/top-10-machine-learning-algorithms-for-beginners/)\).
+There are several articles listing the most popular ML algorithms for Beginners:
 
-or \[here\]\([https://www.analyticsvidhya.com/blog/2017/09/common-machine-learning-algorithms/](https://www.analyticsvidhya.com/blog/2017/09/common-machine-learning-algorithms/)\)
-
-or \[here\]\([https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/](https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/)\)
+- [dataquest](https://www.dataquest.io/blog/top-10-machine-learning-algorithms-for-beginners/)
+- [analyticsvidhya](https://www.analyticsvidhya.com/blog/2017/09/common-machine-learning-algorithms/)
+- [machinelearningmastery](https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/)
 
 Three types of ML algorithms:
 
