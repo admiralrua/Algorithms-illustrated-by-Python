@@ -14,7 +14,7 @@ To bold text, add two asterisks or underscores before and after a **word** or **
 
 To emphasize text with bold and italics at the same time, add three asterisks or underscores before and after a _**word**_ or _**phrase**_.
 
-To strikethrough words, use two tilde symbols \(~~\) ~~before and after~~ the words.
+To strikethrough words, use two tilde symbols \(~\~\) ~~before and after~~ the words.
 
 To create a blockquote, add a &gt; in front of a paragraph to create something like this:
 
@@ -131,7 +131,7 @@ I learn Markdown [from this link](https://www.markdownguide.org/)
 
 You can optionally add a title for a link by enclosing it in parentheses after the URL. This will appear as a tooltip when the user hovers over the link, e.g.:
 
-I learn Markdown [from this link](https://www.markdownguide.org/)
+I learn Markdown [from this link](https://www.markdownguide.org/ [Markdown])
 
 To quickly turn a URL or email address into a link, enclose it in angle brackets \(\&lt;\).
 
