@@ -56,7 +56,7 @@ Then we come to the basic Data structures and Algorithms. They are one of cores 
   * [Searching](ds-algo/searching/)
     * [Binary search](ds-algo/searching/binary-search.md)
     * [Ternary search](ds-algo/searching/ternary-search.md)
-    * [\_notyet\_ Binary search tree](ds-algo/searching/binary-search-tree.md)
+    * [\_notyet\_ Binary search tree]()
 
 This is the second preparation including introduction for packages of Python such as numpy, pandas and matplotlib, then introduction to basic mathematical foundation for DS and ML. If you are familiar with these subjects, please skip this section.
 
@@ -74,33 +74,33 @@ This is the second preparation including introduction for packages of Python suc
 This is the third preparation including basic algorithms for DS and ML. If you are familiar with these subjects, please skip this section.
 
 * [\_notyet\_ Preparation 03](preparation-03/)
-  * [Python](preparation-03/python.md)
+  * [Python]()
   * [Gradient descent](preparation-03/gradient-descent.md)
   * [Genetic algorithm \(GA\)](preparation-03/genetic-algorithm-ga.md)
 
 Now we come to Machine Learning.
 
-* [\_notyet\_ Machine learning](machine-learning/README.md)
+* [\_notyet\_ Machine learning](machine-learning/)
   * [Introduction](machine-learning/introduction.md)
-  * [Regression algorithms](machine-learning/regression-algorithms/README.md)
+  * [Regression algorithms](machine-learning/regression-algorithms/)
     * [Linear regression](machine-learning/regression-algorithms/linear-regression.md)
     * [Logistic regression](machine-learning/regression-algorithms/logistic-regression.md)
-  * [Instance-based algorthims](machine-learning/instance-based-algorthims/README.md)
+  * [Instance-based algorthims](machine-learning/instance-based-algorthims/)
     * [K-nearest neighbors](machine-learning/instance-based-algorthims/k-nearest-neighbors.md)
-  * [Clustering algorithms](machine-learning/clustering-algorithms/README.md)
+  * [Clustering algorithms](machine-learning/clustering-algorithms/)
     * [K-means](machine-learning/clustering-algorithms/clustering.md)
   * [Decision tree](machine-learning/classification.md)
   * [Support vector machine](machine-learning/support-vector-machine.md)
-  * [Bayesian algorithms](machine-learning/bayesian-algorithms/README.md)
+  * [Bayesian algorithms](machine-learning/bayesian-algorithms/)
     * [Naïve Bayes](machine-learning/bayesian-algorithms/naive-bayes.md)
-  * [Artificial neural networks](machine-learning/artificial-neural-networks/README.md)
+  * [Artificial neural networks](machine-learning/artificial-neural-networks/)
     * [FFNNs](machine-learning/artificial-neural-networks/ffnns.md)
-  * [Deep learning](machine-learning/deep-learning/README.md)
+  * [Deep learning](machine-learning/deep-learning/)
     * [CNNs](machine-learning/deep-learning/cnns.md)
     * [RNNs](machine-learning/deep-learning/rnns.md)
-  * [Dimensionality reduction](machine-learning/dimensionality-reduction-algorithms/README.md)
+  * [Dimensionality reduction](machine-learning/dimensionality-reduction-algorithms/)
     * [Principal component analysis](machine-learning/dimensionality-reduction-algorithms/principal-component-analysis.md)
-  * [Ensemble algorithms](machine-learning/ensemble-algorithms/README.md)
+  * [Ensemble algorithms](machine-learning/ensemble-algorithms/)
     * [Random forest](machine-learning/ensemble-algorithms/random-forest.md)
     * [Gradient boosting](machine-learning/ensemble-algorithms/gradient-boosting-algorithms.md)
 

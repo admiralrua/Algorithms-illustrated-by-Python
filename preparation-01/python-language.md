@@ -1,4 +1,4 @@
-# Python programming language
+# Python
 
 ## Brief introduction
 

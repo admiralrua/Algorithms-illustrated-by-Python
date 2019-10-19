@@ -1,4 +1,4 @@
-# Markdown for documentation
+# Markdown
 
 Markdown is a markup-style language which makes writing technical documents conveniently.
 

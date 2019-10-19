@@ -1,6 +1,6 @@
 # Data structures and Algorithms
 
-In this part, I would like to briefly present data structures and algorithms mainly used in software engineering. Uhm, more precisely, they are for Interview Code.
+In this part, I would like to briefly present **Data structures and Algorithms** taught as fundamental subject of Computer Science. Practicing in this field does not require a high fluency of this subject, however it is really good to train your mindset and will help you produce a better code.
 
 I learn from different resources
 
@@ -9,8 +9,9 @@ I learn from different resources
 3. [Analysis of Algorithms](http://www8.cs.umu.se/kurser/TDBAfl/VT06/algorithms/LEC/LECTURES/ALL.HTM)
 4. [cp-algorithms](https://cp-algorithms.com/)
 5. [G4G algorithms](https://www.geeksforgeeks.org/greedy-algorithms/)
+6. [Big-O coding classes](www.bigocoding.com)
 
-and then practice with problems from several diffrent coding pages. The places to practice can be named as follows:
+and then practice with problems from several different coding platform. The places to practice can be named as follows:
 
 1. [cc codechef](https://www.codechef.com/)
 2. [cf codeforces](https://codeforces.com/)
