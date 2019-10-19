@@ -5,8 +5,8 @@ One of the very powerful family type of data structures is [**Tree**](https://en
 Some other data structures which may not exactly be a **tree** but can be considered to belong to the **tree-family** will be briefly presented in this note including:
 
 * **Heap**
-* **Binary search tree**
-* **Red-Black tree**
 * **Trie**
 * **Disjoint Set Union**
+* **Binary search tree**
+* **Red-Black tree**
 

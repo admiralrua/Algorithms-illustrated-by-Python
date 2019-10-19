@@ -21,7 +21,7 @@ There are two, actually three including the initialisation, [operations](https:/
 
 ### makeSet
 
- **makeSet** makes a new set by creating a new element with a unique _id_, a _rank_ of 0, a _size_ of 1 and a parent pointer to itself.
+**makeSet** makes a new set by creating a new element with a unique _id_, a _rank_ of 0, a _size_ of 1 and a parent pointer to itself.
 
 The following code initialises a disjoint-set:
 
@@ -143,7 +143,7 @@ To optimise the **unionSet** operation, we will change which tree gets attached 
     sizes[up] += sizes[vp]
   ```
 
-The convenience of following the union by size is that, at the end, we can know how large each independent set is in $$sizes[root]$$, i.e. the following code for the example in the figure above shows:
+The convenience of following the union by size is that, at the end, we can know how large each independent set is in $$sizes[root]$$, i.e. the following code taking the example in the figure above as an input results in:
 
 ```python
 n, m = map(int, input().split())
@@ -165,8 +165,10 @@ The following problems from different sources can be used to practice the disjoi
 * [uva Friends](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1549)
 * [uva Graph connectivity](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=400)
 * [uva War](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1099)
-* [timus Anansi's cobweb](http://acm.timus.ru/problem.aspx?space=1&num=1671)
-* [cf Roads not only in Berland](https://codeforces.com/contest/25/problem/D)
-* [spoj Strange food chain](https://www.spoj.com/problems/CHAIN/)
-* [spoj Colorful array](https://www.spoj.com/problems/CLFLARR/)
+* \(not yet solved\)
+  * [timus Anansi's cobweb](http://acm.timus.ru/problem.aspx?space=1&num=1671)
+  * [cf Roads not only in Berland](https://codeforces.com/contest/25/problem/D)
+  * [spoj Strange food chain](https://www.spoj.com/problems/CHAIN/)
+  * [spoj Colorful array](https://www.spoj.com/problems/CLFLARR/)
+  * [hr Merging communities](https://www.hackerrank.com/challenges/merging-communities/problem)
 

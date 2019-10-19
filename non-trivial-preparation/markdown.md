@@ -121,7 +121,7 @@ $$\sum_{n=1}^{10}\left( x^{n} + \frac{x}{n} \right)$$
 
 To add an image, add an exclamation mark \(!\), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title after the URL in the parentheses.
 
-![Where i currently work](../.gitbook/assets/rhdhv.jpg)
+![Where i currently work](../.gitbook/assets/sommerset-the-vista.jpg)
 
 ## Insert links
 
@@ -135,7 +135,7 @@ I learn Markdown [from this link](https://www.markdownguide.org/)
 
 To quickly turn a URL or email address into a link, enclose it in angle brackets \(\&lt;\).
 
-[https://github.com/admiralrua/Algorithms-illustrated-by-Python](https://github.com/admiralrua/Algorithms-illustrated-by-Python)
+[https://admiralrua.gitbook.io/aip/](https://admiralrua.gitbook.io/aip/)
 
 [ntchi1983@gmail.com](mailto:ntchi1983@gmail.com)
 
