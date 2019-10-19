@@ -3,7 +3,7 @@ There are several well-known algorithms for finding [the minimum spanning tree](
 
 ## Prim algorithm
 ### Briefing
-[Prim (also known as Jarník) algorithm](https://en.wikipedia.org/wiki/Prim's_algorithm) is a greedy algorithm that finds a minimum spanning tree for a weighted undirected graph. This means it finds a subset of the edges that forms a tree that includes every vertex, where the total weight of all the edges in the tree is minimized. The algorithm operates by building this tree one vertex at a time, from an arbitrary starting vertex, at each step adding the cheapest possible connection from the tree to another vertex.
+[Prim \(also known as Jarník\) algorithm](https://en.wikipedia.org/wiki/Prim's_algorithm) is a greedy algorithm that finds a minimum spanning tree for a weighted undirected graph. This means it finds a subset of the edges that forms a tree that includes every vertex, where the total weight of all the edges in the tree is minimized. The algorithm operates by building this tree one vertex at a time, from an arbitrary starting vertex, at each step adding the cheapest possible connection from the tree to another vertex.
 
 ### Implementation
 The Prim algorithm is quite straightfoward. Howver, the time complexity of the algorithm depends heavily on the data structures used for the graph and for odering the edges by weight. The following table shows the consequences of several typical choices:
@@ -78,7 +78,7 @@ Later :)
 
 
 ## Kruskal algorithm
-[Kruskal algorithm](https://en.wikipedia.org/wiki/Kruskal's_algorithm) is a minimum-spanning-tree algorithm which finds an edge of the least possible weight that connects any two trees in the forest. It is a greedy algorithm in graph theory as it finds a minimum spanning tree for a connected weighted graph adding increasing cost arcs at each step. This means it finds a subset of the edges that forms a tree that includes every vertex, where the total weight of all the edges in the tree is minimized. If the graph is not connected, then it finds a minimum spanning forest (a minimum spanning tree for each connected component).
+[Kruskal algorithm](https://en.wikipedia.org/wiki/Kruskal\'s_algorithm) is a minimum-spanning-tree algorithm which finds an edge of the least possible weight that connects any two trees in the forest. It is a greedy algorithm in graph theory as it finds a minimum spanning tree for a connected weighted graph adding increasing cost arcs at each step. This means it finds a subset of the edges that forms a tree that includes every vertex, where the total weight of all the edges in the tree is minimized. If the graph is not connected, then it finds a minimum spanning forest (a minimum spanning tree for each connected component).
 
 ### Implementation
 Later :)
@@ -100,7 +100,7 @@ Later :)
 
 
 ## Borůvka algorithm
-[Borůvka algorithm](https://en.wikipedia.org/wiki/Borůvka's_algorithm) is a greedy algorithm for finding a minimum spanning tree in a graph for which all edge weights are distinct, or a minimum spanning forest in the case of a graph that is not connected.
+[Bor\ůvka algorithm](https://en.wikipedia.org/wiki/Borůvka's_algorithm) is a greedy algorithm for finding a minimum spanning tree in a graph for which all edge weights are distinct, or a minimum spanning forest in the case of a graph that is not connected.
 
 ### Implementation
 Later :)
