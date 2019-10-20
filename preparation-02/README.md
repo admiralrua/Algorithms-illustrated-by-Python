@@ -19,7 +19,7 @@ The main references for this part include:
 | $$\mathbf{A} = [\mathbf{a}_1; \mathbf{a}_2;...; \mathbf{a}_n] $$   | A matrix created by row-vectors. |
 | $$\mathbf{x}^T, \mathbf{A}^T$$           | Transpose of a vector or matrix. |
 | $$\mathbf{A}^{-1}$$                      | Inverse of a matrix.             |
-| $$\text{tr}}(\mathbf{A}) (\mathbf{A})$$  | Trace of a matrix.               |
+| $$\text{tr}(\mathbf{A})$$                | Trace of a matrix.               |
 | $$\det (\mathbf{A})$$                    | Determinant of a matrix.         |
 
 
