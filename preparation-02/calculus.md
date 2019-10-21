@@ -14,7 +14,7 @@ Since the derivative is the slope of the linear approximation to $$f$$ at the po
 
 
 ### Basic derivative rules
-Numerous basic derivative rules can be found [here](https://en.wikipedia.org/wiki/Differentiation_rules). Some of them are presented here:
+Numerous basic derivative rules can be found [here](https://en.wikipedia.org/wiki/Differentiation_rules). Some of them are presented below:
 
 | Rules         | Meaning |
 | ---           | ---     |
@@ -64,7 +64,7 @@ Firstly, we know that as $$f(x) = \sin(x), f^{(1)}(x) = \cos(x), f^{(2)}(x) = -\
 
 $$ \sin(x) = \sin(a) + \frac{\cos(x)}{1!}(x-a) - \frac{\sin(x)}{2!}(x-a)^2 - \frac{\cos(x)}{3!}(x-a)^3 + ... $$
 
-Now, put $$a = 0$$ which leads to $$sin(0) = 0$$ and $$cos(0) = 1$$, we have:
+Now, put $$a = 0$$ leading to $$sin(0) = 0$$ and $$cos(0) = 1$$, we have:
 
 $$ \sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - ... = \sum_{n=0}^{\infty}\frac{(-1)^n}{(2n+1)!}x^{2n+1} $$
 
@@ -72,14 +72,23 @@ Another example of finding the Taylor series for $$f(x) = e^{-x}$$ at point $$x 
 
 $$ e^{-x} = \sum_{n = 0}^{\infty} \frac{(-1)^n e^3}{n!}(x+3)^n $$
 
-Another useful form of Taylor series which has numerous applications is:
-
-$$ f(x_0 + \Delta x) = f(x_0) + \frac{f^{(1)}(x_0)}{1!} \Delta x + \frac{f^{(2)}(x_0)}{2!} \Delta x^2 + ... $$
+From the two examples above, you can see that one of the application of the Taylor series is to approximate a function at a given point. Although the two example above are rather trivial, you may have to use the Taylor series in Machine Learning because, sometimes, the cost function optimisation can be rather complex.
 
 
 ### Taylor's theorem
+[Taylor's theorem](https://en.wikipedia.org/wiki/Taylor's_theorem) gives an approximation of a $$k$$-times differentiable function around a given point by a $$k$$-th order Taylor polynomial. The most basic version of Taylor's theorem can be written as follows:
 
+$$ f(x) = f(a) + f^{(1)}(x-a) + \frac{f^{(2)}(a)}{2!}(x-a)^2 + ... + \frac{f^{(k)}(a)}{k!}(x-a)^k + h_k(x)(x-a)^k $$
 
+with $$ \lim_{x \rightarrow a} h_k(x) = 0 $$
+
+The polynomial appearing in Taylor's theorem is the k-th order Taylor polynomial $$P_{k}(x)$$. 
+
+$$ P_{k}(x) = f(a) + f^{(1)}(x-a) + \frac{f^{(2)}(a)}{2!}(x-a)^2 + ... + \frac{f^{(k)}(a)}{k!}(x-a)^k $$
+
+The approximation error when approximating $$f(x)$$ with its Taylor polynomial is:
+
+$$ R_{k}(x) = f(x) - P_{k}(x) $$
 
 
 ## Fourier series
