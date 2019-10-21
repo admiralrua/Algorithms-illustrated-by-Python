@@ -76,7 +76,7 @@ From the two examples above, you can see that one of the application of the Tayl
 
 
 ### Taylor's theorem
-[Taylor's theorem](https://en.wikipedia.org/wiki/Taylor's_theorem) gives an approximation of a $$k$$-times differentiable function around a given point by a $$k$$-th order Taylor polynomial. The most basic version of Taylor's theorem can be written as follows:
+[Taylor's theorem](https://en.wikipedia.org/wiki/Taylor\'s_theorem) gives an approximation of a $$k$$-times differentiable function around a given point by a $$k$$-th order Taylor polynomial. The most basic version of Taylor's theorem can be written as follows:
 
 $$ f(x) = f(a) + f^{(1)}(x-a) + \frac{f^{(2)}(a)}{2!}(x-a)^2 + ... + \frac{f^{(k)}(a)}{k!}(x-a)^k + h_k(x)(x-a)^k $$
 
