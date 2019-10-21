@@ -12,6 +12,7 @@ $$ f'(a) = \left. \frac{df}{dx} \right |_{x = a} $$
 
 Since the derivative is the slope of the linear approximation to $$f$$ at the point $$a$$, the derivative (together with the value of $$f$$ at $$a$$) determines the best linear approximation, or [linearization](https://en.wikipedia.org/wiki/Linearization), of $$f$$ near the point $$a$$. The linear approximation of a function is the first order Taylor expansion, which will be described later, around the point of interest.
 
+
 ### Derivative rules
 
 | Rules         | Meaning |
@@ -26,6 +27,10 @@ Since the derivative is the slope of the linear approximation to $$f$$ at the po
 |               | $$ \frac{d}{dx} \left( a^{g(x)} \right ) = \ln(a) \cdot a^{g(x)} \cdot g'(x) $$ |
 | Logarithmic   | $$ \frac{d}{dx} \left( \log_a x \right ) = \frac{1}{x \ln a} $$ |
 |               | $$ \frac{d}{dx} \left( \log_a g(x) \right ) = \frac{g'(x)}{g(x) \ln a} $$ |
+
+
+### Numerical differentiation
+Numerical differentiation will be described in [the next section](numerical-methods.md)
 
 
 ## Integration
