@@ -30,6 +30,8 @@ Numerous basic derivative rules can be found [here](https://en.wikipedia.org/wik
 | Logarithmic   | $$ \frac{d}{dx} \left( \log_a x \right ) = \frac{1}{x \ln a} $$ |
 |               | $$ \frac{d}{dx} \left( \log_a g(x) \right ) = \frac{g'(x)}{g(x) \ln a} $$ |
 
+### Problems for practice
+
 
 ### Numerical differentiation
 Numerical differentiation will be described in [the next section](numerical-methods.md)
@@ -89,6 +91,8 @@ $$ P_{k}(x) = f(a) + f^{(1)}(x-a) + \frac{f^{(2)}(a)}{2!}(x-a)^2 + ... + \frac{f
 The approximation error when approximating $$f(x)$$ with its Taylor polynomial is:
 
 $$ R_{k}(x) = f(x) - P_{k}(x) $$
+
+**Example ???**
 
 
 ## Fourier series
