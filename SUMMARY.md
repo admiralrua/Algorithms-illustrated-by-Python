@@ -51,7 +51,6 @@
     * [Pandas](preparation-02/python/pandas.md)
   * [Basic calculus](preparation-02/basic-calculus.md)
   * [Linear algebra](preparation-02/linear-algebra.md)
-  * [Multivariate calculus](preparation-02/multivariate-calculus.md)
   * [Numerical methods](preparation-02/numerical-methods.md)
   * [Probability and Statistics](preparation-02/probability-and-statistics.md)
 * [\_notyet\_ Preparation 03](preparation-03/README.md)
