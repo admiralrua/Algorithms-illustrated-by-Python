@@ -54,6 +54,27 @@ Numerical differentiation will be described in [the next section](numerical-meth
 ### Briefing
 [A Taylor series](https://en.wikipedia.org/wiki/Taylor_series) is a representation of a function as an infinite sum of terms that are calculated from the values of the function's derivatives at a single point. Consequently, a function can be approximated by using a finite number of terms of its Taylor series. 
 
+The Taylor series of a function $$f(x)$$ that is infinitely differentiable at a point $$x = a$$ is the power series:
+
+$$ f(x) = f(a) + \frac{f^{(1)}(a)}{1!}(x-a) + \frac{f^{(2)}(a)}{2!}(x-a)^2 + ... = \sum_{n=0}^{\infty}\frac{f^{(n)}(a)}{n!}(x-a)^n $$
+
+It is straight forward that we can derive the Taylor-series form of a function if we know the derivatives of that function. The following example illustrate how to do so by finding the Taylor-series form of function $$f = \sin(x)$$. 
+
+Firstly, we know that as $$f(x) = \sin(x), f^{(1)}(x) = \cos(x), f^{(2)}(x) = -\sin(x), f^{(3)}(x) = -\cos(x)... $$ so we get:
+
+$$ \sin(x) = \sin(a) + \frac{\cos(x)}{1!}(x-a) - \frac{\sin(x)}{2!}(x-a)^2 - \frac{\cos(x)}{3!}(x-a)^3 + ... $$
+
+Now, put $$a = 0$$ which leads to $$sin(0) = 0$$ and $$cos(0) = 1$$, we have:
+
+$$ \sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - ... = \sum_{n=0}^{\infty}\frac{(-1)^n}{(2n+1)!}x^{2n+1} $$
+
+Another example of finding the Taylor series for $$f(x) = e^{-x}$$ at point $$x = -3$$. Firstly, we can easily derive $$f^{(n)}(x) = (-1)^n e^{-x}$$, hence $$f^{(n)}(-3) = (-1)^n e^{3}$$. Finally:
+
+$$ e^{-x} = \sum_{n = 0}^{\infty} \frac{(-1)^n e^3}{n!}(x+3)^n $$
+
+Another useful form of Taylor series which has numerous applications is:
+
+$$ f(x_0 + \Delta x) = f(x_0) + \frac{f^{(1)}(x_0)}{1!} \Delta x + \frac{f^{(2)}(x_0)}{2!} \Delta x^2 + ... $$
 
 
 ### Taylor's theorem
