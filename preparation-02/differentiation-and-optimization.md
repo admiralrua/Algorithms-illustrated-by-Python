@@ -1,2 +1,2 @@
-# Differentiation and Optimization
+# Differentiation
 

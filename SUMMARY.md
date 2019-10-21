@@ -49,7 +49,7 @@
     * [Nympy](preparation-02/python/nympy.md)
     * [Matplotlib](preparation-02/python/matplotlib.md)
     * [Pandas](preparation-02/python/pandas.md)
-  * [Differentiation and Optimization](preparation-02/differentiation-and-optimization.md)
+  * [Differentiation](preparation-02/differentiation-and-optimization.md)
   * [Linear algebra](preparation-02/linear-algebra.md)
   * [Multivariate calculus](preparation-02/multivariate-calculus.md)
   * [Numerical methods](preparation-02/numerical-methods.md)
