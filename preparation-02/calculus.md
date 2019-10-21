@@ -13,12 +13,14 @@ $$ f'(a) = \left. \frac{df}{dx} \right |_{x = a} $$
 Since the derivative is the slope of the linear approximation to $$f$$ at the point $$a$$, the derivative (together with the value of $$f$$ at $$a$$) determines the best linear approximation, or [linearization](https://en.wikipedia.org/wiki/Linearization), of $$f$$ near the point $$a$$. The linear approximation of a function is the first order Taylor expansion, which will be described later, around the point of interest.
 
 
-### Derivative rules
+### Basic derivative rules
+Numerous basic derivative rules can be found [here](https://en.wikipedia.org/wiki/Differentiation_rules). Some of them are presented here:
 
 | Rules         | Meaning |
 | ---           | ---     |
 | Constant      | $$ \frac{d}{dx}(c) = 0 $$ |
 | Power         | $$ \frac{d}{dx}(x^n) = n \times x^{n-1} $$ |
+|               | $$ \frac{d}{dx} \left( f(x)^{g(x)} \right ) = f(x)^{g(x)} \left( f'(x) \frac{g(x)}{f(x)} + g'(x) \cdot \ln f(x) \right ) $$ |
 | Sum/Diff.     | $$ \frac{d}{dx}[f(x) \pm g(x)] = f'(x) \pm g'(x)   $$ |
 | Product       | $$ \frac{d}{dx}[f(x) g(x)] = f'(x) \times g(x) + f(x) \times g'(x) $$ |
 | Quotient      | $$ \frac{d}{dx} \left [ \frac{f(x)}{g(x)} \right ] = \frac{f'(x) \times g(x) - f(x) \times g'(x)}{[g(x)]^2} $$ |
@@ -49,6 +51,13 @@ Numerical differentiation will be described in [the next section](numerical-meth
 
 
 ## Taylor series
+### Briefing
+[A Taylor series](https://en.wikipedia.org/wiki/Taylor_series) is a representation of a function as an infinite sum of terms that are calculated from the values of the function's derivatives at a single point. Consequently, a function can be approximated by using a finite number of terms of its Taylor series. 
+
+
+
+### Taylor's theorem
+
 
 
 
