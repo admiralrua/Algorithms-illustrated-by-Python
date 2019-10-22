@@ -38,10 +38,7 @@ Compute the derivaties of the following activation functions:
 | Identity | $$ f(x) = x                                  $$ |
 | Logistic | $$ f(x) = \frac{1}{1+e^{-x}}                 $$ |
 | Tanh     | $$ f(x) = \tanh(x) = \frac{2}{1+e^{-2x}} - 1 $$ |
-| Rectified Linear Unit (ReLU) | $$ f(x) = \left \{ \begin{matrix} 
-                                    0 & \text{for} & x < 0 \\
-                                    x & \text{for} & x \ge 0 
-                                    \end{matrix} \right . $$ | 
+| Rectified Linear Unit (ReLU) | $$ f(x) = \left \{ \begin{matrix} <br> 0 & \text{for} & x < 0 \\ <br> x & \text{for} & x \ge 0 <br> \end{matrix} \right . $$ | 
 | Parametric Rectified Linear Unit (PReLU) | $$ f(x) = \left \{ \begin{matrix} 
                                                 \alpha x & \text{for} & x < 0 \\
                                                 x & \text{for} & x \ge 0 
