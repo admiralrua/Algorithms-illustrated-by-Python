@@ -31,6 +31,18 @@ Numerous basic derivative rules can be found [here](https://en.wikipedia.org/wik
 |               | $$ \frac{d}{dx} \left( \log_a g(x) \right ) = \frac{g'(x)}{g(x) \ln a} $$ |
 
 ### Problems for practice
+Compute the derivaties of the following activation functions:
+
+| Name | Function |
+| ---  | ---      |
+| Identity | $$f(x) = x$$ |
+| Logistic | $$f(x) = \frac{1}{1+e^{-x}}$$ |
+| Tanh     | $$f(x) = \tanh(x) = \frac{2}{1+e^{-2x}} - 1$$ |
+| Rectified Linear Unit (ReLU) | f(x) = \left \{ \begin{matrix}
+                                 0 & \text{for} & x < 0 \\
+                                 x & \text{for} & x \ge 0 
+                                 \end{matrix} \right . |
+
 
 
 ### Numerical differentiation
