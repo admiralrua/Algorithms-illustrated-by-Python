@@ -35,9 +35,10 @@ Compute the derivaties of the following activation functions:
 
 | Name | Function |
 | ---  | ---      |
-| Identity  | $$ f(x) = x                                  $$ |
-| Logistic  | $$ f(x) = \frac{1}{1+e^{-x}}                 $$ |
-| Tanh      | $$ f(x) = \tanh(x) = \frac{2}{1+e^{-2x}} - 1 $$ |
+| Identity  | $$ f(x) = x                                 $$ |
+| Logistic  | $$ f(x) = \frac{1}{1+e^{-x}}                $$ |
+| Arctan    | $$ f(x) = \frac{1}{\tan{x}}                 $$ |
+| Tanh      | $$ f(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}} $$ |
 | Soft-Plus | $$ f(x) = \log_e(1+e^x) $$ |     
 | Rectified Linear Unit (ReLU) | $$ f(x) = \left \{ \begin{matrix} 0 & \text{for} & x < 0 \\ x & \text{for} & x \ge 0 \end{matrix} \right . $$ | 
 | Parametric Rectified Linear Unit (PReLU) | $$ f(x) = \left \{ \begin{matrix} \alpha x & \text{for} & x < 0 \\ x & \text{for} & x \ge 0 \end{matrix} \right . $$ | 
