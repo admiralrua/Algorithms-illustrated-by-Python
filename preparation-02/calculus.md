@@ -31,7 +31,7 @@ Numerous basic derivative rules can be found [here](https://en.wikipedia.org/wik
 |               | $$ \frac{d}{dx} \left( \log_a g(x) \right ) = \frac{g'(x)}{g(x) \ln a} $$ |
 
 ### Problems for practice
-Compute the derivaties of the following activation functions:
+Compute the derivaties of the following [activation functions](https://en.wikipedia.org/wiki/Activation_function):
 
 | Name | Function |
 | ---  | ---      |
