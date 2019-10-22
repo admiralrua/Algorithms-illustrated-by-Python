@@ -42,7 +42,15 @@ Compute the derivaties of the following activation functions:
                                     0 & \text{for} & x < 0 \\
                                     x & \text{for} & x \ge 0 
                                     \end{matrix} \right . $$ | 
-
+| Parametric Rectified Linear Unit (PReLU) | $$ f(x) = \left \{ \begin{matrix} 
+                                                \alpha x & \text{for} & x < 0 \\
+                                                x & \text{for} & x \ge 0 
+                                               \end{matrix} \right . $$ | 
+| Exponential Rectified Linear Unit (ELU) | $$ f(x) = \left \{ \begin{matrix} 
+                                               \alpha (e^x - 1) & \text{for} & x < 0 \\
+                                               x & \text{for} & x \ge 0 
+                                               \end{matrix} \right . $$ | 
+| Soft-Plus | $$ f(x) = \log_e(1+e^x) $$ |       
 
 
 ### Numerical differentiation
