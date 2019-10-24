@@ -13,28 +13,21 @@ This note reflects what I am studying on Computer Science.
 [\[2\]](./): More information about these courses can be found [here](http://bigocoding.com/). Those courses are highly recommended, not only becasue of their contents and a practical and highly illustrative approach they are delivered, but also because you will have supports from highly trained and enthuastic TAs to have a smooth start with DS & Algo.
 
 ## Table of contents
+Main contents of this page include:
+
 * [Data structures and Algorithms](ds-algo/)
 * [\_notyet\_ Machine learning](machine-learning/)
+* [\_notyet\_ Data science](data-science/)
+* [Tips for coding interview](interview.md)
 
-This is the very first preparation. If you already know about Markdown, basic Python and C/C++, you can skip this.
+You may need some preparation before diving into the main contents above, please skip those parts if you are already familiar with what they are about:
 
+- Markdown, basic Python and C/C++
 * [Preparation 01](preparation-01/)
-
-
- 
-This is the second preparation including introduction for packages of Python such as numpy, pandas and matplotlib, then introduction to basic mathematical foundation for DS and ML. If you are familiar with these subjects, please skip this section.
-
+- Basic mathematical foundation for ML/DS and brief introduction for Python packages such as numpy, pandas and matplotlib.
 * [\_notyet\_ Preparation 02](preparation-02/)
-
-This is the third preparation including basic algorithms for DS and ML. If you are familiar with these subjects, please skip this section.
-
+- Basic algorithms for ML/DS.
 * [\_notyet\_ Preparation 03](preparation-03/)
 
-Now we come to Machine Learning.
 
-
-
-Finally, tips and tricks for Coding Interview.
-
-* [Coding interview](interview.md)
 
