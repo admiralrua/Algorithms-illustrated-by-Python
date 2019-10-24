@@ -86,8 +86,8 @@
   * [\_notyet\_ Linear algebra](preparation-02/linear-algebra.md)
   * [\_notyet\_ Probability and Statistics](preparation-02/probability-and-statistics.md)
   * [\_notyet\_ Numerical methods](preparation-02/numerical-methods.md)
-* [\_notyet\_ Preparation 03](preparation-03/README.md)
-  * [Python](preparation-03/python.md)
-  * [Gradient descent](preparation-03/gradient-descent.md)
-  * [Genetic algorithm \(GA\)](preparation-03/genetic-algorithm-ga.md)
+* [Preparation 03](preparation-03/README.md)
+  * [\_notyet\_ Python](preparation-03/python.md)
+  * [\_notyet\_ Gradient descent](preparation-03/gradient-descent.md)
+  * [\_notyet\_ Genetic algorithm \(GA\)](preparation-03/genetic-algorithm-ga.md)
 
