@@ -1,5 +1,5 @@
 import sys
-sys.setrecursionlimit(number_you_need)
+sys.setrecursionlimit(100000000)
 
 # Code to calculate the factorial
 # n! = n * (n-1)!

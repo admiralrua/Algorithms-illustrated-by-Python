@@ -60,3 +60,11 @@ def unionSet_size(u, v):
     parent[vp] = up
     sizes[up] += sizes[vp]
     
+    
+if (__name__ == "__main__"):  
+    makeSet(9)
+    relationship = [[1,2],[3,1],[3,4],[5,4],[3,5],[4,6],[5,2],[7,1],[8,9]]
+    for x in relationship:
+        unionSet_size(x[0],x[1])
+    
+    print(*sizes[1:])

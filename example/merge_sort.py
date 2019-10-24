@@ -7,10 +7,10 @@ def merge(aL, aR):
     while (i < nL) and (j < nR):
         if (aL[i] < aR[j]):
             aS.append(aL[i])
-            i    += 1
+            i += 1
         else:
             aS.append(aR[j])
-            j    += 1
+            j += 1
             
     for i in range(i,nL):
         aS.append(aL[i])

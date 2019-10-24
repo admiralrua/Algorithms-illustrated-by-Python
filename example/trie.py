@@ -1,28 +1,3 @@
-# Search Engine
-# https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/search-engine/description/
-# AC
-
-# DNA Prefix
-# https://vjudge.net/problem/LightOJ-1224
-# Not possible
-
-# Consistency Checker
-# https://vjudge.net/problem/LightOJ-1129
-# Not possible
-
-# Contacts
-# https://www.hackerrank.com/challenges/contacts/problem
-# AC
-
-# No Prefix Set
-# https://www.hackerrank.com/challenges/no-prefix-set/problem
-# AC
-
-# Diccionario Portunol
-# https://www.urionlinejudge.com.br/judge/en/problems/view/1313
-# TLE
-
-
 import sys
 sys.setrecursionlimit(10000000)
 

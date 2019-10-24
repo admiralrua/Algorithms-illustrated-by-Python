@@ -1,6 +1,6 @@
 # List as an array
 # One-dimensional
-a1 = [1 2 3 4 5 6 7 8 9]
+a1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 a1.append(10)             # Add an element to a list
 a1.append(3.14)
 a1.append('hello')
@@ -13,10 +13,10 @@ print(a1[ 0])             # Print the first element
 print(a1[-2])             # Print the second last element
 
 # Multi-dimensional
-matrix1 = [1 2 3 4]
-matrix2 = [2 3 4 1] 
-matrix3 = [3 4 1 2] 
-matrix4 = [4 1 2 3]
+matrix1 = [1, 2, 3, 4]
+matrix2 = [2, 3, 4, 1] 
+matrix3 = [3, 4, 1, 2] 
+matrix4 = [4, 1, 2, 3]
 
 matrix  = []
 matrix.append(matrix1)    # Create multi-dimensional array

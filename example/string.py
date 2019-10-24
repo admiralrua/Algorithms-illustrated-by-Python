@@ -3,7 +3,7 @@ st    = "Here we; have a; string"
 st[0] = "h"                        # Error, immutable
 
 for i, ch in enumerate(st):        # Print in a long way
-    print(chr(x), ord(ch), end = " ")
+    print(chr(i), ord(ch), end = " ")
 	
 # ASCII table:
 # 0 -> 9: 48 -> 57

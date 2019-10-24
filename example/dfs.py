@@ -9,7 +9,7 @@ INF = int(10**3)
 import sys
 sys.setrecursionlimit(INF)
 
-import collections
+from collections import deque
 
 from bfs_algo import Path_iter, Path_recu
 
@@ -19,7 +19,7 @@ def DFS_iter(graph, sta):
     color[sta] = 0
     dist[sta]  = 0
     
-    visit = collections.deque()
+    visit = deque()
     visit.append(sta)
     
     while (len(visit) > 0):
