@@ -70,7 +70,7 @@ This is the second preparation including introduction for packages of Python suc
     * [Nympy](preparation-02/python/nympy.md)
     * [Matplotlib](preparation-02/python/matplotlib.md)
     * [Pandas](preparation-02/python/pandas.md)
-  * [Basic calculus](preparation-02/basic-calculus.md)
+  * [Basic calculus]()
   * [Linear algebra](preparation-02/linear-algebra.md)
   * [Numerical methods](preparation-02/numerical-methods.md)
   * [Probability and Statistics](preparation-02/probability-and-statistics.md)
@@ -78,7 +78,7 @@ This is the second preparation including introduction for packages of Python suc
 This is the third preparation including basic algorithms for DS and ML. If you are familiar with these subjects, please skip this section.
 
 * [\_notyet\_ Preparation 03](preparation-03/)
-  * [Python](preparation-03/python.md)
+  * [Python]()
   * [Gradient descent](preparation-03/gradient-descent.md)
   * [Genetic algorithm \(GA\)](preparation-03/genetic-algorithm-ga.md)
 
