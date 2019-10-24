@@ -23,11 +23,11 @@ Main contents of this page include:
 You may need some preparation before diving into the main contents above, please skip those parts if you are already familiar with what they are about:
 
 - Markdown, basic Python and C/C++
-* [Preparation 01](preparation-01/)
+  [Preparation 01](preparation-01/)
 - Basic mathematical foundation for ML/DS and brief introduction for Python packages such as numpy, pandas and matplotlib.
-* [\_notyet\_ Preparation 02](preparation-02/)
+  [\_notyet\_ Preparation 02](preparation-02/)
 - Basic algorithms for ML/DS.
-* [\_notyet\_ Preparation 03](preparation-03/)
+  [\_notyet\_ Preparation 03](preparation-03/)
 
 
 
