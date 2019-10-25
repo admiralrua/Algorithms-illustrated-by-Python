@@ -90,5 +90,3 @@
   * [\_notyet\_ Python](preparation-03/python.md)
   * [\_notyet\_ Gradient descent](preparation-03/gradient-descent.md)
   * [\_notyet\_ Genetic algorithm \(GA\)](preparation-03/genetic-algorithm-ga.md)
-
-(trial_jupyter.ipynb)
