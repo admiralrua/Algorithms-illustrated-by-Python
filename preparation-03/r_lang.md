@@ -1,4 +1,4 @@
-# \[B\] Briefing on R
+# \[Bonus\] Briefing on R
 
 ## Briefing
 
@@ -66,3 +66,16 @@ rep(c("Q1", "Q2", "Q3", "Q4"), 10)
 rep(c("Q1", "Q2", "Q3", "Q4"), each = 10)
 ```
 
+### Working with dataframe
+Dataframe in R stores data in a row-oriented which means each row represents an object, each column represents a property of an object. 
+
+#### Typer conversion
+
+#### Making querry
+
+#### Data extraction/manipulation
+
+#### Filtering - aggregation
+
+#### Merging data from different sources
+\~ join in SQL or vlookup in Excel 
