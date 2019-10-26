@@ -9,9 +9,6 @@ Numeric variables
 x <- 4
 y <- 5
 z <- x + y
-x
-y
-z
 ```
 
 Character variables
@@ -20,7 +17,6 @@ Character variables
 a <- "hello"
 b <- "world"
 c <- paste(a, b, sep = " ")                  # this is a function to concate two strings
-c
 ```
 
 Vecter and slicing
@@ -35,8 +31,7 @@ index <- c(2,4)                              # indirect slicing
 x[index]
 x[x >= 5]                                    # conditional slicing
 x[(x >= 5) & (x %% 2 == 0)]
-y <- x >= 5                                  # y is a logical variable
-y                       
+y <- x >= 5                                  # y is a logical variable                    
 x[y]
 seq(1, 100, 2)                               # different ways to define a sequence
 seq(1, 10, length.out = 101)
