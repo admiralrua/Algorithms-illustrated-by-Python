@@ -72,6 +72,7 @@
     * [Clustering](data-science/data-exploration/clustering.md)
     * [Association](data-science/data-exploration/association.md)
   * [Time series data](data-science/time-series-data.md)
+  * [\[B\] Briefing on R](data-science/r_lang.md)
 * [Tips for coding interview](interview.md)
 * [Preparation 01](preparation-01/README.md)
   * [Markdown](preparation-01/markdown.md)
