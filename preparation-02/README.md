@@ -1,4 +1,4 @@
-# \_notyet\_ Preparation 02
+# Preparation 02
 
 This part will focus on the \(basic\) mathematical foundation for Machine Learning and Data Science and introduction for several Python packages such as numpy, pandas and matplotlib... If you already have a strong mathematical background, please skip this section.
 

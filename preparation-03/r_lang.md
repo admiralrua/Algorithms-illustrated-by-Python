@@ -1,28 +1,30 @@
-# Basic of R
+# \[B\] Briefing on R
 
 ## Briefing
-This section gives a brief introduction into R-language. 
 
+This section gives a brief introduction into R-language.
 
 ## Basic data types and structures in R
 
 ### Data types
+
 Everything in R is an object. R has 6 basic data types:
 
 | Type | Examples |
-| ---  | ---      |
-| character                 | "a", "swc"  |
-| numeric (real or decimal) | 2, 15.5     |
-| integer                   | 2L          |
-| logical                   | TRUE, FALSE |
-| complex                   | 1+4i        |
-| raw                       | _not yet_   |
+| :--- | :--- |
+| character | "a", "swc" |
+| numeric \(real or decimal\) | 2, 15.5 |
+| integer | 2L |
+| logical | TRUE, FALSE |
+| complex | 1+4i |
+| raw | _not yet_ |
 
 R provides many functions to examine features of vectors and other objects, for example
-- class(): what kind of object is it (high-level)
-- typeof(): what is the object’s data type (low-level)
-- length(): how long is it? What about two dimensional objects
-- attributes(): does it have any metadata
+
+* class\(\): what kind of object is it \(high-level\)
+* typeof\(\): what is the object’s data type \(low-level\)
+* length\(\): how long is it? What about two dimensional objects
+* attributes\(\): does it have any metadata
 
 Numeric variables
 
@@ -40,8 +42,8 @@ b <- "world"
 c <- paste(a, b, sep = " ")                  # this is a function to concate two strings
 ```
 
-
 ### Data structures
+
 Vector and slicing
 
 ```r

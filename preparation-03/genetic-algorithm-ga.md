@@ -1,2 +1,2 @@
-# Genetic algorithm \(GA\)
+# \_notyet\_ Genetic algorithm \(GA\)
 
