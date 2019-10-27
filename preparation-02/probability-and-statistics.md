@@ -1,2 +1,2 @@
-# \_notyet\_ Probability and Statistics
+# \_notyet\_ Probability
 
