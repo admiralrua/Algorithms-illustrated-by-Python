@@ -6,19 +6,30 @@
 
 ## Mathematical treatment
 
-### Independent events
+### Probability
+
+#### Independent events
+
+#### Mutually exclusive events
+
+#### Not mutually exclusive events
+
+#### Conditional probability
+
+#### Inverse probability
+
+#### Summary of probabilities
 
 
-### Mutually exclusive events
+### Probability distributions
+
+#### Discrete probability distribution
+
+#### Continuous probability distribution
+
+#### Classical probability distributions
+
+#### Cumulative distribution function
 
 
-### Not mutually exclusive events
-
-
-### Conditional probability
-
-
-### Inverse probability
-
-
-### Summary of probabilities
+### Basic terms
