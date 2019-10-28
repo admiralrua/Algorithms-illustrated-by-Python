@@ -19,6 +19,8 @@ Responsibilities for Data Scientist include but not limited to:
 - communicate the predictions from the data analysed through data visualizations and reports;
 - recommend effective changes for the existing strategies to companies.
 
+
+## To become a Data Scientist
 Main qualifications for Data Scientist include but not limited to:
 
 - Experience using statistical computer languages (R, Python, SLQ, etc.) to manipulate data and draw insights from large data sets;
