@@ -4,9 +4,9 @@
 ## Briefing 
 [Statistics](https://en.wikipedia.org/wiki/Statistics) is the discipline that concerns the collection, organization, displaying, analysis, interpretation and presentation of data.
 
-Two main statistical methods are used in data analysis: descriptive statistics, which summarize data from a sample using indexes such as the mean or standard deviation, and inferential statistics, which draw conclusions from data that are subject to random variation (e.g., observational errors, sampling variation). Recently, exploratory data analysis analyzing data sets to summarize their main characteristics (often with visual methods) also becomes popular. 
+Two main statistical methods are used in data analysis: **descriptive statistics**, which summarize data from a sample using indexes such as the mean or standard deviation, and **inferential statistics**, which draw conclusions from data that are subject to random variation (e.g., observational errors, sampling variation). Recently, **exploratory data analysis** analyzing data sets to summarize their main characteristics (often with visual methods) also becomes popular. 
 
-This section will give a quick introduction to the basis of statistics. The is heavily based on the following comprehensive references:
+This section will give a quick introduction to the basis of statistics. The section is heavily based on the following comprehensive references:
 
 - [wiki](https://en.wikipedia.org/wiki/Statistics)
 - [The elements of statistical learning](https://www.amazon.com/Elements-Statistical-Learning-Prediction-Statistics/dp/0387848576) [or here](https://web.stanford.edu/~hastie/ElemStatLearn/)
@@ -16,12 +16,12 @@ This section will give a quick introduction to the basis of statistics. The is h
 ### Data preparation
 The process of data preparation includes several works:
 
-- data collection by experimental study or observational study
-- data summarising (aka descriptive statistics) is considered as a problem of defining what aspects of statistical samples need to be described and how well they can be described from a typically limited sample of data; this work includes:
+- **data collection** by experimental study or observational study
+- **data summarising** (aka descriptive statistics) is considered as a problem of defining what aspects of statistical samples need to be described and how well they can be described from a typically limited sample of data; this work includes:
   + choosing summary statistics to describe a sample
   + summarising probability distributions of sample data 
   + summarising the relationships between different quantities measured on the same items 
-- data interpreting (aka inferential statistics) finds the philosophy underlying statistical inference by using different data analytic techniques; this work includes:
+- **data interpreting** (aka inferential statistics) finds the philosophy underlying statistical inference by using different data analytic techniques; this work includes:
   + summarising populations in the form of a fitted distribution or probability density function
   + summarising the relationship between variables using some type of regression analysis
   + providing ways of predicting the outcome of a random quantity given other related variables
@@ -31,8 +31,8 @@ The process of data preparation includes several works:
 ### Data types
 In statistics, groups of individual data points may be classified as belonging to any of various [statistical data types](https://en.wikipedia.org/wiki/Statistical_data_type). In the most general form, there are two types of data/variables:
 
-- categorical variables: variables conform only to nominal or ordinal measurements which cannot be reasonably measured numerically; and
-- quantitative variables: variables conform ratio and interval measurements which have numerical nature, either discrete or continuous.
+- **categorical** variables: variables conform only to nominal or ordinal measurements which cannot be reasonably measured numerically; and
+- **quantitative** variables: variables conform ratio and interval measurements which have numerical nature, either discrete or continuous.
 
 [Level of measurement](https://en.wikipedia.org/wiki/Level_of_measurement)
 
