@@ -8,10 +8,25 @@
 
 ## Statistical data
 ### Data preparation
+The process of data preparation includes several works:
+
+- data collection by experimental study or observational study
+- data summarising (also known as descriptive statistics) is considered as a problem of defining what aspects of statistical samples need to be described and how well they can be described from a typically limited sample of data; this work includes:
+  + choosing summary statistics to describe a sample
+  + summarising probability distributions of sample data 
+  + summarising the relationships between different quantities measured on the same items 
+- data interpreting finds the philosophy underlying statistical inference by using different data analytic techniques; this work includes:
+  + summarising populations in the form of a fitted distribution or probability density function
+  + summarising the relationship between variables using some type of regression analysis
+  + providing ways of predicting the outcome of a random quantity given other related variables
+  + examining the possibility of reducing the number of variables being considered within a problem (the task of Dimension Reduction Analysis)
 
 
 ### Data types
+In the most general form, there are two types of data/variables:
 
+- categorical variables: variables conform only to nominal or ordinal measurements which cannot be reasonably measured numerically; and
+- quantitative variables: variables conform ratio and interval measurements which have numerical nature, either discrete or continuous.
 
 
 ## Statistical methods
