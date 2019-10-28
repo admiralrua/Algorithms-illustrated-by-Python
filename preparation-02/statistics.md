@@ -37,22 +37,22 @@ In statistics, groups of individual data points may be classified as belonging t
 
 | Incremental progress | Measure property | Mathematical operators | Central tendency |
 | ---                  | ---              | ---                    | ---              |
-| Nominal  | Classification, membership   | \=, \>\< | Mode            |  
-| Ordinal  | Comparison, level            | \>, \<   | Median          |
+| Nominal  | Classification, membership   | =, \><   | Mode            |  
+| Ordinal  | Comparison, level            | \>, <    | Median          |
 | Interval | Difference, affinity         | \+, \-   | Mean, deviation |
-| Ratio    | Magnitude, amount            | \*, \/   | Geometric mean, coefficient of variation |
+| Ratio    | Magnitude, amount            | \*, /    | Geometric mean, coefficient of variation |
 
 Examples of simple data types:
 
-| Data type                  | Possible values  | Example usage  | Level of measurement |
-| ---                        | ---              | ---            | ---                  |
-| binary                     | 0, 1             | binary outcome | nominal              |
+| Data type                  | Possible values        | Example usage  | Level of measurement |
+| ---                        | ---                    | ---            | ---                  |
+| binary                     | 0, 1                   | binary outcome | nominal              |
 | categorical                | 1, 2,... , n           | categorical outcome | nominal |
 | ordinal                    | integer or real number | relative score      | ordinal |
-| binomial                   | 0, 1,..., $$n$$  | number of success out of $$n$$ possibility | interval |
-| count                      | non-neg. integer | number of items in given interval/area/volume | ratio |
-| real-valued additive       | real number      | anything not varying over a large scale (temperature, relative distance...)   | interval |
-| real-valued multiplicative | pos. real number | anything varying over a large scale (price, income, size...)  | ratio    |
+| binomial                   | 0, 1,..., $$n$$        | number of success out of $$n$$ possibility | interval |
+| count                      | non-negative integer   | number of items in given interval/area/volume | ratio |
+| real-valued additive       | real number            | anything not varying over a large scale (temperature, relative distance...) | interval |
+| real-valued multiplicative | positive real number   | anything varying over a large scale (price, income, size...)  | ratio    |
 
 Examples of multivariate data types:
 
