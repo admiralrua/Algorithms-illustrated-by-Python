@@ -68,7 +68,14 @@ Examples of multivariate data types:
 ## Descriptive statistics
 A descriptive statistic is a summary statistic that quantitatively describes or summarizes features of a data set. Descriptive statistics is distinguished from inferential statistics in that descriptive statistics aims to summarize a sample, rather than use the data to learn about the population that the sample of data is thought to represent. Numerical descriptors include mean and standard deviation for continuous data types, while frequency and percentage are more useful in terms of describing categorical data. The drawing of the sample has been subject to an element of randomness, hence the established numerical descriptors from the sample are also due to uncertainty. 
 
-### Average
+Numerical descriptors in descriptive statistics can be listed as:
+| Property type | Descriptors |
+| ---           | ---         |
+| Center        | **Mean**, **Median**, **Mode**, **Mid-range** |
+| Despersion    | **Variance**, **Standard deviation**, **Coefficient of variation**, **Percentile**, **Range/Interquartile range** |
+
+
+### Mean
 Mean is also called the expected value of a data set. There are several kinds of means in statistics. Let's consider a set of numbers $$x_1, x_2,... , x_n$$.
 
 **Pythagorean means** include three classical means
@@ -89,12 +96,12 @@ By choosing different values for the parameter $$m$$, the following types of mea
 
 | $$m$$ | Type of means |
 | ---   | ---           |
-| $$ m \rightarrow \infy $$  | maximum of $$x_i$$ |
-| $$ m = 2 $$                | quadratic mean     |
-| $$ m = 1 $$                | arithmetic mean    |
-| $$ m \rightarrow 0 $$      | geometric mean     |
-| $$ m = -1 $$               | harmonic mean      |
-| $$ m \rightarrow -\infy $$ | minimum of $$x_i$$ |
+| $$ m \rightarrow \infty $$  | maximum of $$x_i$$ |
+| $$ m = 2 $$                 | quadratic mean     |
+| $$ m = 1 $$                 | arithmetic mean    |
+| $$ m \rightarrow 0 $$       | geometric mean     |
+| $$ m = -1 $$                | harmonic mean      |
+| $$ m \rightarrow -\infty $$ | minimum of $$x_i$$ |
 
 
 **Weighted arithmetic mean**
@@ -104,6 +111,7 @@ $$ \overline{x} = \frac{\sum_{i=1}^n w_i x_i}{\sum_{i=1}^n w_i} $$
 
 The **truncated mean** is the arithmetic mean of data values after a certain number or proportion of the highest and lowest data values have been discarded.
 
+### Median / Mode / Mid-range
 The **median** is the middle value that separates the higher half from the lower half of the data set.
 
 The most frequently occurring values in a data set is called the **mode**.
