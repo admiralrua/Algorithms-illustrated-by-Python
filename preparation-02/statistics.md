@@ -47,13 +47,13 @@ Examples of simple data types:
 
 | Data type                  | Possible values        | Example usage  | Level of measurement |
 | ---                        | ---                    | ---            | ---                  |
-| binary                     | 0, 1                   | binary outcome | nominal              |
-| categorical                | 1, 2,... , n           | categorical outcome | nominal |
-| ordinal                    | integer or real number | relative score      | ordinal |
-| binomial                   | 0, 1,..., $$n$$        | number of success out of $$n$$ possibility | interval |
-| count                      | non-negative integer   | number of items in given interval/area/volume | ratio |
-| real-valued additive       | real number            | anything not varying over a large scale (temperature, relative distance...) | interval |
-| real-valued multiplicative | positive real number   | anything varying over a large scale (price, income, size...)  | ratio    |
+| Binary                     | 0, 1                   | binary outcome | nominal              |
+| Categorical                | 1, 2,... , n           | categorical outcome | nominal |
+| Ordinal                    | integer or real number | relative score      | ordinal |
+| Binomial                   | 0, 1,..., $$n$$        | number of success out of $$n$$ possibility | interval |
+| Count                      | non-negative integer   | number of items in given interval/area/volume | ratio |
+| Real-valued additive       | real number            | anything not varying over a large scale (temperature, relative distance...) | interval |
+| Real-valued multiplicative | positive real number   | anything varying over a large scale (price, income, size...)  | ratio    |
 
 Examples of multivariate data types:
 
@@ -68,26 +68,60 @@ Examples of multivariate data types:
 ## Descriptive statistics
 A descriptive statistic is a summary statistic that quantitatively describes or summarizes features of a data set. Descriptive statistics is distinguished from inferential statistics in that descriptive statistics aims to summarize a sample, rather than use the data to learn about the population that the sample of data is thought to represent. Numerical descriptors include mean and standard deviation for continuous data types, while frequency and percentage are more useful in terms of describing categorical data. The drawing of the sample has been subject to an element of randomness, hence the established numerical descriptors from the sample are also due to uncertainty. 
 
-### Mean
-There are several kinds of means in statistics. Let's consider a set of numbers $$x_1, x_2,... , x_n$$.
+### Average
+Mean is also called the expected value of a data set. There are several kinds of means in statistics. Let's consider a set of numbers $$x_1, x_2,... , x_n$$.
 
-Pythagorean means include three classical means
+**Pythagorean means** include three classical means
 
 | Pythagorean means | Formulation |
 | ---               | ---         |
-| arithmetic        | $$ \overline{x}_A = \frac{x_1 + x_2 + ... + x_n}{n} = \sum_{i=1}^n x_i $$ |
-| geoetri           | $$ \overline{x}_G = (x_1 x_2 ... x_n)^\frac{1}{n} = \left( \prod_{i=1}^n x_i \right )^\frac{1}{n} $$ |
-| harmonic          | $$ \overline{x}_H = n \left( \sum_{i=1}^n \frac{1}{x_i} \right )^{-1} $$ |
+| Arithmetic        | $$ \overline{x}_A = \frac{x_1 + x_2 + ... + x_n}{n} = \sum_{i=1}^n x_i $$ |
+| Geometric         | $$ \overline{x}_G = (x_1 x_2 ... x_n)^\frac{1}{n} = \left( \prod_{i=1}^n x_i \right )^\frac{1}{n} $$ |
+| Harmonic          | $$ \overline{x}_H = n \left( \sum_{i=1}^n \frac{1}{x_i} \right )^{-1} $$ |
 
-  In general, $$ \overline{x}_A \ge \overline{x}_G \ge \overline{x}_H $$.
+In general, $$ \overline{x}_A \ge \overline{x}_G \ge \overline{x}_H $$.
 
-The generalized mean, also known as the power mean, is an abstraction of the quadratic, arithmetic, geometric and harmonic means as follows:
+**The generalized mean**, also known as the power mean, is an abstraction of the quadratic, arithmetic, geometric and harmonic means as follows:
 
 $$ \overline{x} = \left( \frac{1}{n} \sum_{i=1}^n x_i^m \right )^\frac{1}{m} $$
 
 By choosing different values for the parameter $$m$$, the following types of means are obtained:
 
+| $$m$$ | Type of means |
+| ---   | ---           |
+| $$ m \rightarrow \infy $$  | maximum of $$x_i$$ |
+| $$ m = 2 $$                | quadratic mean     |
+| $$ m = 1 $$                | arithmetic mean    |
+| $$ m \rightarrow 0 $$      | geometric mean     |
+| $$ m = -1 $$               | harmonic mean      |
+| $$ m \rightarrow -\infy $$ | minimum of $$x_i$$ |
 
+
+**Weighted arithmetic mean**
+The weighted arithmetic mean (or weighted average) is useful if one wants to combine average values from samples of the same population with different sample sizes:
+
+$$ \overline{x} = \frac{\sum_{i=1}^n w_i x_i}{\sum_{i=1}^n w_i} $$
+
+The **truncated mean** is the arithmetic mean of data values after a certain number or proportion of the highest and lowest data values have been discarded.
+
+The **median** is the middle value that separates the higher half from the lower half of the data set.
+
+The most frequently occurring values in a data set is called the **mode**.
+
+The **mid-range** of a set of statistical data values is the arithmetic mean of the maximum and minimum values in a data set:
+
+$$ M = \frac{\max(x_i) + \min(x_i)}{2} $$
+
+
+### Variance
+
+### Standard deviation
+
+### Coefficient of variation
+
+### Percentile
+
+### Range/Interquartile range
 
 
 ## Inferential statistics
