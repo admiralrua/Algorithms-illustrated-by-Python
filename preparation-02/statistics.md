@@ -68,6 +68,27 @@ Examples of multivariate data types:
 ## Descriptive statistics
 A descriptive statistic is a summary statistic that quantitatively describes or summarizes features of a data set. Descriptive statistics is distinguished from inferential statistics in that descriptive statistics aims to summarize a sample, rather than use the data to learn about the population that the sample of data is thought to represent. Numerical descriptors include mean and standard deviation for continuous data types, while frequency and percentage are more useful in terms of describing categorical data. The drawing of the sample has been subject to an element of randomness, hence the established numerical descriptors from the sample are also due to uncertainty. 
 
+### Mean
+There are several kinds of means in statistics. Let's consider a set of numbers $$x_1, x_2,... , x_n$$.
+
+Pythagorean means include three classical means
+
+| Pythagorean means | Formulation |
+| ---               | ---         |
+| arithmetic        | $$ \overline{x}_A = \frac{x_1 + x_2 + ... + x_n}{n} = \sum_{i=1}^n x_i $$ |
+| geoetri           | $$ \overline{x}_G = (x_1 x_2 ... x_n)^\frac{1}{n} = \left( \prod_{i=1}^n x_i \right )^\frac{1}{n} $$ |
+| harmonic          | $$ \overline{x}_H = n \left( \sum_{i=1}^n \frac{1}{x_i} \right )^{-1} $$ |
+
+  In general, $$ \overline{x}_A \ge \overline{x}_G \ge \overline{x}_H $$.
+
+The generalized mean, also known as the power mean, is an abstraction of the quadratic, arithmetic, geometric and harmonic means as follows:
+
+$$ \overline{x} = \left( \frac{1}{n} \sum_{i=1}^n x_i^m \right )^\frac{1}{m} $$
+
+By choosing different values for the parameter $$m$$, the following types of means are obtained:
+
+
+
 
 ## Inferential statistics
 Statistical inference is the process of using data analysis to deduce properties of an underlying probability distribution. Inferential statistical analysis infers properties of a population. It is assumed that the observed data set is sampled from a larger population. It uses patterns in the sample data to draw inferences about the population represented, accounting for randomness. These inferences may take the form of: answering yes/no questions about the data (hypothesis testing), estimating numerical characteristics of the data (estimation), describing associations within the data (correlation) and modeling relationships within the data (for example, using regression analysis). Inference can extend to forecasting, prediction and estimation of unobserved values either in or associated with the population being studied; it can include extrapolation and interpolation of time series or spatial data, and can also include data mining.
