@@ -64,7 +64,6 @@
     * [Random forest](machine-learning/ensemble-algorithms/random-forest.md)
     * [Gradient boosting](machine-learning/ensemble-algorithms/gradient-boosting-algorithms.md)
 * [\_notyet\_ Data science](data-science/README.md)
-  * [Briefing](data-science/briefing.md)
   * [Data structures](data-science/data-structures.md)
   * [Data exploration](data-science/data-exploration/README.md)
     * [Regression analysis](data-science/data-exploration/regression-analysis.md)
