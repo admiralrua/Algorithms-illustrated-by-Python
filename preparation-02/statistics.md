@@ -69,6 +69,7 @@ Examples of multivariate data types:
 A descriptive statistic is a summary statistic that quantitatively describes or summarizes features of a data set. Descriptive statistics is distinguished from inferential statistics in that descriptive statistics aims to summarize a sample, rather than use the data to learn about the population that the sample of data is thought to represent. Numerical descriptors include mean and standard deviation for continuous data types, while frequency and percentage are more useful in terms of describing categorical data. The drawing of the sample has been subject to an element of randomness, hence the established numerical descriptors from the sample are also due to uncertainty. 
 
 Numerical descriptors in descriptive statistics can be listed as:
+
 | Property type | Descriptors |
 | ---           | ---         |
 | Center        | **Mean**, **Median**, **Mode**, **Mid-range** |
