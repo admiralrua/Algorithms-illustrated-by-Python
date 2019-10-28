@@ -4,6 +4,11 @@
 ## Briefing 
 [Statistics](https://en.wikipedia.org/wiki/Statistics) is the discipline that concerns the collection, organization, displaying, analysis, interpretation and presentation of data.
 
+This section is heavily based on the following references:
+
+- [wiki](https://en.wikipedia.org/wiki/Statistics)
+- [The elements of statistical learning](https://www.amazon.com/Elements-Statistical-Learning-Prediction-Statistics/dp/0387848576) [or here](https://web.stanford.edu/~hastie/ElemStatLearn/)
+
 
 
 ## Statistical data
@@ -11,11 +16,11 @@
 The process of data preparation includes several works:
 
 - data collection by experimental study or observational study
-- data summarising (also known as descriptive statistics) is considered as a problem of defining what aspects of statistical samples need to be described and how well they can be described from a typically limited sample of data; this work includes:
+- data summarising (aka descriptive statistics) is considered as a problem of defining what aspects of statistical samples need to be described and how well they can be described from a typically limited sample of data; this work includes:
   + choosing summary statistics to describe a sample
   + summarising probability distributions of sample data 
   + summarising the relationships between different quantities measured on the same items 
-- data interpreting finds the philosophy underlying statistical inference by using different data analytic techniques; this work includes:
+- data interpreting (aka inferential statistics) finds the philosophy underlying statistical inference by using different data analytic techniques; this work includes:
   + summarising populations in the form of a fitted distribution or probability density function
   + summarising the relationship between variables using some type of regression analysis
   + providing ways of predicting the outcome of a random quantity given other related variables
