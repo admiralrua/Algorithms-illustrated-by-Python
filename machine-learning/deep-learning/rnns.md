@@ -1,4 +1,0 @@
-# RNNs
-
-Recurrent Neural Networks
-

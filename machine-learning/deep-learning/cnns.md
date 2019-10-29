@@ -1,4 +1,0 @@
-# CNNs
-
-Convolutional Neural Networks
-

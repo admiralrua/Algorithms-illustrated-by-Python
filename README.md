@@ -17,13 +17,9 @@ This note reflects what I am studying on Computer Science.
 Main contents of this page include:
 
 * [Data structures and Algorithms](ds-algo/)
-* [\_notyet\_ Machine learning](machine-learning/)
-* [\_notyet\_ Data science](data-science/)
 * [Tips for coding interview](interview.md)
 
 You may need some preparation before diving into the main contents above, please skip those parts if you are already familiar with what they are about:
 
-* [Preparation 01](preparation-01/) Markdown, basic Python and C/C++
-* [Preparation 02](preparation-02/) Basic mathematical foundation for ML/DS and brief introduction for Python packages such as numpy, pandas and matplotlib.
-* [Preparation 03](preparation-03/) Basic algorithms for ML/DS.
+* [Preparation](preparation/) Markdown, basic Python and C/C++
 
