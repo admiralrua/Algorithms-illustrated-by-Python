@@ -3,7 +3,7 @@
 ## Text-to-speech with Python
 A friend of mine taking an English course asked me if it is hard to write a Python script to read-out-loud a list of his learning word list in a random order. It turns out that with just a couple of code line, we can easily do it in the Windows OS computer. This section briefly describes how to do that and provides a piece of code for illustration. 
 
-The code based on Speech API in the Windows OS. Detailed information on that API can be found [here](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ee125077(v=vs.85\)). To invoke this API from Python, this code will help you:
+The code based on Speech API in the Windows OS. Detailed information on that API can be found [here](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ee125077\(v=vs.85\)). To invoke this API from Python, this code will help you:
 
 ```python
 from win32com.client import Dispatch
