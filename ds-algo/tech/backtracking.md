@@ -97,4 +97,11 @@ if __name__ == "__main__":
 {% endtabs %}
 
 
+## Problems for practicing
+- [g4g](https://www.geeksforgeeks.org/backtracking-algorithms/)
+- [leetcode](https://leetcode.com/tag/backtracking/)
+- [hackerearth](https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/)
+- [interviewbit](https://www.interviewbit.com/courses/programming/topics/backtracking/)
+- [techiedelight](https://www.techiedelight.com/Category/backtracking/)
+- [spoj](https://www.spoj.com/problems/tag/backtracking)
 
