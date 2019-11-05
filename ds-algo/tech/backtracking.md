@@ -13,18 +13,15 @@ With the backtracking technique, a problem is solved incrementally. We start fro
 ```python
 solution = {}
 
-procedure backtracking(solution)
-    if complete(solution) then
+def backtracking(solution)
+    if (solution == complete)
         print(solution)
         return
     
-    solution += item
-    backtracking(solution)
-    solution -= item
-    
-    if empty(solution) then
-        print("No more alternative")
-        return    
+    for item in possible_item:
+        solution += item
+        backtracking(solution)
+        solution -= item
 ```
 
 
