@@ -24,8 +24,9 @@ def backtracking(solution)
         solution -= item
 ```
 
-{% tabs %} {% tab title="Intro" %}
-Illustration of the backtracking algorithm to solve the knight tour problem and the $$n$$-queen problem is given here. for 
+{% tabs %} 
+{% tab title="Intro" %}
+Illustration of the backtracking algorithm to solve the knight tour problem and the $$n$$-queen problem is given here. 
 {% endtab %}
 
 {% tab title="Knight's tour" %}
@@ -94,6 +95,10 @@ if __name__ == "__main__":
     solve(board,0,0,move_x,move_y,move)
 ```
 {% endtab %} 
+{% tab title="$$n$$-Queen" %}
+```python
+```
+{% endtab %}
 {% endtabs %}
 
 
