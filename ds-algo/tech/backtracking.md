@@ -10,7 +10,7 @@ A classic example of the use of backtracking is the knight's tour problem that a
 ## Algorithm
 With the backtracking technique, a problem is solved incrementally. We start from an empty solution vector and gradually add items. If the item added violate the problem constraint then we remove the item and try other alternatives for adding. If there is no alternatives then we come back to the previous stage and remove the item added in the previous stage. If we reach the initial stage then actually no solution exists. If adding an item doesn’t violate constraints then we recursively add items one by one. If the solution vector becomes complete then we print the solution. The pseudo-code of the backtracking algorithm can be presented as follows:
 
-```
+```python
 solution = {}
 
 procedure backtracking(solution)
