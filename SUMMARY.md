@@ -45,3 +45,5 @@
   * [Markdown](preparation/markdown.md)
   * [Python](preparation/python-language.md)
   * [\_notyet\_ C/C++](preparation/c-c++.md)
+* [Miscellaneous](miscellaneous.md)
+

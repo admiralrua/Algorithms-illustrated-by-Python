@@ -1,4 +1,4 @@
-# Preparation 01
+# Preparation
 
 When I start beginning more serious on topics in Computer Science, I used Latex for documentation and Python for coding.
 
