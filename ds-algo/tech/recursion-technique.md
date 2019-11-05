@@ -18,7 +18,6 @@ sys.setrecursionlimit(1000000)
 ```
 
 ## Examples
-
 The traditional examples for recursion are to calculate:
 
 * the factorial $$n!$$
