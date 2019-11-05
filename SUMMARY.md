@@ -29,7 +29,7 @@
   * [Popular techniques](ds-algo/tech/README.md)
     * [Two-pointer technique](ds-algo/tech/two-pointer-technique.md)
     * [Recursion technique](ds-algo/tech/recursion-technique.md)
-    * [\_notyet\_ Backtracking](ds-algo/tech/_notyet_-backtracking.md)
+    * [Backtracking](ds-algo/tech/backtracking.md)
     * [\_notyet\_ Bit manipulation](ds-algo/tech/_notyet_-bit-manipulation.md)
     * [\_notyet\_ Greedy algorithm](ds-algo/tech/greedy-algorithm.md)
     * [\_notyet\_ Divide and Conquer](ds-algo/tech/_notyet_-divide-and-conquer.md)
