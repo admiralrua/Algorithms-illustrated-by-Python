@@ -25,6 +25,7 @@ def backtracking(solution)
 ```
 
 {% tabs %} 
+
 {% tab title="Intro" %}
 
 Illustration of the backtracking algorithm to solve the knight tour problem and the $$n$$-queen problem is given here.
