@@ -26,7 +26,7 @@ def backtracking(solution)
 
 {% tabs %} {% tab title="Illustration" %}
 
-Illustration of the backtracking algorithm to solve the knight tour problem is given here.
+Illustrations of the backtracking algorithm to solve the knight tour problem and the $$n$$-Queen are given here. In the first problem, the naive backtracking solution is presented. In the second problem, we combine the backtracking algorithm with the branch-and-bound technique. In the naive backtracking, we backtrack only when we hit a dead end. However, in Branch-and-Bound, after building a partial solution, we figure out that if it is possible to go any deeper or not. By doing that, obvious unacceptatble solutions are eliminated early to save time.
 
 {% endtab %}
 
@@ -37,10 +37,13 @@ import sys
 sys.setrecursionlimit(1000000)
 
 def sol_out(board): 
+    global cnt
+    cnt += 1
+    
     for i in range(n): 
         for j in range(n): print("{:3d}".format(board[i][j]), end = ' ') 
         print() 
-    print("----------")
+    print("----- ", cnt, " -----")
       
 def check(board,new_x,new_y):
     if ((new_x in range(n)) and (new_y in range(n)) and (board[new_x][new_y] == -1)): return True
@@ -80,9 +83,15 @@ if __name__ == "__main__":
       
     # solution 
     board[0][0] = 0                                               # put the knight at the first square
-    move        = 1                                               # number of move of knight         
+    move, cnt   = 1, 0                                            # number of move of knight         
     solve(board,0,0,move_x,move_y,move)                           # Knight's tour
 ```
+
+{% endtab %} 
+
+{% tab title="$$n$$-Queen" %}
+
+$$n$$-Queen problem.
 
 {% endtab %} {% endtabs %}
 
