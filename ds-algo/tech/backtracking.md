@@ -85,11 +85,12 @@ if __name__ == "__main__":
     board[0][0] = 0                                               # put the knight at the first square
     move, cnt   = 1, 0                                            # number of move of knight         
     solve(board,0,0,move_x,move_y,move)                           # Knight's tour
+    if (cnt == 0): print("No solution exists.")
 ```
 
 {% endtab %} 
 
-{% tab title="$$n$$-Queen" %}
+{% tab title="Place of Queens" %}
 
 $$n$$-Queen problem.
 
