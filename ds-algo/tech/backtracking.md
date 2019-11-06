@@ -26,7 +26,16 @@ def backtracking(solution)
 
 {% tabs %} {% tab title="Illustration" %}
 
-Illustrations of the backtracking algorithm to solve the knight tour problem and the $$n$$-Queen are given here. In the first problem, the naive backtracking solution is presented. In the second problem, we combine the backtracking algorithm with the branch-and-bound technique. In the naive backtracking, we backtrack only when we hit a dead end. However, in Branch-and-Bound, after building a partial solution, we figure out that if it is possible to go any deeper or not. By doing that, obvious unacceptatble solutions are eliminated early to save time.
+Illustrations of the backtracking algorithm to solve the knight tour problem and the $$n$$-Queen are given here. 
+
+In the first problem, the naive backtracking solution is presented in which we backtrack only when we hit a dead end
+
+In the second problem, we combine the backtracking algorithm with the branch-and-bound technique. After building a partial solution, we figure out that if it is possible to go any deeper or not. By doing that, obvious unacceptatble solutions are eliminated early to save time. In the $$n$$-Queen problem, the branch-and-bound technique can be illustrated as follows:
+
+- no two queens can place on the same horizontal, vertical or diagonal lines;
+- the first constraint can be automatcically satisfied if we place queen line-by-line;
+- the second constraint can be tracked by a logical vector length $$n$$, a space of alternatives for the next item is reduced one after each placement;
+- the third constraint can be controlled by two logical vectors length $$2 \times n$$ to track the left- and right-inclined diagonals, a space of alternatives for the next item is reduced atleast one after each placement.  
 
 {% endtab %}
 
