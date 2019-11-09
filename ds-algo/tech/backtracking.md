@@ -30,7 +30,7 @@ Illustrations of the backtracking algorithm to solve the knight tour problem and
 
 In the first problem, the naive backtracking solution is presented in which we backtrack only when we hit a dead end
 
-In the second problem, we combine the backtracking algorithm with the branch-and-bound technique. After building a partial solution, we figure out that if it is possible to go any deeper or not. By doing that, obvious unacceptatble solutions are eliminated early to save time. In the $$n$$-Queen problem, the branch-and-bound technique can be illustrated as follows:
+In the second problem, we combine the backtracking algorithm with the [branch-and-bound](https://www.geeksforgeeks.org/branch-and-bound-algorithm/) technique. After building a partial solution, we figure out that if it is possible to go any deeper or not. By doing that, obvious unacceptatble solutions are eliminated early to save time. In the $$n$$-Queen problem, the branch-and-bound technique can be illustrated as follows:
 
 - no two queens can place on the same horizontal, vertical or diagonal lines;
 - the first constraint can be automatcically satisfied if we place queen line-by-line;
