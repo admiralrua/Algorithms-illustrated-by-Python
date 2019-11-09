@@ -37,6 +37,15 @@ In the second problem, we combine the backtracking algorithm with the [branch-an
 - the second constraint can be tracked by a logical vector length $$n$$, a space of alternatives for the next item is reduced one after each placement;
 - the third constraint can be controlled by two logical vectors length $$2 \times n$$ to track the left- and right-inclined diagonals, a space of alternatives for the next item is reduced atleast one after each placement.  
 
+More information and probelms to illustrate the Branch-and-Bound technique can be found in the following links:
+
+- [15-puzzle & knap-sack](http://www.cs.umsl.edu/~sanjiv/classes/cs5130/lectures/bb.pdf) 
+- [8-puzzle & traveling saleman](https://www2.seas.gwu.edu/~bell/csci212/Branch_and_Bound.pdf)
+- [job assignment](https://www.geeksforgeeks.org/job-assignment-problem-using-branch-and-bound/)
+- [traveling saleman](https://www.geeksforgeeks.org/traveling-salesman-problem-using-branch-and-bound-2/)
+
+This is a very useful technique to significantly reduce the search-space toward the correct solution; it would be so cool to be fluent in this technique.
+
 {% endtab %}
 
 {% tab title="Knight's tour" %}
