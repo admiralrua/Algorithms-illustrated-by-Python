@@ -41,9 +41,19 @@ def backtracking(solution)
 
 Illustrations of the backtracking algorithm to solve the knight tour problem, the sum-$$n$$, and the $$n$$-Queen are given here. 
 
-In the first two problems, the naive backtracking solution is presented in which we backtrack only when we hit a dead end
+In the first problem, the naive backtracking solution is presented in which we backtrack only when we hit a dead end
 
-In the second problem, we combine the backtracking algorithm with the [branch-and-bound](https://www.geeksforgeeks.org/branch-and-bound-algorithm/) technique. After building a partial solution, we figure out that if it is possible to go any deeper or not. By doing that, obvious unacceptatble solutions are eliminated early to save time. In the $$n$$-Queen problem, the branch-and-bound technique can be illustrated as follows:
+In the last two problems, we combine the backtracking algorithm with the [branch-and-bound](https://www.geeksforgeeks.org/branch-and-bound-algorithm/) technique. After building a partial solution, we figure out that if it is possible to go any deeper or not. By doing that, obvious unacceptatble solutions are eliminated early to save time. 
+
+In the sum-$$n$$ problem, the branch-and-bound technique can be illustrated as follows:
+
+- use two vectors: $$\mathbf{x}$$ and $$\mathbf{s}$$ 
+- vector $$\mathbf{x}$$ for a solution with a constraint $$x[i] \le x[i+1]$$ 
+- vector $$\mathbf{s}$$ to store the partial sum of the solution vector, $$s[i] = \sum_{j=1}^{i} x[j]$$
+- constraint $$x[i] \le x[i+1]$$ and vector $$\mathbf{s}$$ help reducing a choice of the next element of a solution vector.
+
+
+In the $$n$$-Queen problem, the branch-and-bound technique can be illustrated as follows:
 
 - no two queens can place on the same horizontal, vertical or diagonal lines;
 - the first constraint can be automatcically satisfied if we place queen line-by-line;
@@ -58,47 +68,6 @@ More information and probelms to illustrate the Branch-and-Bound technique can b
 - [traveling saleman](https://www.geeksforgeeks.org/traveling-salesman-problem-using-branch-and-bound-2/) or [here](https://v1study.com/giai-thuat-va-lap-trinh-ky-thuat-nhanh-can.html)
 
 Banch-and-Bound is a very useful technique to significantly reduce the search-space toward the correct solution. It is the best technique to solve some problems in which scanning the whole possible-solution space is a must. Examples will be given later. 
-
-{% endtab %}
-
-{% tab title="sum-$$n$$" %}
-
-**Hint**: use two vectors, vector $$\mathbf{x}$$ for a solution with a constraint $$x[i] \le x[i+1]$$ and an extra vector $$\mathbf{s}$$ in which $$s[i] = \sum_{j=1}^{i} x[j]$$. Constraint $$x[i] \le x[i+1]$$ and vector $$\mathbf{s}$$ help reducing a choice of the next element of a solution vector.
-
-```python
-import sys
-sys.setrecursionlimit(1000000)
-
-def sol_out(k): 
-    global cnt
-    cnt += 1
-    
-    print("{:6d}".format(cnt), end = ' : ') 
-    
-    for i in range(1,k+1): print("{:3d}".format(x[i]), end = ' ') 
-    print()
-       
-def solve(m): 
-    last = (n - s[m-1]) // 2 + 1
-    for i in range(x[m-1],last):
-        x[m] = i
-        s[m] = s[m-1] + i
-        solve(m+1)
-        
-    x[m] = n - s[m-1]
-    sol_out(m)
-      
-if __name__ == "__main__":  
-    # initialization  
-    n = int(input())                                          
-    x = [0 for i in range(n+1)]                                 
-    s = [0 for i in range(n+1)]
-      
-    # solution 
-    cnt  = 0
-    x[0] = 1
-    solve(1)
-```
 
 {% endtab %}
 
@@ -161,6 +130,45 @@ if __name__ == "__main__":
 ```
 
 {% endtab %} 
+
+{% tab title="sum-$$n$$" %}
+
+```python
+import sys
+sys.setrecursionlimit(1000000)
+
+def sol_out(k): 
+    global cnt
+    cnt += 1
+    
+    print("{:6d}".format(cnt), end = ' : ') 
+    
+    for i in range(1,k+1): print("{:3d}".format(x[i]), end = ' ') 
+    print()
+       
+def solve(m): 
+    last = (n - s[m-1]) // 2 + 1
+    for i in range(x[m-1],last):
+        x[m] = i
+        s[m] = s[m-1] + i
+        solve(m+1)
+        
+    x[m] = n - s[m-1]
+    sol_out(m)
+      
+if __name__ == "__main__":  
+    # initialization  
+    n = int(input())                                          
+    x = [0 for i in range(n+1)]                                 
+    s = [0 for i in range(n+1)]
+      
+    # solution 
+    cnt  = 0
+    x[0] = 1
+    solve(1)
+```
+
+{% endtab %}
 
 {% tab title="Place of Queens" %}
 
