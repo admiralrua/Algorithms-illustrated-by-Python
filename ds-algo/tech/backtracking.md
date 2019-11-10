@@ -110,7 +110,7 @@ if __name__ == "__main__":
 
 {% tab title="Place of Queens" %}
 
-```{python}
+```python
 import sys
 sys.setrecursionlimit(1000000)
 
