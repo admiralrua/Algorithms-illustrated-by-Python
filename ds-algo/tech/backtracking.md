@@ -53,7 +53,7 @@ In the sum-$$n$$ problem, the branch-and-bound technique can be illustrated as f
 - constraint $$x[i] \le x[i+1]$$ and vector $$\mathbf{s}$$ help reducing a choice of the next element of a solution vector.
 
 
-In the $$n$$-Queen problem, the branch-and-bound technique can be illustrated as follows:
+In the $$n$$-Queen problem, the branch-and-bound technique is applied as follows:
 
 - no two queens can place on the same horizontal, vertical or diagonal lines;
 - the first constraint can be automatcically satisfied if we place queen line-by-line;
