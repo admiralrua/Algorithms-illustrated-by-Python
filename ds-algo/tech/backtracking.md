@@ -131,7 +131,7 @@ if __name__ == "__main__":
 
 {% endtab %} 
 
-{% tab title="sum-$$n$$" %}
+{% tab title="Sum analysis" %}
 
 ```python
 import sys
