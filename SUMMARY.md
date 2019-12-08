@@ -45,5 +45,6 @@
   * [Markdown](preparation/markdown.md)
   * [Python](preparation/python-language.md)
   * [C/C++](preparation/c-c++.md)
+  * [Syllabus to practice](preparation/syllabus.md)
 * [Miscellaneous](miscellaneous.md)
 
