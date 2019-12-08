@@ -133,12 +133,12 @@ The content of this section is taken from [here](https://people.ksp.sk/~misof/io
 
 - [ ] Algorithm specification, precondition, postcondition, correctness, invariants
 - [ ] Asymptotic analysis of upper complexity bounds (informally if possible)
-- [x] Big O notation
-- [x] Standard complexity classes: constant, logarithmic, linear, O(nlogn), quadratic, cubic, exponential, etc.
+- [x] Big-$$O$$ notation
+- [x] Standard complexity classes: constant, logarithmic, linear, $$O(n \log n)$$, quadratic, cubic, exponential, etc.
 - [ ] Time and space tradeoffs in algorithms
 - [ ] Empirical performance measurements
 - [ ] _Identifying differences among best, average, and worst case behaviors_
-- [ ] _Little o, Omega, and Theta notation_
+- [ ] _Little-$$O$$, Omega, and Theta notation_
 - [ ] _Tuning parameters to reduce running time, memory consumption or other measures of performance_
 - [ ] _Asymptotic analysis of average complexity bounds_
 - [ ] _Using recurrence relations to analyze recursive algorithms_
@@ -164,16 +164,16 @@ The content of this section is taken from [here](https://people.ksp.sk/~misof/io
 - [ ] Simple operations on arbitrary precision integers (addition, subtraction, simple multiplication)
 - [ ] Simple array manipulation (filling, shifting, rotating, reversal, resizing, minimum/maximum, preffix sums, histogram, bucket sort)
 - [ ] Simple string algorithms (e.g., naive substring search)
-- [ ] sequential processing/search and binary search
+- [ ] Sequential processing/search and binary search
 - [ ] Quicksort and Quickselect to find the k-th smallest element
-- [ ] O(n log n) worst-case sorting algorithms (heap sort, merge sort)
+- [ ] $$O(n \log n)$$ worst-case sorting algorithms (heap sort, merge sort)
 - [ ] Traversals of ordered trees (pre-, in-, and post-order)
 - [ ] Depth- and breadth-first traversals
 - [ ] Applications of the depth-first traversal tree, such as topological ordering and Euler paths/cycles
 - [ ] Finding connected components and transitive closures.
 - [ ] Shortest-path algorithms (Dijkstra, Bellman-Ford, Floyd-Warshall)
 - [ ] Minimum spanning tree (Jarnik-Prim and Kruskal algorithms)
-- [ ] O(V E) time algorithm for computing maximum bipartitematching
+- [ ] $$O(VE)$$ time algorithm for computing maximum bipartitematching
 - [ ] Biconnectivity in undirected graphs (bridges, articulation points)
 - [ ] Connectivity in directed graphs (strongly connected components)
 - [ ] Basics of combinatorial game theory, winning and losing positions, minimax algorithm for optimal game playing
