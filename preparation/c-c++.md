@@ -1,6 +1,17 @@
-# \_notyet\_ C/C++
+# \[nyf\] C/C++
 
 This section will briefly summarise basic C++ knowledge that can be useful for the purpose of learning and practicing data structures and algorithms. Extensive reference to C++ can be found elsewhere.
 
-Later :\)
+## C++ code template
+A typical C++ code template looks like:
+
+'''cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    // solution comes here
+}
+'''
 
