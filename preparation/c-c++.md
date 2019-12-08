@@ -91,9 +91,9 @@ freopen("output.txt", "w", stdout);
 ```
 
 
-## Numbers, `int`, `long`, `float`
+## Numbers `int`, `long`, `float`
 ### Integers
-The most used integer type is `int` which is 32-bit type with a value range of $$-2^{31} \dots 2^{31}-1$$
+The most used integer type is `int` which is 32-bit type with a value range of $$-2^{31} \dots 2^{31}-1$$ or about $$-2\*10^{9} \dots 2\*10^{9}$$. If the type `int` is not enough, the 64-bit type `long long` can be used with a value range of $$-2^{63} \dots 2^{63}-1$$ or about $$-9\*10^{18} \dots 9\*10^{18}$$.
 
 
 
