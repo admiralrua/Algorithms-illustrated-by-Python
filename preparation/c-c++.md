@@ -5,7 +5,7 @@ This section will briefly summarise basic C++ knowledge that can be useful for t
 ## C++ code template
 A typical C++ code template looks like:
 
-'''c
+```c
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -13,5 +13,5 @@ using namespace std;
 int main() {
     // solution comes here
 }
-'''
+```
 
