@@ -93,8 +93,91 @@ freopen("output.txt", "w", stdout);
 
 ## Numbers `int`, `long`, `float`
 ### Integers
-The most used integer type is `int` which is 32-bit type with a value range of $$-2^{31} \dots 2^{31}-1$$ or about $$-2*10^{9} \dots 2*10^{9}$$. If the type `int` is not enough, the 64-bit type `long long` can be used with a value range of $$-2^{63} \dots 2^{63}-1$$ or about $$-9*10^{18} \dots 9*10^{18}$$.
+The most used integer type is `int` which is 32-bit type with a value range of $$-2^{31} \dots 2^{31}-1$$ or about $$-2*10^{9} \dots 2*10^{9}$$. If the type `int` is not enough, the 64-bit type `long long` can be used with a value range of $$-2^{63} \dots 2^{63}-1$$ or about $$-9*10^{18} \dots 9*10^{18}$$. The following code defines a long long variable (becareful to include the suffix `LL`):
 
+```c
+long long x = 135792468123456789LL
+```
+
+### Floating point numbers
+The usual floating point types are the 64-bit `double` and, as an extension in the g++ compiler, the 80-bit `long double`. In most cases, `double` is enough, but `long double` is more accurate. The required precision of the answer is usually given in the problem statement. An easy way to output the answer is to use the `printf` function.
+
+```c
+double x = 0.3*3+0.1;
+printf("%.20f\n", x);
+```
+
+A difficulty when using floating point numbers is that some numbers cannot be represented accurately as floating point numbers, and there will be rounding errors, therefore it is risky to compare floating point numbers with the `==` operator. A better way to compare floating point numbers is to assume that two numbers are equal if the difference between them is less a small number.
+
+```c
+if (abs(a-b) < 1e-9) {
+    // a and b are equal
+}
+```
+
+
+## Shortening code
+Short code is ideal in competitive programming, hence shorter names are normally defined for datatypes and other parts of code.
+
+### Type name
+Using the command `typedef` it is possible to give a shorter name to a datatype.
+
+```c
+typedef long long ll;
+long long a = 123456789;
+ll b = 987654321;
+cout << a*b << "\n";
+```
+
+The command `typedef` can also be used with more complex types.
+
+```c
+typedef vector<int> vi;
+typedef pair<int,int> pi;
+```
+
+### Macros
+Another way to shorten code is to define **macros**. A macro means that certain strings in the code will be changed before the compilation. In C++, macros are defined using the `#define` keyword. For example, we can define the following macros:
+
+```c
+#define F first
+#define S second
+#define PB push_back
+#define MP make_pair
+```
+
+then the code:
+
+```c
+v.push_back(make_pair(y1,x1));
+v.push_back(make_pair(y2,x2));
+int d = v[i].first+v[i].second;
+```
+
+can be shorted as follows:
+
+```c
+v.PB(MP(y1,x1));
+v.PB(MP(y2,x2));
+int d = v[i].F+v[i].S;
+```
+
+A macro can also have parameters which makes it possible to shorten loops and other structures as follows:
+
+```c
+// Define a macro
+#define REP(i,a,b) for (int i = a; i <= b; i++)
+
+// Original code
+for (int i = 1; i <= n; i++) {
+    search(i);
+}
+
+// Shoertened version
+REP(i,1,n) {
+    search(i);
+}
+```
 
 
 
