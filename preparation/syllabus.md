@@ -118,9 +118,123 @@ The content of this section is taken from [here](https://people.ksp.sk/~misof/io
 - [ ] Some competition tasks may involve a dialog with a reactive environment. Implementing such an interaction with the provided environment is necessary.
 
 
+### Algorithms and complexity
+#### Basic algorithmic analysis
 
+- [ ] Algorithm specification, precondition, postcondition, correctness, invariants
+- [ ] Asymptotic analysis of upper complexity bounds (informally if possible)
+- [x] Big O notation
+- [x] Standard complexity classes: constant, logarithmic, linear, O(nlogn), quadratic, cubic, exponential, etc.
+- [ ] Time and space tradeoffs in algorithms
+- [ ] Empirical performance measurements.
+- [ ] Identifying differences among best, average, and worst case behaviors,
+- [ ] Little o, Omega, and Theta notation,
+- [ ] Tuning parameters to reduce running time, memory consumption or other measures of performance
 
+#### Algorithmic strategies
 
+- [ ] Simple loop design strategies
+- [ ] Brute-force algorithms (exhaustive search)
+- [ ] Greedy algorithms
+- [ ] Divide-and-conquer
+- [ ] Backtracking (recursive and non-recursive), Branch-and-bound
+- [ ] Dynamic programming12
+- [ ] Heuristics
+- [ ] Finding good features for machine learning tasks13
+- [ ] Discrete approximation algorithms
+- [ ] Randomized algorithms.
+- [ ] Clustering algorithms (e.g. k-means, k-nearest neighbor)
+- [ ] Minimizing multi-variate functions using numerical approaches.
 
+#### Algorithms
 
+- [ ] Simple algorithms involving integers: radix conversion, Euclid's algorithm, primality test by $$O(\sqrt{n})$$ trial division, Sieve of Eratosthenes, factorization (by trial division or a sieve), efficient exponentiation
+- [ ] Simple operations on arbitrary precision integers (addition, subtraction, simple multiplication)
+- [ ] Simple array manipulation (filling, shifting, rotating, reversal, resizing, minimum/maximum, preffix sums, histogram, bucket sort)
+- [ ] Simple string algorithms (e.g., naive substring search)
+- [ ] sequential processing/search and binary search
+- [ ] Quicksort and Quickselect to find the k-th smallest element
+- [ ] O(n log n) worst-case sorting algorithms (heap sort, merge sort)
+- [ ] Traversals of ordered trees (pre-, in-, and post-order)
+- [ ] Depth- and breadth-first traversals
+- [ ] Applications of the depth-first traversal tree, such as topological ordering and Euler paths/cycles
+- [ ] Finding connected components and transitive closures.
+- [ ] Shortest-path algorithms (Dijkstra, Bellman-Ford, Floyd-Warshall)
+- [ ] Minimum spanning tree (Jarnik-Prim and Kruskal algorithms)
+- [ ] O(V E) time algorithm for computing maximum bipartitematching
+- [ ] Biconnectivity in undirected graphs (bridges, articulation points)
+- [ ] Connectivity in directed graphs (strongly connected components)
+- [ ] Basics of combinatorial game theory, winning and losing positions, minimax algorithm for optimal game playing
+- [ ] Maximum flow. Flow/cut duality theorem.
+- [ ] Lexicographical BFS, maximum adjacency search and their properties
 
+#### Data structures
+
+- [x] Stacks and queues
+- [x] Representations of graphs (adjacency lists, adjacency matrix)
+- [x] Binary heap data structures
+- [x] Representation of disjoint sets: the Union-Find data structure
+- [ ] Statically balanced binary search trees. Instances of this include binary index trees (also known as Fenwick trees) and segment trees (also known as interval trees and tournament trees)
+- [ ] Balanced binary search trees
+- [ ] Augmented binary search trees
+- [ ] O(logn) time algorithms for answering lowest common ancestor queries in a static rooted tree
+- [ ] Creating persistent data structures by path copying or using fat nodes
+- [ ] Composition of data structures, e.g. 2-D statically balanced binary trees
+- [x] Nesting of data structures, such as having a sequence of sets
+- [x] Tries
+- [ ] String algorithms and data structures: there is evidence that the inter-reducibility between KMP, Rabin-Karp hashing, suffix arrays/tree, suffix automaton, and Aho-Corasick makes them difficult to separate
+- [ ] Heavy-light decomposition and separator structures for static trees
+- [ ] Data structures for dynamically changing trees and their use in graph algorithms
+- [ ] Complex heap variants such as binomial and Fibonacci heaps
+- [ ] Using and implementing hash tables (incl. strategies to resolve collisions)
+
+#### Automata and grammars
+
+- [ ] Understanding a simple grammar in Backus-Naur form
+- [ ] Formal definition and properties of finite-state machines
+
+#### Advanced algorithmic analysis
+
+- [ ] Amortized analysis
+- [ ] Online algorithms
+- [ ] Randomized algorithms
+- [ ] Cryptographic algorithms __???__
+- [ ] Parallel algorithms __???__
+
+#### Geometric algorithms
+
+- [ ] Representing points, vectors, lines, line segments
+- [ ] Checking for collinear points, parallel/orthogonal vectors and clockwise turns (for example, by using dot products and cross products)
+- [ ] Intersection of two lines
+- [ ] Computing the area of a polygon from the coordinates of its vertices
+- [ ] Checking whether a (general/convex) polygon contains a point
+- [ ] Coordinate compression
+- [ ] O(n log n) time algorithms for convex hull
+- [ ] Sweeping line method
+
+## Software engineering
+### Software design
+
+- [ ] Fundamental design concepts and principles
+- [ ] Design patterns
+- [ ] Structured design
+
+### Using APIs
+- [ ] API (Application Programming Interface) programming
+
+### Software tools and environments
+
+- [x] Programming environments, incl. IDE, to write and edit program texts, compile, execute and debug program
+
+### Software validation
+
+- [ ] Testing fundamentals, including test plan creation and test case generation
+- [ ] Black-box and white-box testing techniques
+- [ ] Unit, integration, validation, and system testing
+- [ ] Inspections
+
+### Software project management
+
+- [ ] Project scheduling (especially time management)
+- [ ] Risk analysis
+- [ ] Software configuration management
