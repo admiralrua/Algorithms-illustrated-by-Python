@@ -32,7 +32,7 @@ The code can be compiled with the `g++` compiler using the following command:
 g++ -std=c++11 -O2 -Wall code_file_name.cpp -o app_name
 ```
 
-This command produces a binary file `app_name` fron the source code `code_file_name.cpp` following the C++11 standard `-std=c++11` with an optimisation `-O2` and warnings about possible errors `-Wall`.
+This command produces a binary file `app_name` from the source code `code_file_name.cpp` following the C++11 standard `-std=c++11` with an optimisation `-O2` and warnings about possible errors `-Wall`.
 
 
 ## Input and Output
@@ -72,7 +72,7 @@ int a = 123, b = 456;
 printf("%d %d\n", a, b);
 ```
 
-Sometimes the program should read a whole line from the input, possibly containing spaces. This can be accomplished by using the `getline` function; and, if the amount of data is unknown, the `while loop` is useful:
+Sometimes, the program should read a whole line from the input, possibly containing spaces. This can be accomplished by using the `getline` function; and, if the amount of data is unknown, the `while loop` is useful:
 
 ```c
 string s;
@@ -89,3 +89,20 @@ Sometimes, it is convenient during testing to read the input from the file `inpu
 freopen("input.txt", "r", stdin);
 freopen("output.txt", "w", stdout);
 ```
+
+
+## Numbers, `int`, `long`, `float`
+### Integers
+The most used integer type is `int` which is 32-bit type with a value range of $$-2^{31} \dots 2^{31}-1$$
+
+
+
+
+
+
+
+
+
+
+
+
