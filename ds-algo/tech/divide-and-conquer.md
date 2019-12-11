@@ -1,2 +1,2 @@
-# \_notyet\_ Divide and Conquer
+# Divide and Conquer
 

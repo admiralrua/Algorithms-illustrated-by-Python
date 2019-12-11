@@ -1,4 +1,4 @@
-# \_notyet\_ Red-Black tree
+# Red-Black tree
 
 Reserved ^^
 

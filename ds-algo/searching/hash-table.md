@@ -1,2 +1,2 @@
-# \_notyet\_ Hash table
+# Hash table
 

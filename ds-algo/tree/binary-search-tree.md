@@ -1,4 +1,4 @@
-# \_notyet\_ Binary search tree
+# Binary search tree
 
 Reserved ^^
 

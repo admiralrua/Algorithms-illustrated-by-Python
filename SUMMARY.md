@@ -32,7 +32,7 @@
     * [Recursion technique](ds-algo/tech/recursion-technique.md)
     * [Backtracking](ds-algo/tech/backtracking.md)
     * [Bit manipulation](ds-algo/tech/bit-manipulation.md)
-    * [Sorting](ds-algo/sorting.md)
+    * [Sorting](ds-algo/tech/sorting.md)
     * [Greedy algorithm](ds-algo/tech/greedy-algorithm.md)
     * [Divide and Conquer](ds-algo/tech/divide-and-conquer.md)
     * [Dynamic programming](ds-algo/tech/dynamic-programming.md)

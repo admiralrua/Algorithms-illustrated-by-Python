@@ -1,2 +1,2 @@
-# \_notyet\_ Segment tree
+# Segment tree
 

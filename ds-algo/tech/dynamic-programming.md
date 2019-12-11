@@ -1,4 +1,4 @@
-# \_notyet\_ Dynamic programming
+# Dynamic programming
 
 ## Briefing
 

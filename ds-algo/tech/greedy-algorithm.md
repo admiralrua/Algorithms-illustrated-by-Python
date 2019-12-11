@@ -13,10 +13,10 @@ Greedy is an algorithmic paradigm that builds up a solution piece by piece, alwa
 
 ## Illustration
 
-- [problem 4](https://www.geeksforgeeks.org/job-sequencing-problem/)
-- [problem 1](https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/)
-- [problem 2](https://www.geeksforgeeks.org/water-connection-problem/)
-- [problem 3](https://www.geeksforgeeks.org/minimum-swaps-bracket-balancing/)
+* [problem 4](https://www.geeksforgeeks.org/job-sequencing-problem/)
+* [problem 1](https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/)
+* [problem 2](https://www.geeksforgeeks.org/water-connection-problem/)
+* [problem 3](https://www.geeksforgeeks.org/minimum-swaps-bracket-balancing/)
 
 ## Problems for practice
 

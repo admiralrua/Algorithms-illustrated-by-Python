@@ -1,2 +1,2 @@
-# \_notyet\_ Connected components
+# Connected components
 

@@ -1,2 +1,2 @@
-# \_notyet\_ Linked-list
+# Linked-list
 

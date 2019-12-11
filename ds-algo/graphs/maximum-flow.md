@@ -1,4 +1,4 @@
-# \_notyet\_ Maximum flow
+# Maximum flow
 
 ### Flow networks
 
