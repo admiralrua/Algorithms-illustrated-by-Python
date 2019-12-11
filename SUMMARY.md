@@ -23,6 +23,7 @@
     * [Graph traversal](ds-algo/graphs/elementary-algorithms.md)
     * [Shortest paths](ds-algo/graphs/shortest-paths.md)
     * [Minimum spanning trees](ds-algo/graphs/spanning-trees.md)
+    * [Topological sort](ds-algo/graphs/topo-sort.md)
     * [Connected components](ds-algo/graphs/connected-components.md)
     * [Maximum flow](ds-algo/graphs/maximum-flow.md)
     * [Miscellaneous](ds-algo/graphs/miscellaneous.md)
