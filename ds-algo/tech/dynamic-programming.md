@@ -28,7 +28,7 @@ The bottom-up and top-down approaches can be illustrated through the Fibonacci p
 {% tab title="Induction formulae" %}
 The $$n$$-th Fibonacci number is defined as: 
 
-    $$ f[0] = 0; \quad f[1] = 1; \quad f[n] = f[n-1] + f[n-2]$$
+  $$ f[0] = 0; \quad f[1] = 1; \quad f[n] = f[n-1] + f[n-2]$$
 
 {% endtab %}
 
@@ -76,6 +76,7 @@ print(fibonacci_ite2(n))
   
 It will take time to have a good feeling about DP. The next sections will provide illustrations for several DP problems to help the reader be familiar with the technique. A simple trick is using paper-and-pen to solve a sub-problem with a gradually-increasing size to come up with the inductive formulae. Once you have the formulae, coding is not that difficult anymore. 
 
+
 ## Illustration 01: Staircase and Coin-change
 In this type of problems, the DP solution can be stored in a 1-dimensional array.
 
@@ -84,9 +85,57 @@ Problem statement: there is a staircase with $$N$$ steps ($$N$$ is a positive in
 
 Induction formulae: $$ path[0] = 1; \quad path[1] = 1; \quad path[n] = path[n-1] + path[n-2]$$ with $$n$$ is the number of steps of the staircase at the time of consideration and $$path$$ is the number of paths to go from the ground to the $$n$$-th step.
 
-## Coin-change problem
-A rather similar problem to the staircase problem is the coin-change problem. Problem statement: given an amount of money and $$N$$ type of coins (with the unlimited amount of each coins). Count and print out the number of coin changes.
+### Coin-change problem
+A rather similar problem to the staircase problem is the coin-change problem. Problem statement: given an amount of money $$total$$ and $$n$$ type of coins (with the unlimited amount of each coins). Count and print out the number of coin changes.
 
+{% tabs %}
+
+{% tab title="Methodology" %}
+Let's do it by hand the following steps:
+
+- arrange the coins from the smallest to the largest value
+- at the first step, assume that you can use only the smallest coin to build up the amount $$total$$
+- at each next steps, gradually add one more type of coin and recalculate the number of way to build up the amount $$total$$
+- then you can find the induction formulae.
+
+```python
+total = 29
+n = 4
+coins = [2, 3, 5, 7, 11]
+numbs = coinchange(total, n, coins)
+print("Number of solution : ", numbs)
+result = []
+if numbs > 0: solprint(result, total, n, coins, 0)
+```
+{% endtab %}
+
+{% tab title="Induction formulae" %}
+```python
+def coinchange(total, n, coins):
+    result = [0] * (total + 1)
+    result[0] = 1
+
+    for i in range(n):
+        for j in range(coins[i], total + 1):
+            result[j] += result[j - coins[i]]
+    return result[total]
+```
+{% endtab %}
+
+{% tab title="Print out solution" %}
+To list all possible solutions of this problem, one may use the backtracking technique. Assume that you have to use the smallest coins to build up the total $$amount$$ (in fact, it may be possible that you can not build up $$total$$ by only using the smallest coin; but this does not matter at all). Then gradually take out coin by coin and check if any coin of large values can be put in.
+
+```python
+def solprint(result, total, n, coins, pos):
+    if total == 0: print(*result)
+
+    for i in range(pos, n):
+        if total >= coins[i]:
+            result.append(coins[i])
+            solprint(result, total - coins[i], n, coins, i)
+            result.pop()
+```
+{% endtab %}{% endtabs %}
 
 
 ## Problems for practice
