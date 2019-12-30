@@ -149,6 +149,47 @@ The following problems from different sources can be used to practice:
 - [uva_Ingenuous cubrency](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2078)
 
 
+## Ilustration 02: Longest common subsequence and Longest increasing subsequence
+### Longest common subsequence
+Given two strings, find their longest common subsequence (the characters are not required to be adjacent).
+
+![Longest common subsequence](../../.gitbook/assets/dp_lcs.png)
+
+{% tabs %}
+
+{% tab title="Methodology" %}
+
+{% endtab %}
+
+{% tab title="Top-down" %}
+
+{% endtab %}
+
+{% tab title="Bottom-up" %}
+
+{% endtab %}
+
+{% tab title="Print out solution" %}
+
+{% endtab %}{% endtabs %}
+
+
+### Longest increasing subsequence
+
+
+### Problems for practice
+The following problems from different sources can be used to practice:
+
+- [spoj_Cross country](https://vn.spoj.com/problems/CRSCNTRY/)
+- [uva_Compromise](https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=472)
+- [spoj_Aibohphobia](https://www.spoj.com/problems/AIBOHP/)
+- [g4g_lcs 3-string](https://www.geeksforgeeks.org/lcs-longest-common-subsequence-three-strings/)
+- [lightoj_Love calculator](https://vjudge.net/problem/LightOJ-1013)
+- [spoj_Advanced fruits](https://www.spoj.com/problems/ADFRUITS/)
+- [cf_Palindromic characteristics](https://codeforces.com/contest/835/problem/D)
+
+
+
 
 ## Evan further problems for practice
 
@@ -159,4 +200,3 @@ The following problems from different sources can be used to practice:
 * [geeksforgeeks](https://practice.geeksforgeeks.org/explore/?category%5B%5D=Dynamic%20Programming&page=1&sortBy=accuracy)
 * [spoj](https://www.spoj.com/problems/tag/dynamic-programming)
 * [usejournal](https://blog.usejournal.com/top-50-dynamic-programming-practice-problems-4208fed71aa3)
-* 
