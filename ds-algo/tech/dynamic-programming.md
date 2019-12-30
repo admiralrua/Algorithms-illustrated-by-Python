@@ -23,12 +23,15 @@ Nevertheless, the core of the dynamic programming technique is, first, finding t
 
 The bottom-up and top-down approaches can be illustrated through the Fibonacci problems as follows:
 
-{% tabs %} {% tab title="Induction formulae" %}
+{% tabs %}
+
+{% tab title="Induction formulae" %}
 The $$n$$-th Fibonacci number is defined as: 
 
 $$ f[0] = 0; \quad f[1] = 1; \quad f[n] = f[n-1] + f[n-2]$$
 
 {% endtab %}
+
 {% tab title="Top-down approach" %}
 ```python
 n = 100
@@ -46,6 +49,7 @@ def fibonacci_rec(n):
 print(fibonacci_rec(n))        
 ```
 {% endtab %}
+
 {% tab title="Top-down approach" %}
 ```python
 n = 100
@@ -66,7 +70,8 @@ def fibonacci_ite2(n):
 print(fibonacci_ite1(n))
 print(fibonacci_ite2(n))
 ```
-{% endtab %}{% endtab %}
+{% endtab %}
+{% endtab %}
   
 It will take time to have a good feeling about DP. The next sections will provide illustrations for several DP problems to help the reader be familiar with the technique. A simple trick is using paper-and-pen to solve a sub-problem with a gradually-increasing size to come up with the inductive formulae. Once you have the formulae, coding is not that difficult anymore. 
 
