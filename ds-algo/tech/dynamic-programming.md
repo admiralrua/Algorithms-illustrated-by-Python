@@ -275,7 +275,7 @@ print_lis_dp(a, length, last, path)
 {% endtab %}
 
 {% tab title="Naive DP" %}
-Time complexity: $$O(n^2)$$
+Naive DP solution has the time complexity of $$O(n^2)$$.
 
 ![Longest common subsequence](../../.gitbook/assets/dp_lis_sol.png)
 
@@ -313,7 +313,11 @@ def print_lis_dp(a, length, last, path):
 {% endtab %}
 
 {% tab title="DP + binary-search" %}
-Time complexity: $$O(n \log{n})$$
+This algorithm bases on the idea of Solitaire game in which all of the elements of the array is considered, suitable items are added into the solution list whereas currently unsuitable items are stored in the waiting list. Following this idea, of all subsequences with the same length, only the smallest item is stored becasue it has a bigger chance to be extended $$result$$. The binary search algorithm can be combined to reduce the time complexity to $$O(n \log{n})$$.
+
+![Longest common subsequence](../../.gitbook/assets/dp_lis_bs.png)
+
+The implementation of this algorithm is given below. Please noted that the $$result$$ array stores the location of the item. The $$path$$ array is used to trace back the final result. Please take a look at the results obtained by the naive DP algorithm and the DP + binary-search algorithm to see the difference of the chosen item in the final result.
 
 ```python
 def find_last(a, sub, n, x):
