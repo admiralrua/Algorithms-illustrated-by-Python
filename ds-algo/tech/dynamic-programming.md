@@ -274,9 +274,11 @@ print_lis_dp(a, length, last, path)
 ```
 {% endtab %}
 
-{% tab title="$$Naive DP$$" %}
+{% tab title="Naive DP" %}
 Time complexity: $$O(n^2)$$
+
 ![Longest common subsequence](../../.gitbook/assets/dp_lis_sol.png)
+
 ```python
 def lis_dp(a):
     path = [-1] * len(a)
@@ -310,8 +312,9 @@ def print_lis_dp(a, length, last, path):
 ```
 {% endtab %}
 
-{% tab title="$$DP + binary-search$$" %}
+{% tab title="DP + binary-search" %}
 Time complexity: $$O(n \log{n})$$
+
 ```python
 def find_last(a, sub, n, x):
     left = 0
