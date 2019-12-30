@@ -312,8 +312,8 @@ def print_lis_dp(a, length, last, path):
 ```
 {% endtab %}
 
-{% tab title="DP + binary-search" %}
-This algorithm bases on the idea of Solitaire game in which all of the elements of the array is considered, suitable items are added into the solution list whereas currently unsuitable items are stored in the waiting list. Following this idea, of all subsequences with the same length, only the smallest item is stored becasue it has a bigger chance to be extended $$result$$. The binary search algorithm can be combined to reduce the time complexity to $$O(n \log{n})$$.
+{% tab title="DP + Binary-search" %}
+The same methodology used in the naive DP is used. However, this algorithm is improved based on the idea of Solitaire game in which all of the elements of the array is considered, suitable items are added into the solution list whereas currently unsuitable items are stored in the waiting list. Following this idea, of all subsequences with the same length, only the smallest item is stored (in $$result$$) becasue it has a bigger chance to be extended. The binary search algorithm can be combined to reduce the time complexity to $$O(n \log{n})$$.
 
 ![Longest common subsequence](../../.gitbook/assets/dp_lis_bs.png)
 
@@ -356,13 +356,13 @@ def lis_bs(a):
             path[i] = result[pos-1]
             result[pos] = i
 
-    return length, result, path
+    return length, result[length-1], path
 
 
-def print_lis_bs(a, length, result, path):
+def print_lis_bs(a, length, last, path):
     print(length)
     b = []
-    i = result[length-1]
+    i = last
     while i != -1:
         b.append(a[i])
         i = path[i]
