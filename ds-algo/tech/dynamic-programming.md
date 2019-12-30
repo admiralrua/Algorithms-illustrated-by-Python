@@ -28,7 +28,7 @@ The bottom-up and top-down approaches can be illustrated through the Fibonacci p
 {% tab title="Induction formulae" %}
 The $$n$$-th Fibonacci number is defined as: 
 
-$$ f[0] = 0; \quad f[1] = 1; \quad f[n] = f[n-1] + f[n-2]$$
+    $$ f[0] = 0; \quad f[1] = 1; \quad f[n] = f[n-1] + f[n-2]$$
 
 {% endtab %}
 
@@ -39,6 +39,7 @@ result = [0] * (n+1)
 
 result[0] = 0
 result[1] = 1
+
 def fibonacci_rec(n):
     if n <= 1: return n
     if result[n] != 0: return result[n]
@@ -50,10 +51,11 @@ print(fibonacci_rec(n))
 ```
 {% endtab %}
 
-{% tab title="Top-down approach" %}
+{% tab title="Bottom-up approach" %}
 ```python
 n = 100
 result = [0] * (n+1) 
+
 def fibonacci_ite1(n):
     result[0] = 0
     result[1] = 1
