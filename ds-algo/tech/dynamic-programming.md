@@ -266,8 +266,8 @@ The main idea to solve this problem can be summarised as follows:
 ```python
 a = [2,5,12,3,10,6,8,14,4,11,7,15]
 
-length, result, path = lis_bs(a)
-print_lis_bs(a, length, result, path)
+length, last, path = lis_bs(a)
+print_lis_bs(a, length, last, path)
 
 length, last, path = lis_dp(a)
 print_lis_dp(a, length, last, path)
