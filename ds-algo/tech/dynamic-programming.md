@@ -151,7 +151,7 @@ The following problems from different sources can be used to practice:
 
 ## Ilustration 02: Longest common subsequence and Longest increasing subsequence
 ### Longest common subsequence
-Given two strings with the length of $$(m, n)$$, find their longest common subsequence (the characters are not required to be adjacent).
+Problem statement: given two strings with the length of $$(m, n)$$, find their longest common subsequence (the characters are not required to be adjacent).
 
 ![Longest common subsequence](../../.gitbook/assets/dp_lcs.png)
 
@@ -251,7 +251,21 @@ def print_lcs(s1,s2,lcs):
 {% endtab %}{% endtabs %}
 
 ### Longest increasing subsequence
+Problem statement: given an array of random integers, find the longest subsequence of increasing number. 
 
+![Longest common subsequence](../../.gitbook/assets/dp_lcs.png)
+
+{% tabs %}
+
+{% tab title="Methodology" %}
+{% endtab %}
+
+{% tab title="$$O(n^2)$$" %}
+{% endtab %}
+
+{% tab title="$$O(n \log{n})$$" %}
+
+{% endtab %}{% endtabs %}
 
 ### Problems for practice
 The following problems from different sources can be used to practice:
