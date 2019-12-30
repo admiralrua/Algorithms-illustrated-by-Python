@@ -151,28 +151,104 @@ The following problems from different sources can be used to practice:
 
 ## Ilustration 02: Longest common subsequence and Longest increasing subsequence
 ### Longest common subsequence
-Given two strings, find their longest common subsequence (the characters are not required to be adjacent).
+Given two strings with the length of $$m, n$$, find their longest common subsequence (the characters are not required to be adjacent).
 
 ![Longest common subsequence](../../.gitbook/assets/dp_lcs.png)
 
 {% tabs %}
 
 {% tab title="Methodology" %}
+Solution: compare character-by-character from two strings, then we have two possibilities:
 
+- if the two characters are identical, the result will increase and this character is chosen;
+- if the two characters are different, we need to consider two cases: (1) each character of the first string to compare with characters from the second string, and (2) vice versa. The maximum of these two cases will be used.
+
+This solution is illustrated through the naive recursive function as follows:
+
+```python
+def lcs_recursive(s1,s2,i1,i2):
+    if (i1 == 0) or (i2 == 0):
+        return 0
+    elif s1[i1-1] == s2[i2-1]:
+        return 1 + lcs_recursive(s1,s2,i1-1,i2-1)
+    else:
+        return max(lcs_recursive(s1,s2,i1-1,i2), lcs_recursive(s1,s2,i1,i2-1))
+```
+
+Time complexity of this implementation is $$O(2^{m+n})$$. To reduce the time complexity of the solution to $$O(m \times n)$$, the dynamic programming is used with exactly the same methodology. Additionally, the intermedia results are stored for reuse. 
+
+```python
+s1 = 'ABCDEFGHI'
+s2 = 'AECDGI'
+
+print(lcs_recursive(s1,s2,len(s1),len(s2)), end = ' vs ')
+
+lcs = [[-1 for i in range(len(s2) + 1)] for i in range(len(s1) + 1)]
+print(dp_down(s1,s2,len(s1),len(s2)), end = ' vs ')
+
+lcs = [[0 for i in range(len(s2) + 1)] for i in range(len(s1) + 1)]
+print(dp_up(s1,s2))
+
+print_lcs(s1, s2, lcs)
+```
 {% endtab %}
 
-{% tab title="Top-down" %}
-
+{% tab title="Top-down approach" %}
+```python
+def dp_down(s1,s2,i1,i2):
+    if (i1 == 0) or (i2 == 0):
+        return 0
+    if lcs[i1-1][i2-1] != -1:
+        return lcs[i1-1][i2-1]
+    if s1[i1-1] == s2[i2-1]:
+        lcs[i1-1][i2-1] = 1 + dp_down(s1,s2,i1-1,i2-1)
+        return lcs[i1-1][i2-1]
+    else:
+        lcs[i1-1][i2-1] =  max(dp_down(s1,s2,i1-1,i2), dp_down(s1,s2,i1,i2-1))
+        return lcs[i1-1][i2-1]
+```       
 {% endtab %}
 
-{% tab title="Bottom-up" %}
+{% tab title="Bottom-up approach" %}
+```python
+def dp_up(s1,s2):
+    ls1 = len(s1)
+    ls2 = len(s2)
+    for i in range(1,ls1+1):
+        for j in range(1,ls2+1):
+            if s1[i-1] == s2[j-1]:
+                lcs[i][j] = lcs[i-1][j-1] + 1
+            else:
+                lcs[i][j] = max(lcs[i-1][j],lcs[i][j-1])
 
+    return lcs[ls1][ls2]
+```
 {% endtab %}
 
 {% tab title="Print out solution" %}
+The subsequence can be found based on the result table from the dynamic programing calculation. We start from the index $$(m,n)$$ and compare charaters from the two strings. 
 
+- if the characters are not identical, follow the direction with the higher value between lcs[i-1][j] and lcs[i][j-1]
+- if the characters are identical, take that character and proceeds to [i-1][j-1].
+
+```python
+def print_lcs(s1,s2,lcs):
+    result = []
+    i, j = len(s1), len(s2)
+    while i > 0 and j > 0:
+        if s1[i-1] == s2[j-1]:
+            result.append( s1[i-1])
+            i -= 1
+            j -= 1
+        elif lcs[i-1][j] > lcs[i][j-1]:
+            i -= 1
+        else:
+            j -= 1
+    result.reverse()
+
+    print(*result, end = '')
+```   
 {% endtab %}{% endtabs %}
-
 
 ### Longest increasing subsequence
 
