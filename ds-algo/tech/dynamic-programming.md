@@ -17,7 +17,7 @@ Dynamic programming is a technique of algorithmic design in which a problem is d
 - the top-down approach (memoization): using recursive technique to find solutions of sub-problems and store them into a table, when the sub-problem is encountered, its solution is taken out without recalculation.
 - the bottom-up approach (tabulation): using the loop-statement to solve first sub-problems then the main problem. 
 
-![Illustration of general dynamic programming technique](../.gitbook/assets/dp-general.png)
+![Illustration of general dynamic programming technique](.gitbook/assets/dp-general.png)
 
 ## Illustration
 
