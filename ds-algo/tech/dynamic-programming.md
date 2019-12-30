@@ -146,7 +146,7 @@ The following problems from different sources can be used to practice:
 - [spoj_Bytelandian gold coins](https://www.spoj.com/problems/COINS/)
 - [spoj_Philosophers stone](https://www.spoj.com/problems/BYTESM2/)
 - [timus_K-based numbers](https://acm.timus.ru/problem.aspx?space=1&num=1009)
-- [uva_Ingenuous cubrency](https://onlinejudge.org/external/111/11137.pdf)
+- [uva_Ingenuous cubrency](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2078)
 
 
 
