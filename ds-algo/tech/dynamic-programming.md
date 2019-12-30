@@ -70,8 +70,7 @@ def fibonacci_ite2(n):
 print(fibonacci_ite1(n))
 print(fibonacci_ite2(n))
 ```
-{% endtab %}
-{% endtab %}
+{% endtab %}{% endtabs %}
   
 It will take time to have a good feeling about DP. The next sections will provide illustrations for several DP problems to help the reader be familiar with the technique. A simple trick is using paper-and-pen to solve a sub-problem with a gradually-increasing size to come up with the inductive formulae. Once you have the formulae, coding is not that difficult anymore. 
 
