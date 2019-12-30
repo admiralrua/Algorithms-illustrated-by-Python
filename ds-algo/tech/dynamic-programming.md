@@ -151,7 +151,7 @@ The following problems from different sources can be used to practice:
 
 ## Ilustration 02: Longest common subsequence and Longest increasing subsequence
 ### Longest common subsequence
-Given two strings with the length of $$m, n$$, find their longest common subsequence (the characters are not required to be adjacent).
+Given two strings with the length of $$(m, n)$$, find their longest common subsequence (the characters are not required to be adjacent).
 
 ![Longest common subsequence](../../.gitbook/assets/dp_lcs.png)
 
@@ -228,8 +228,8 @@ def dp_up(s1,s2):
 {% tab title="Print out solution" %}
 The subsequence can be found based on the result table from the dynamic programing calculation. We start from the index $$(m,n)$$ and compare charaters from the two strings. 
 
-- if the characters are not identical, follow the direction with the higher value between lcs[i-1][j] and lcs[i][j-1]
-- if the characters are identical, take that character and proceeds to [i-1][j-1].
+- if the characters are not identical, follow the direction with the higher value between `lcs[i-1][j]` and `lcs[i][j-1]`
+- if the characters are identical, take that character and proceeds to `[i-1][j-1]`.
 
 ```python
 def print_lcs(s1,s2,lcs):
