@@ -251,20 +251,118 @@ def print_lcs(s1,s2,lcs):
 {% endtab %}{% endtabs %}
 
 ### Longest increasing subsequence
-Problem statement: given an array of random integers, find the longest subsequence of increasing number. 
+Problem statement: given an array of $$n$$ random integers, find the longest subsequence of increasing number. 
 
-![Longest common subsequence](../../.gitbook/assets/dp_lcs.png)
+![Longest common subsequence](../../.gitbook/assets/dp_lis.png)
 
 {% tabs %}
 
 {% tab title="Methodology" %}
+The main idea to solve this problem can be summarised as follows:
+
+- Suppose that we have the longest increasing subsequence with the last item `a[i]`, if we find another item `a[j]` in which `j > i` and `a[j] > a[i]` then we can add `a[j]` into the current-longest subsequence to form a longer subsequence. By doing this procedure repeatedly, the longest increasing subsequence can be found.
+- More detail: at each location of the array, find the last location at which the item is smaller than the item at the current location to increase the length of the subsequence. One configuration of item of the longest increasing subsequence can be traced back through an extra array. In this step, there are actually two implementation types, naive DP and DP in combination with binary-search to reduce the time complexity.
+
+```python
+a = [2,5,12,3,10,6,8,14,4,11,7,15]
+
+length, result, path = lis_bs(a)
+print_lis_bs(a, length, result, path)
+
+length, last, path = lis_dp(a)
+print_lis_dp(a, length, last, path)
+```
 {% endtab %}
 
-{% tab title="$$O(n^2)$$" %}
+{% tab title="$$Naive DP$$" %}
+Time complexity: $$O(n^2)$$
+![Longest common subsequence](../../.gitbook/assets/dp_lis_sol.png)
+```python
+def lis_dp(a):
+    path = [-1] * len(a)
+    result = [1] * len(a)
+
+    for i in range(1, len(a)):
+        for j in range(i):
+            # attention here: i>=j for non-decreasing
+            if (a[i] > a[j]) and (result[i] < result[j] + 1):
+                result[i] = result[j] + 1
+                path[i] = j
+
+    length = 0
+    for i in range(len(a)):
+        if length < result[i]:
+            last = i
+            length = result[i]
+
+    return length, last, path
+
+
+def print_lis_dp(a, length, last, path):
+    print(length)
+    b = []
+    i = last
+    while i != -1:
+        b.append(a[i])
+        i = path[i]
+    for i in range(len(b)-1,-1,-1):
+        print(b[i], end = ' ')
+```
 {% endtab %}
 
-{% tab title="$$O(n \log{n})$$" %}
+{% tab title="$$DP + binary-search$$" %}
+Time complexity: $$O(n \log{n})$$
+```python
+def find_last(a, sub, n, x):
+    left = 0
+    right = n
+    pos = right
 
+    while left < right:
+        mid = left + (right-left) // 2
+        ind = sub[mid]
+        # attention here: > for non-decreasing
+        if a[ind] >= x:
+            pos = mid
+            right = mid
+        else:
+            left = mid + 1
+
+    return pos
+
+
+def lis_bs(a):
+    length = 1
+    path = [-1] * len(a)
+    result = [0]
+
+    for i in range(1, len(a)):
+        if a[i] < a[result[0]]:
+            result[0] = i
+        # attention here: >= for non-decreasing
+        elif a[i] > a[result[length-1]]:
+            path[i] = result[length-1]
+            result.append(i)
+            length += 1
+        else:
+            pos = find_last(a, result, length, a[i])
+            path[i] = result[pos-1]
+            result[pos] = i
+
+    return length, result, path
+
+
+def print_lis_bs(a, length, result, path):
+    print(length)
+    b = []
+    i = result[length-1]
+    while i != -1:
+        b.append(a[i])
+        i = path[i]
+    for i in range(len(b)-1,-1,-1):
+        print(b[i], end = ' ')
+    print()
+```
 {% endtab %}{% endtabs %}
 
 ### Problems for practice
