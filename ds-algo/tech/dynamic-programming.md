@@ -29,7 +29,7 @@ $$ f[0] = 0; f[1] = 1; f[n] = f[n-1] + f[n-2]$$
 
 - coding:
 
-  '''python
+  ```python
   n = 100
   result = [0] * (n+1)
 
@@ -60,7 +60,7 @@ $$ f[0] = 0; f[1] = 1; f[n] = f[n-1] + f[n-2]$$
   print(fibonacci_rec(n))
   print(fibonacci_ite1(n))
   print(fibonacci_ite2(n))
-  '''
+  ```
 
 ## Illustration
 
