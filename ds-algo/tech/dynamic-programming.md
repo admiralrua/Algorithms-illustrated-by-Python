@@ -83,7 +83,8 @@ In this type of problems, the DP solution can be stored in a 1-dimensional array
 ### Staircase problem
 Problem statement: there is a staircase with $$N$$ steps ($$N$$ is a positive integer). You can jump over 1 or 2 steps at once. How many paths to go over the staircase if you start from the ground ?
 
-Induction formulae: $$ path[0] = 1; \quad path[1] = 1; \quad path[n] = path[n-1] + path[n-2]$$ with $$n$$ is the number of steps of the staircase at the time of consideration and $$path$$ is the number of paths to go from the ground to the $$n$$-th step.
+Induction formulae: $$ path[0] = 1; \quad path[1] = 1; \quad path[n] = path[n-1] + path[n-2]$$ with $$n$$ is the number of steps of the staircase at the time of consideration and $$path$$ is the number of paths to go from the ground to the $$n$$-th step. This inductive formulae is similar to that of the Fibonacci problem.
+
 
 ### Coin-change problem
 A rather similar problem to the staircase problem is the coin-change problem. Problem statement: given an amount of money $$total$$ and $$n$$ type of coins (with the unlimited amount of each coins). Count and print out the number of coin changes.
@@ -123,7 +124,7 @@ def coinchange(total, n, coins):
 {% endtab %}
 
 {% tab title="Print out solution" %}
-To list all possible solutions of this problem, one may use the backtracking technique. Assume that you have to use the smallest coins to build up the total $$amount$$ (in fact, it may be possible that you can not build up $$total$$ by only using the smallest coin; but this does not matter at all). Then gradually take out coin by coin and check if any coin of large values can be put in.
+To list all possible solutions of this problem, one may use the backtracking technique. Assume that you have to use the smallest coins to build up the $$total$$ amount (in fact, it may be possible that you can not build up $$total$$ by only using the smallest coin; but this does not matter at all). Then gradually take out coin by coin and check if any coin of large values can be put in.
 
 ```python
 def solprint(result, total, n, coins, pos):
@@ -138,7 +139,18 @@ def solprint(result, total, n, coins, pos):
 {% endtab %}{% endtabs %}
 
 
-## Problems for practice
+### Problems for practice
+The following problems from different sources can be used to practice:
+
+- [spoj_Alphacode](https://www.spoj.com/problems/ACODE/)
+- [spoj_Bytelandian gold coins](https://www.spoj.com/problems/COINS/)
+- [spoj_Philosophers stone](https://www.spoj.com/problems/BYTESM2/)
+- [timus_K-based numbers](https://acm.timus.ru/problem.aspx?space=1&num=1009)
+- [uva_Ingenuous cubrency](https://onlinejudge.org/external/111/11137.pdf)
+
+
+
+## Evan further problems for practice
 
 * [leetcode](https://leetcode.com/tag/dynamic-programming/)
 * [hackerrank](https://www.hackerrank.com/domains/algorithms?filters%5Bsubdomains%5D%5B%5D=dynamic-programming)
