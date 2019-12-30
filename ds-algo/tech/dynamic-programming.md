@@ -23,7 +23,7 @@ Nevertheless, the core of the dynamic programming technique is, first, finding t
 
 The bottom-up and top-down approaches can be illustrated through the Fibonacci problems as follows:
 
-- Induction formulae: $$ f[0] = 0; \tab f[1] = 1; \tab f[n] = f[n-1] + f[n-2]$$
+- Induction formulae: $$ f[0] = 0; \quad f[1] = 1; \quad f[n] = f[n-1] + f[n-2]$$
 
 - Coding:
 
@@ -66,7 +66,7 @@ It will take time to have a good feeling about DP. The next sections will provid
 ### Staircase problem
 Problem statement: there is a staircase with $$N$$ steps ($$N$$ is a positive integer). You can jump over 1 or 2 steps at once. How many paths to go over the staircase if you start from the ground ?
 
-Induction formulae: $$ path[0] = 1; \tab path[1] = 1; \tab path[n] = path[n-1] + path[n-2]$$ with $$n$$ is the number of steps of the staircase and $$path$$ is the number of paths to go from the ground to the $$n$$-th step.
+Induction formulae: $$ path[0] = 1; \quad path[1] = 1; \quad path[n] = path[n-1] + path[n-2]$$ with $$n$$ is the number of steps of the staircase and $$path$$ is the number of paths to go from the ground to the $$n$$-th step.
 
 ## Coin-change problem
 A rather similar problem to the staircase problem is the coin-change problem. Problem statement: given an amount of money and $$N$$ type of coins (with the unlimited amount of each coins). Count and print out the number of coin changes.
