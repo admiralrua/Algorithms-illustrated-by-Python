@@ -389,7 +389,7 @@ The following problems from different sources can be used to practice:
 - [uva_Wavio sequence](https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1475)
 
 
-## Evan further problems for practice
+## Even further problems for practice
 
 * [leetcode](https://leetcode.com/tag/dynamic-programming/)
 * [hackerrank](https://www.hackerrank.com/domains/algorithms?filters%5Bsubdomains%5D%5B%5D=dynamic-programming)
@@ -398,3 +398,11 @@ The following problems from different sources can be used to practice:
 * [geeksforgeeks](https://practice.geeksforgeeks.org/explore/?category%5B%5D=Dynamic%20Programming&page=1&sortBy=accuracy)
 * [spoj](https://www.spoj.com/problems/tag/dynamic-programming)
 * [usejournal](https://blog.usejournal.com/top-50-dynamic-programming-practice-problems-4208fed71aa3)
+
+
+## Hints for selected problems above
+
+- __cf_Beautiful people__: apparently naive DP will result in TLE solution, DP + Binary search is a must. Checking the "equal" condition in the binary search can be quite tricky. A hint is sorting the guests ascending by the first index then descending by the second index. 
+- __uva_Prince And Princess__: this problem, if considered as the naive LCS, definitely has the complexity of $$O(n^2)$$ hence TLE. With that size of input $$O(n \log{n}$$ is required. A hint is (1) a square is visited atmost once -> unique id -> can be converted into LIS; (2) reoder index of the first path to be monotonically increased, (3) transform index of the second path to the second path, numbers which do not occur in both paths can be ignored.
+- __uva_Wavio sequence__: dont be greedy, the solution is actually maximum of minimum. To achieve $$O(n \log{n}$$, DP + Binary search must be used, then an array to store the result as in naive DP solution must be generated. 
+- __lightoj_Love calculator__: first LCS table must be created, then the counting can be based on LCS table. Hand calculation can give you the inductive formulae.
