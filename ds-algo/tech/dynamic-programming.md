@@ -23,11 +23,11 @@ Nevertheless, the core of the dynamic programming technique is, first, finding t
 
 The bottom-up and top-down approaches can be illustrated through the Fibonacci problems as follows:
 
-- the induction formulae: 
+- Induction formulae: 
 
 $$ f[0] = 0; f[1] = 1; f[n] = f[n-1] + f[n-2]$$
 
-- coding:
+- Coding:
 
   ```python
   n = 100
@@ -61,8 +61,19 @@ $$ f[0] = 0; f[1] = 1; f[n] = f[n-1] + f[n-2]$$
   print(fibonacci_ite1(n))
   print(fibonacci_ite2(n))
   ```
+  
+It will take time to have a good feeling about DP. The next sections will provide illustrations for several DP problems to help the reader be familiar with the technique. A simple trick is using paper-and-pen to solve a sub-problem with a gradually-increasing size to come up with the inductive formulae. Once you have the formulae, coding is not that difficult anymore. 
 
-## Illustration
+## Illustration 01: Staircase and Coin-change
+### Staircase problem
+Problem statement: there is a staircase with $$N$$ steps ($$N$$ is a positive integer). You can jump over 1 or 2 steps at once. How many paths to go over the staircase if you start from the ground ?
+
+Induction formulae: $$ path[0] = 1; path[1] = 1; path[n] = path[n-1] + path[n-2]$$ with $$n$$ is the number of steps of the staircase.
+
+## Coin-change problem
+A rather similar problem to the staircase problem is the coin-change problem. Problem statement: given an amount of money and $$N$$ type of coins (with the unlimited amount of each coins). Count and print out the number of coin changes.
+
+
 
 ## Problems for practice
 
