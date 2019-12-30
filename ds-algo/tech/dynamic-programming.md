@@ -1,17 +1,6 @@
 # Dynamic programming
 
 ## Briefing
-There are several very good references for Dynamic Programming (DP) as follows:
-
-* [interviewbit](https://www.interviewbit.com/courses/programming/topics/dynamic-programming/)
-* [topcoder](https://www.topcoder.com/community/competitive-programming/tutorials/dynamic-programming-from-novice-to-advanced/)
-* [skerritt](https://skerritt.blog/dynamic-programming/)
-* [itnext](https://itnext.io/introduction-to-multi-dimensional-dynamic-programming-666b095b2e7b)
-* [blogarithms](https://blogarithms.github.io/articles/2019-03/cracking-dp-part-one)
-* [brilliant](https://brilliant.org/wiki/problem-solving-dynamic-programming/)
-* [hackerearth](https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/)
-* [geeksforgeeks](https://www.geeksforgeeks.org/dynamic-programming/)
-
 Dynamic programming is a technique of algorithmic design in which a problem is divided into sub-problems and results of sub-problems are combined into the result of the original problem. Results of a dynamic programming solution are often stored in a table, 1- or 2-dimensional array to avoid recalculation. There are two main approaches followning the dynamic programming technique, the top-down approach and the bottom-up one. 
 
 - the top-down approach (memoization): using recursive technique to find solutions of sub-problems and store them into a table, when the sub-problem is encountered, its solution is taken out without recalculation.
@@ -75,6 +64,17 @@ print(fibonacci_ite2(n))
 {% endtab %}{% endtabs %}
   
 It will take time to have a good feeling about DP. The next sections will provide illustrations for several DP problems to help the reader be familiar with the technique. A simple trick is using paper-and-pen to solve a sub-problem with a gradually-increasing size to come up with the inductive formulae. Once you have the formulae, coding is not that difficult anymore. 
+
+There are several very good references for Dynamic Programming (DP) as follows:
+
+* [interviewbit](https://www.interviewbit.com/courses/programming/topics/dynamic-programming/)
+* [topcoder](https://www.topcoder.com/community/competitive-programming/tutorials/dynamic-programming-from-novice-to-advanced/)
+* [skerritt](https://skerritt.blog/dynamic-programming/)
+* [itnext](https://itnext.io/introduction-to-multi-dimensional-dynamic-programming-666b095b2e7b)
+* [blogarithms](https://blogarithms.github.io/articles/2019-03/cracking-dp-part-one)
+* [brilliant](https://brilliant.org/wiki/problem-solving-dynamic-programming/)
+* [hackerearth](https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/)
+* [geeksforgeeks](https://www.geeksforgeeks.org/dynamic-programming/)
 
 
 ## Illustration 01: Staircase and Coin-change
@@ -256,15 +256,18 @@ def print_lcs(s1,s2,lcs):
 ### Problems for practice
 The following problems from different sources can be used to practice:
 
-- [spoj_Cross country](https://vn.spoj.com/problems/CRSCNTRY/)
-- [uva_Compromise](https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=472)
-- [spoj_Aibohphobia](https://www.spoj.com/problems/AIBOHP/)
-- [g4g_lcs 3-string](https://www.geeksforgeeks.org/lcs-longest-common-subsequence-three-strings/)
+- [cf_Beautiful people](https://codeforces.com/problemsets/acmsguru/problem/99999/199)
+- [cf_Palindromic characteristics](https://codeforces.com/contest/835/problem/D)
+- [g4g_LCS 3-string](https://www.geeksforgeeks.org/lcs-longest-common-subsequence-three-strings/)
 - [lightoj_Love calculator](https://vjudge.net/problem/LightOJ-1013)
 - [spoj_Advanced fruits](https://www.spoj.com/problems/ADFRUITS/)
-- [cf_Palindromic characteristics](https://codeforces.com/contest/835/problem/D)
-
-
+- [spoj_Aibohphobia](https://www.spoj.com/problems/AIBOHP/)
+- [spoj_Cross country](https://vn.spoj.com/problems/CRSCNTRY/)
+- [uva_Compromise](https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=472)
+- [uva_Prince And Princess](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1576)
+- [uva_Testing the CATCHER](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=167)
+- [uva_Tower of Babylon](https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=378)
+- [uva_Wavio sequence](https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1475)
 
 
 ## Evan further problems for practice
