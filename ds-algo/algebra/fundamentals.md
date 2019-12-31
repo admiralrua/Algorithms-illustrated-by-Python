@@ -10,5 +10,4 @@
 
 ## Linear Diophantine equations
 
-## Number theory
 
