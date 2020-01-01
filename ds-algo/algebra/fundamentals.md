@@ -10,7 +10,39 @@ Later, we will use this technique in modular multiplication (in problems related
 
 
 ### Algorithm
-Raising $$a$$ to the power $$n$$ is expressed as multiplication by $$a$$ done $$n-1$$ times. However, this approach is not practical for large $$n$$ or we have to do that multiple time. Since the multiplication operator is associative, we can split the multiplication down to smaller numbers, i.e. $$a^{2*n} = a^n * a^n = (a^n)^2$$. Moreover, this is actually the idea of binary exponentiation, we can split the work using the binary representation of the exponent. 
+Raising $$a$$ to the power $$n$$ is expressed as multiplication by $$a$$ done $$n-1$$ times. However, this approach is not practical for large $$n$$ or we have to do that multiple time. Since the multiplication operator is associative, we can split the multiplication down to smaller numbers, e.g. $$a^{2*n} = a^n * a^n = (a^n)^2$$. Moreover, this is actually the idea of binary exponentiation, we can split the work using the binary representation of the exponent. 
+
+Let's consider the following example: if we have to calculate $$7^{25}$$ and if we do that as follows $$7^25 = 7^{11001_2} = 7^{2^4} * 7^{2^3} * 7^1$$, we actually only need 4 multiplications instead of 25. Generally, since the number $$n$$ has $$\log{n} + 1$$ digits in base 2, we only need to perform $$O(\log{n})$$ multiplications if we know the power $$a^1, a^2,..., a^{\log{n}}$$.
+
+The following recursive approach summarises the idea:
+
+$$ a^n = \left\{\begin{matrix}
+1 & n = 0 \\ 
+(a^{n/2})^2 & n > 0 \text{, even} \\ 
+(a^{n/2})^2 \times a & n > 0 \text{, odd}  
+\end{matrix}\right. $$
+
+```python
+def binpowr(a, n):
+    if n == 0: return 1
+    ans = binpowr(a, n // 2)
+    if n % 2 == 1: return ans * ans * a
+    else: return ans * ans
+
+
+def binpowi(a, n):
+    ans = 1
+    while n > 0:
+        if n % 2 == 1: ans *= a
+        a *= a
+        n //= 2
+    return ans
+
+
+a, n = 3, 1000000
+print(binpowr(a, n))
+print(binpowi(a, n))
+```
 
 
 ## (Extended) Euclidean algorithm
