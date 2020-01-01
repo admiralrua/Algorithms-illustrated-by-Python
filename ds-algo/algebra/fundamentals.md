@@ -18,8 +18,8 @@ The following recursive approach summarises the idea:
 
 $$ a^n = \left\{\begin{matrix}
 1 & n = 0 \\ 
-(a^{n/2})^2 & n > 0 \text{, even} \\ 
-(a^{n/2})^2 \times a & n > 0 \text{, odd}  
+(a^{n/2})^2 & n % 2 = 0 \\ 
+(a^{n/2})^2 \times a & n % 2 = 1  
 \end{matrix}\right. $$
 
 ```python
@@ -33,9 +33,9 @@ def binpowr(a, n):
 def binpowi(a, n):
     ans = 1
     while n > 0:
-        if n % 2 == 1: ans *= a
+        if n & 1: ans *= a
         a *= a
-        n //= 2
+        n >>= 1
     return ans
 
 
@@ -53,6 +53,20 @@ print(binpowi(a, n))
 
 ## Modular arithmetic
 
+```python
+def bpmod(a, n, m):
+    a %= m
+    ans = 1
+    while n > 0:
+        if n & 1: ans = ans * a % m
+        a = a * a % m
+        n >>= 1
+    return ans
+
+
+a, n, m = 7, 1000000, 2019
+print(bpmod(a, n, m))
+```
 
 ## Problems for practice
 - [uva_Modex](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3671)
