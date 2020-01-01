@@ -46,6 +46,39 @@ print(binpowi(a, n))
 
 
 ## (Extended) Euclidean algorithm
+Given two non-negative integers $$a$$ and $$b$$, we have to find their GCD (greatest common divisor), i.e. the largest number which is a divisor of both $$a$$ and $$b$$. It's commonly denoted by $$gcd(a,b)$$. If one number is zero, the greatest common divisor is the other number; if both numbers are zero, their GCD is undefined.
+
+The Euclidean algorithm is stated as follows:
+
+$$ \text{gcd}(a,b) = \left\{\begin{matrix}
+a & b = 0 \\ 
+\text{gcd}(b, a \mod b) & \text{otherwise} 
+\end{matrix}\right. $$
+
+The Euclidean algorithm works in $$O(\log{\min{(a,b)}})$$. Conveniently, the least common multiple (denoted as LCM) can be reduced to calculating the GCD as follows:
+
+$$\text{lcm}(a,b) = \frac{a*b}{\text{gcd}(a,b)}$$
+
+```python
+def gcdr(a, b):
+    if b == 0: return a
+    else: return gcdr(b, a % b)
+
+
+def gcdi(a, b):
+    while b != 0:
+        a %= b
+        a, b = b, a
+    return a
+
+
+def lcm(a,b):
+    return a//gcdi(a,b) * b
+
+
+a, b = 1983, 2907
+print(gcdr(a, b), gcdi(a, b), lcm(a,b))
+```
 
 
 ## Linear Diophantine equations
