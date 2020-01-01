@@ -51,23 +51,6 @@ print(binpowi(a, n))
 ## Linear Diophantine equations
 
 
-## Modular arithmetic
-
-```python
-def bpmod(a, n, m):
-    a %= m
-    ans = 1
-    while n > 0:
-        if n & 1: ans = ans * a % m
-        a = a * a % m
-        n >>= 1
-    return ans
-
-
-a, n, m = 7, 1000000, 2019
-print(bpmod(a, n, m))
-```
-
 ## Problems for practice
 - [uva_Modex](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3671)
 - [uva_Big Mod](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=310)
