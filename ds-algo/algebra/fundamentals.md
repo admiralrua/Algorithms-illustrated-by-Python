@@ -18,8 +18,8 @@ The following recursive approach summarises the idea:
 
 $$ a^n = \left\{\begin{matrix}
 1 & n = 0 \\ 
-(a^{n/2})^2 & n % 2 = 0 \\ 
-(a^{n/2})^2 \times a & n % 2 = 1  
+(a^{n/2})^2 & n \mod 2 = 0 \\ 
+(a^{n/2})^2 \times a & n \mod 2 = 1  
 \end{matrix}\right. $$
 
 ```python
