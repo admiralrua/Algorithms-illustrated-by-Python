@@ -6,6 +6,7 @@
   * [Algebra](ds-algo/algebra/README.md)
     * [Fundamentals](ds-algo/algebra/fundamentals.md)
     * [Primers](ds-algo/algebra/primers.md)
+    * [Number theories](ds-algo/algebra/number_theory.md)
     * [Miscellaneous](ds-algo/algebra/miscellaneous.md)
   * [Combinatorics](ds-algo/combinatorics.md)
   * [Basic data structures](ds-algo/data-structures/README.md)
