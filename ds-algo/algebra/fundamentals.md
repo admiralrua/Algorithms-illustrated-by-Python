@@ -162,9 +162,9 @@ Apparently, if we don't impose any restrictions on the solutions, there would be
 
 To solve this problem:
 
-- (1) first we determine the solutions which have the minimum and maximum values of $$x$$ that $$x_{l1} \geq \min{x}$$ and $$x_{r1} \leq \max{x}$$;
-- (2) then we find values of $$x$$ corresponding to the minimum and maximum values of $$y$$ that $$y(x_{l2}) \geq \min{y}$$ and $$y(x_{r2}) \leq \max{y}$$. 
-- The final solution is all solutions of $$x$$ in the intersection of $$[x_{l1},x_{r1}]$$ and $$[x_{l2},x_{r2}]$$ denoted by $$[x_{l},x_{r}]$$ and the corresponding values of $$y$$ satisfying $$a \cdot x + b \cdot y = c$$. 
+- first we determine the solutions which have the minimum and maximum values of $$x$$ that $$x_{l1} \geq \min{x}$$ and $$x_{r1} \leq \max{x}$$;
+- then we find values of $$x$$ corresponding to the minimum and maximum values of $$y$$ that $$y(x_{l2}) \geq \min{y}$$ and $$y(x_{r2}) \leq \max{y}$$; 
+- the final solution is all solutions of $$x$$ in the intersection of $$[x_{l1},x_{r1}]$$ and $$[x_{l2},x_{r2}]$$ denoted by $$[x_{l},x_{r}]$$ and the corresponding values of $$y$$ satisfying $$a \cdot x + b \cdot y = c$$. 
 
 The values for $$x$$ can be found by iterating through 
 
@@ -174,7 +174,7 @@ until $$x = x_{r}$$.
 
 In the question of finding the solution with minimum value of $$x+y$$, actually $$(x, y)$$ need to be given some restriction, otherwise the answer may become negative infinity. Note that, from the previous section, the sum $$x+y$$ takes the form:
 
-$$x' + y' = x + y + k cdot \frac{b-a}{g}$$ 
+$$x' + y' = x + y + k \cdot \frac{b-a}{g}$$ 
 
 Hence, if $$a < b$$ we need to choose the smallest possible value of $$k$$; if $$a > b$$ we need to choose the largest possible value of $$k$$; otherwise all solution will have the same sum.
 
@@ -194,4 +194,3 @@ Hence, if $$a < b$$ we need to choose the smallest possible value of $$k$$; if $
 - [cf_Ebony and Ivory](http://codeforces.com/contest/633/problem/A)
 - [cc_Get AC in one go](https://www.codechef.com/problems/COPR16G)
 - [lightoj_Solutions to an equation](http://www.lightoj.com/volume_showproblem.php?problem=1306)
-
