@@ -139,17 +139,24 @@ $$a \cdot x + b \cdot y = c$$
 where $$a, b, c$$ are given and $$x, y$$ are unknown. In general, this equation either has no solution $$(a = b = 0; c != 0)$$ or infinite solutions. In practice, several classical scenarios of these equations are of interested:
 
 - finding one (and all) solutions;
-- finding a solution with minimum value of $$x+y$$;
-- finding the number of solutions and solutions themselves in a given interval.
+- finding the number of solutions and solutions themselves in a given interval;
+- finding the solution with minimum value of $$x+y$$.
 
-### Finding solutions
 To find one solution of the Diophantine equation, we can use the Extended Euclidean algorithm. First, we solve the equation:
 
 $$a \cdot x_g + b \cdot y_g = g$$
 
 in which $$g = \text{gcd}(a,b)$$. Then, if $$c$$ is divisible by $$g$$ then the Diophantine equation has a solution $$(x_0, y_0) = (x_g \cdot \frac{c}{g}, y_g \cdot \frac{c}{g})$$; otherwise, it does not have any solution.
 
+From one solution $$(x_0, y_0)$$ satisfying the equation $$a \cdot x_0 + b \cdot y_0 = c$$, we can easily see that all the numbers of the form $$(x, y) = (x_0 + k \cdot \frac{b}{g}, y_0 - k \cdot \frac{a}{g})$$ with $$k$$ is an integer are also sollutions of the given Diophantine equation. Moreover, this is the set of all possible solutions of the given Diophantine equation. 
 
+Apparently, if we don't impose any restrictions on the solutions, there would be infinite number of them. One of the common restriction is that given an interval for $$x$$ as $$[\min{x},\max{x}]$$ and an interval for $$y$$ as $$[\min{y},\max{y}]$$, find all possible solutions $$(x,y)$$. To solve this problem, (1) first we determine the solutions which have the minimum and maximum values of $$x$$ that $$x_{l1} \geq \min{x}$$ and $$x_{r1} \leq \max{x}$$; (2) then we find values of $$x$$ corresponding to the minimum and maximum values of $$y$$ that $$y(x_{l2}) \geq \min{y}$$ and $$y(x_{r2}) \leq \max{y}$$. The final solution is all solutions of $$x$$ in the intersection of $$[x_{l1},x_{r1}]$$ and $$[x_{l2},x_{r2}]$$ denoted by $$[x_{l},x_{r}]$$ and the corresponding values of $$y$$ satisfying $$a \cdot x + b \cdot y = c$$. The values for $$x$$ can be found by iterating through $$x = x_{l} + k \cdot \frac{b}{g}$$ with $$k \geq 0$$ until $$x = x_{r}$$.
+
+In the question of finding the solution with minimum value of $$x+y$$, actually $$(x, y)$$ need to be given some restriction, otherwise the answer may become negative infinity. Note that, from the previous section, the sum $$x+y$$ takes the form:
+
+$$x' + y' = x + y + k cdot \frac{b-a}{g}$$ 
+
+Hence, if $$a < b$$ we need to choose the smallest possible value of $$k$$; if $$a > b$$ we need to choose the largest possible value of $$k$$; otherwise all solution will have the same sum.
 
 
 ## Problems for practice
