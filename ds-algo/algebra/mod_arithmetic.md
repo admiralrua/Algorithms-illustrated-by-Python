@@ -1,4 +1,7 @@
 ## Basic operators
+In computing, the [modulo operation](https://en.wikipedia.org/wiki/Modulo_operation) finds the remainder after division of one number by another (called the modulus of the operation). 
+
+
 
 ### Multiplication
 ```python
