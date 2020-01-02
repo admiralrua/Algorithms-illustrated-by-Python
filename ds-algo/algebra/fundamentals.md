@@ -1,4 +1,4 @@
-[Reserved ^\_^](https://cp-algorithms.com/)
+This section discusses several fundamental topics of algebra. They are foundation for more sophisticated subjects in number theories, modular arithmetic... The section is mainly based on this excellent [document](https://cp-algorithms.com/).
 
 ## Binary exponentiation
 ### Briefing
@@ -132,6 +132,15 @@ print(egcdr(a,b), ' vs ', egcdi(a,b))
 ```
 
 ## Linear Diophantine equations
+A Linear Diophantine equation (for two variables) is an equation of the general form:
+
+$$a \cdot x + b \cdot y = c$$
+
+where $$a, b, c$$ are given and $$x, y$$ are unknown. In general, this equation either has no solution $$(a = b = 0; c >< 0)$$ or infinite solutions. In practice, several classical scenarios of these equations are of interested:
+
+- finding one (and all) solutions;
+- finding a solution with minimum value of $$x+y$$;
+- finding the number of solutions and solutions themselves in a given interval.
 
 
 ## Problems for practice
