@@ -4,7 +4,7 @@
 ### Briefing
 Binary exponentiation (also known as exponentiation by squaring) is a technique which allows to calculate $$a^n$$ using only $$O(\log{n})$$ multiplications (instead of $$O(n)$$ multiplications required by the naive approach). In fact, this technique can be applied to any operations that have the property of associativity:
 
-$$(X \times Y) \times Z = X \times (Y \times Z)$$
+$$(X \cdot Y) \cdot Z = X \times (Y \cdot Z)$$
 
 Later, we will use this technique in modular multiplication (in problems related to modular arithmetic) and matrices multiplication (e.g. to calculate Fibonacci number in $$O(\log{n})$$).
 
@@ -82,7 +82,52 @@ print(gcdr(a, b), gcdi(a, b), lcm(a,b))
 ```
 
 ### Extended Euclidean algorithm
+When the Euclidean algorithm calculates only the greatest common divisor (GCD) of two integers $$a$$ and $$b$$, the extended version also finds a way to represent GCD in terms of $$a$$ and $$b$$, i.e. coefficients $$x$$ and $$y$$ for which:
 
+$$ a \times x + b \times y = \text{gcd}(a,b) $$
+
+Mathematically, the extension from the original algorithm can be expressed as follows:
+
+- assume we found $$(x_1, y_1)$$ for $$(b \mod a, a)$$ satisfied: $$ (b \mod a) \cdot x_1 + a \cdot y_1 = g $$
+- and we want to find a pair $$(x, y)$$ for $$(a, b)$$ satisfied: $$ a \times x + b \cdot y = g $$
+- by substitution $$b \mod a = b - \left \lfloor \frac{b}{a} \right \rfloor \cdot a$$ we come up with the relationship:
+$$ \left\{\begin{matrix}
+x = y_1 - \left \lfloor \frac{b}{a} \right \rfloor \cdot x_1 \\ 
+y = x_1
+\end{matrix}\right. $$
+- and remember that we have the base condition $$(x,y) = (0,1)$$ for $$(a,b) = (0,b)$$
+
+```python
+def egcdr(a, b):
+    if a == 0:
+        x, y = 0, 1
+        return b, x, y
+    d, x_, y_ = egcdr(b % a, a)
+    x = y_ - b//a * x_
+    y = x_
+    return d, x, y
+
+
+def egcdi(a, b):
+    x1, y1 = 0, 1
+    x2, y2 = 1, 0
+    x, y = 1, 0
+
+    while b != 0:
+        q = a // b
+        r = a % b
+        x = x2 - q*x1
+        y = y2 - q*y1
+        x2, y2 = x1, y1
+        x1, y1 = x, y
+        a, b = b, r
+
+    return a, x2, y2
+
+
+a, b = 1234567, 89012
+print(egcdr(a,b), ' vs ', egcdi(a,b))
+```
 
 ## Linear Diophantine equations
 
