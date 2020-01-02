@@ -136,11 +136,20 @@ A Linear Diophantine equation (for two variables) is an equation of the general 
 
 $$a \cdot x + b \cdot y = c$$
 
-where $$a, b, c$$ are given and $$x, y$$ are unknown. In general, this equation either has no solution $$(a = b = 0; c >< 0)$$ or infinite solutions. In practice, several classical scenarios of these equations are of interested:
+where $$a, b, c$$ are given and $$x, y$$ are unknown. In general, this equation either has no solution $$(a = b = 0; c != 0)$$ or infinite solutions. In practice, several classical scenarios of these equations are of interested:
 
 - finding one (and all) solutions;
 - finding a solution with minimum value of $$x+y$$;
 - finding the number of solutions and solutions themselves in a given interval.
+
+### Finding solutions
+To find one solution of the Diophantine equation, we can use the Extended Euclidean algorithm. First, we solve the equation:
+
+$$a \cdot x_g + b \cdot y_g = g$$
+
+in which $$g = \text{gcd}(a,b)$$. Then, if $$c$$ is divisible by $$g$$ then the Diophantine equation has a solution $$(x_0, y_0) = (x_g \cdot \frac{c}{g}, y_g \cdot \frac{c}{g})$$; otherwise, it does not have any solution.
+
+
 
 
 ## Problems for practice
