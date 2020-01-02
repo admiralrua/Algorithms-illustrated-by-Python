@@ -91,10 +91,12 @@ Mathematically, the extension from the original algorithm can be expressed as fo
 - assume we found $$(x_1, y_1)$$ for $$(b \mod a, a)$$ satisfied: $$ (b \mod a) \cdot x_1 + a \cdot y_1 = g $$
 - and we want to find a pair $$(x, y)$$ for $$(a, b)$$ satisfied: $$ a \times x + b \cdot y = g $$
 - by substitution $$b \mod a = b - \left \lfloor \frac{b}{a} \right \rfloor \cdot a$$ we come up with the relationship:
+
 $$ \left\{\begin{matrix}
 x = y_1 - \left \lfloor \frac{b}{a} \right \rfloor \cdot x_1 \\ 
 y = x_1
 \end{matrix}\right. $$
+
 - and remember that we have the base condition $$(x,y) = (0,1)$$ for $$(a,b) = (0,b)$$
 
 ```python
