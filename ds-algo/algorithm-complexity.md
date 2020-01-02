@@ -25,7 +25,7 @@ Please take a look at the following examples to understand more on how to estima
           i /= 2
   ```
 
-* $$O(n) = n*log(n)$$
+* $$O(n) = n \cdot log(n)$$
 
   ```python
   cnt, x = 0, n
@@ -35,7 +35,7 @@ Please take a look at the following examples to understand more on how to estima
           x /= 2
   ```
 
-* $$T(n) = \frac{n*(n-1)}{2} \rightarrow O(n) = n^2$$
+* $$T(n) = \frac{n \cdot (n-1)}{2} \rightarrow O(n) = n^2$$
 
   ```python
   cnt = 0
@@ -108,7 +108,7 @@ Please practice with the following codes:
 
 Here is a table prepared by Dr. Jeyakesavan Veerasamy to illustrate the real-life time elapsed based on the time complexity of a code and the magnitude of data involved:
 
-| $$n$$ | $$O(1)$$ | $$O(\log_2 n)$$ | $$O(n)$$ | $$O(n \log_2 n)$$ | $$O(n^2)$$ | $$O(2^n)$$ |
+| $$n$$ | $$O(1)$$ | $$O(\log n)$$ | $$O(n)$$ | $$O(n \log n)$$ | $$O(n^2)$$ | $$O(2^n)$$ |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 100 | 1.0 $$\mu$$s | 1.0 $$\mu$$s | 1.0 $$\mu$$s | 1.0 $$\mu$$s | 1.0 $$\mu$$s | 1 $$\mu$$s |
 | 110 | 1.0 $$\mu$$s |  |  |  | 1.2 $$\mu$$s | 1 ms |
@@ -123,5 +123,5 @@ Here is a table prepared by Dr. Jeyakesavan Veerasamy to illustrate the real-lif
 | $$10^7$$ | 1.0 $$\mu$$s | 3.5 $$\mu$$s | 100 ms | 350 ms | 2.8 h |  |
 | $$10^8$$ | 1.0 $$\mu$$s | 4.0 $$\mu$$s | 1 s | 4 s | 11.7 d |  |
 
-From this table, you can understand why a solution with $$O(2^n)$$, i.e. the naive recursive solution for the Hanoi's tower problem, is not accepted because of the executable time grows too fast in comparison with the size of the problem.
+Note that the logarithmic arithmetic is on base 2. From this table, you can understand why a solution with $$O(2^n)$$, i.e. the naive recursive solution for the Hanoi's tower problem, is not accepted because of the executable time grows too fast in comparison with the size of the problem.
 
