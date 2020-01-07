@@ -147,6 +147,7 @@ The following problems from different sources can be used to practice:
 - [spoj_Philosophers stone](https://www.spoj.com/problems/BYTESM2/)
 - [timus_K-based numbers](https://acm.timus.ru/problem.aspx?space=1&num=1009)
 - [uva_Ingenuous cubrency](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2078)
+- [uva_Exact change](https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2512)
 
 
 ## Ilustration 02: Longest common subsequence and Longest increasing subsequence
