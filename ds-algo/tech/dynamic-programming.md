@@ -152,7 +152,7 @@ The following problems from different sources can be used to practice:
 
 ## Ilustration 02: Longest common subsequence and Longest increasing subsequence
 ### Longest common subsequence
-Problem statement: given two strings with the length of $$(m, n)$$, find their longest common subsequence (the characters are not required to be adjacent).
+Problem statement: given two strings with the length of $$(m, n)$$, find their [longest common subsequence](https://en.wikipedia.org/wiki/Longest_common_subsequence_problem) (the characters are not required to be adjacent).
 
 ![Longest common subsequence](../../.gitbook/assets/dp_lcs.png)
 
@@ -251,8 +251,11 @@ def print_lcs(s1,s2,lcs):
 ```   
 {% endtab %}{% endtabs %}
 
+Bonus: edit distance with [only removal and insertion](https://en.wikipedia.org/wiki/Edit_distance) and with [removal, insertion and substitution](https://en.wikipedia.org/wiki/Levenshtein_distance)
+
+
 ### Longest increasing subsequence
-Problem statement: given an array of $$n$$ random integers, find the longest subsequence of increasing number. 
+Problem statement: given an array of $$n$$ random integers, find the [longest subsequence of increasing](https://en.wikipedia.org/wiki/Longest_increasing_subsequence) number. 
 
 ![Longest common subsequence](../../.gitbook/assets/dp_lis.png)
 
@@ -391,7 +394,7 @@ The following problems from different sources can be used to practice:
 
 
 ## Illustration 03: Knapsack problems
-In this type of problems, the DP solution can be stored in a 1-dimensional array.
+The [knapsack problem](https://en.wikipedia.org/wiki/Knapsack_problem) is a problem in combinatorial optimization: Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible. 
 
 ![Longest common subsequence](../../.gitbook/assets/dp_knapsack.png)
 
