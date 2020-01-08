@@ -87,7 +87,7 @@ Induction formulae: $$ path[0] = 1; \quad path[1] = 1; \quad path[n] = path[n-1]
 
 
 ### Coin-change problem
-A rather similar problem to the staircase problem is the coin-change problem. Problem statement: given an amount of money $$total$$ and $$n$$ type of coins (with the unlimited amount of each coins). Count and print out the number of coin changes.
+A rather similar problem to the staircase problem is the [coin-change problem](https://en.wikipedia.org/wiki/Change-making_problem). Problem statement: given an amount of money $$total$$ and $$n$$ type of coins (with the unlimited amount of each coins). Count and print out the number of coin changes.
 
 {% tabs %}
 
