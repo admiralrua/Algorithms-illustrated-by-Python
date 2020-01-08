@@ -390,6 +390,12 @@ The following problems from different sources can be used to practice:
 - [uva_Wavio sequence](https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1475)
 
 
+## Illustration 03: Knapsack problems
+In this type of problems, the DP solution can be stored in a 1-dimensional array.
+
+![Longest common subsequence](../../.gitbook/assets/dp_knapsack.png)
+
+
 ## Even further sources for practice
 
 * [leetcode](https://leetcode.com/tag/dynamic-programming/)
