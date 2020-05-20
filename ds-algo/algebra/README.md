@@ -1,2 +1,2 @@
-# Algebra __FUTURE__
+# Algebra
 
