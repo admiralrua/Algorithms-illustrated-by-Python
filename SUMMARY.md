@@ -9,7 +9,7 @@
     * [_ny_ Modular arithmetic](ds-algo/algebra/mod_arithmetic.md)
     * [_ny_ Primers](ds-algo/algebra/primers.md)
     * [_ny_ Miscellaneous](ds-algo/algebra/miscellaneous.md)
-  * [Combinatorics __FUTURE__](ds-algo/combinatorics.md)
+  * [_ny_ Combinatorics](ds-algo/combinatorics.md)
   * [Basic data structures](ds-algo/data-structures/README.md)
     * [Fundamentals](ds-algo/data-structures/basic.md)
     * [Stack and _ny_ Queue](ds-algo/data-structures/stack-and-queue.md)
