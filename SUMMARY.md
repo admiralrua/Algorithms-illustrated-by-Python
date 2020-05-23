@@ -50,3 +50,4 @@
   * [C/C++](preparation/c-c++.md)
 * [Miscellaneous](miscellaneous.md)
   * [Syllabus to practice](preparation/syllabus.md)
+  * [Text-to-speech with Python](preparation/tts_python.md)
