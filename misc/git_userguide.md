@@ -67,7 +67,7 @@ For example:
 
 A stronger pushing when you have some conflicts with the online version of the codes, use this only when you know what you are doing: 
 
-    git push --force <remote> <name-of-branch>       # stronger pushing
+    git push --force <remote> <name-of-branch>      
 
 
 ### Miscellaneous
