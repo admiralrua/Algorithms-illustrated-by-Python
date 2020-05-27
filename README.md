@@ -19,6 +19,8 @@ Main contents of this page include:
 * [Data structures and Algorithms](ds-algo/)
 * [Tips for coding interview](interview.md)
 
+Please note that some sections starting with ``ny'' are not yet presented, I keep their places to remind myself to finalise them later.
+
 You may need some preparation before diving into the main contents above, please skip those parts if you are already familiar with what they are about:
 
 * [Preparation](preparation/) Markdown, basic Python and C/C++
