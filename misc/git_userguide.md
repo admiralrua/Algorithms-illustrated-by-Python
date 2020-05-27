@@ -1,4 +1,15 @@
-This section presents several useful git commands that you may encounter in a daily basis.
+This section presents several useful git commands that you may encounter in a daily basis. Before going into details, you should better know the general proceduce of using git.
+
+1. Creat branch and work on that
+1. Check if a branch has any change or update
+1. If there is any new thing **online**, pull it down.
+1. If there is any new thing **offline** and you dont want to have those anymore, discard them
+1. If there is any new thing **offline** and you want to store them online
+    + add thoses to a buffer (locally)
+    + generate a commit request to push those online (they still stay local)
+    + push those to **online**
+
+Now here we come to each individual steps.
 
 ### Creating branch 
 
