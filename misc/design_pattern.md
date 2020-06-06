@@ -196,7 +196,7 @@ Popular creational patterns consists of four types:
           
           print("Our pet is '{}'!".format(pet))
           print("Our pet says hello by '{}'".format(pet.speak()))
-          print("Its food is '{}'!".format(pet_food))
+          print("Its food is '{}'".format(pet_food))
 
   # create a Concrete Factory
   factory = DogFactory()
