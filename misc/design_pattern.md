@@ -105,7 +105,6 @@ Popular creational patterns consists of four types:
   - decisions to make rearding what classes to use at runtime
   - scenario: a pet shop originally sells dogs, but in the near future will sells also cats -> objects to handle both dogs and cats, for example how the object speaks ("woof"- vs "meow"-sound), the true nature of the object only reveals in the runtime
 - example:
-
   ```python
   class Dog:
       """ A simple dog class """
@@ -141,10 +140,10 @@ Popular creational patterns consists of four types:
 
   c = get_pet("cat3")
   print(c.speak())
-  ```
-  
+  ```  
   - this example illustrates the use of the **factory pattern**, with this pattern, it is easy to add more objects
   - the implementation above is not a conventional **factory pattern** implememented in other OOP language since that implementation used some conveniences of Python.
+- More information can be found [here](https://refactoring.guru/design-patterns/factory-method/python/example)
 
 
 ## Abstract factory
@@ -158,60 +157,59 @@ Popular creational patterns consists of four types:
     - abstract product: normally it is an inheritance type classes but since Python is a dynamic-type language and thereforce did not require abstract classes
     - concrete product: dog and dog food, cat and cat food
 - example:
+    ```python
+    class Dog:
+        """ One of the objects to be returned """
 
-  ```python
-  class Dog:
-      """ One of the objects to be returned """
-      
-      def __init__(self, name="default"):
-          self._name = name
-          
-      def speak(self):
-          return "Woof!"
-          
-      def __str__(self):
-          return "Dog."
-          
-  class DogFactory:
-      """ Concrete Factory """
-      
-      def get_pet(self):
-          """ Returns a Dog object """
-          
-          return Dog()
-          
-      def get_food(self):
-          """ Returns a Dog Food object """
-          
-          return "Dog Food!"
+        def __init__(self, name="default"):
+            self._name = name
 
-  class PetStore:
-      """ PetStore houses our Abstract Factory """
-      
-      def __init__(self, pet_factory=None):
-          """ pet_factory is our Abstract Factory """
-          
-          self._pet_factory = pet_factory
-          
-      def show_pet(self):
-          """ Utility method to display the details of the objects return by the DogFactory """
-          
-          pet = self._pet_factory.get_pet()
-          pet_food = self._pet_factory.get_food()
-          
-          print("Our pet is '{}'!".format(pet))
-          print("Our pet says hello by '{}'".format(pet.speak()))
-          print("Its food is '{}'".format(pet_food))
+        def speak(self):
+            return "Woof!"
 
-  # create a Concrete Factory
-  factory = DogFactory()
-  
-  # create a pet store housing Abstract Factory
-  shop = PetStore(factory)
-  
-  # invoke the utility method to show the details of our pet
-  shop.show_pet()     
-  ```
-  
+        def __str__(self):
+            return "Dog."
+
+    class DogFactory:
+        """ Concrete Factory """
+
+        def get_pet(self):
+            """ Returns a Dog object """
+
+            return Dog()
+
+        def get_food(self):
+            """ Returns a Dog Food object """
+
+            return "Dog Food!"
+
+    class PetStore:
+        """ PetStore houses our Abstract Factory """
+
+        def __init__(self, pet_factory=None):
+            """ pet_factory is our Abstract Factory """
+
+            self._pet_factory = pet_factory
+
+        def show_pet(self):
+            """ Utility method to display the details of the objects return by the DogFactory """
+
+            pet = self._pet_factory.get_pet()
+            pet_food = self._pet_factory.get_food()
+
+            print("Our pet is '{}'!".format(pet))
+            print("Our pet says hello by '{}'".format(pet.speak()))
+            print("Its food is '{}'".format(pet_food))
+
+    # create a Concrete Factory
+    factory = DogFactory()
+
+    # create a pet store housing Abstract Factory
+    shop = PetStore(factory)
+
+    # invoke the utility method to show the details of our pet
+    shop.show_pet()     
+    ```
+  - More information and/or example can be found [here](https://refactoring.guru/design-patterns/abstract-factory/python/example) and [here](https://en.wikipedia.org/wiki/Abstract_factory_pattern).
   
   
