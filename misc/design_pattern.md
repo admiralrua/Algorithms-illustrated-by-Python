@@ -3,7 +3,7 @@ This note is a kind of summary note of **Python: Design patterns** given by Jung
 # Understanding Design Pattern
 
 ## What and Why
-- Well-known solutions for recurring problems
+- well-known solutions for recurring problems
 - no need to reinvent
 - systematic reuse of ideas or best practices yields lower cost and higher quality
 
@@ -86,8 +86,54 @@ A pattern language consists of:
   - provides lists of other patterns which are 
     - used together with the pattern being described
     - are similar but different, the differences should be clearly desribed
+
+
+# Creational patterns
+Popular creational patterns consists of four types:
+- factory
+- singleton
+- builder
+- prototype
+
+## Factory
+- encapsulates object creation, i.e. objects specifying in creating other objects
+- is useful when you have 
+  - uncertainties in types of objects eventually used in the system
+  - decisions to make rearding what classes to use at runtime
+  - scenario: a pet shop originally sells dogs, but in the near future will sells also cats -> objects to handle both dogs and cats, for example how the object speaks ("woof"- vs "meow"-sound), the true nature of the object only reveals in the runtime
+- example:
+
+  ```python
+  class Dog:
+      """ A simple dog class """
+      def __init__(self, name):
+          self._name = name
+      def speak(self):
+          return "Woof!"
+
+  class Cat:
+      """ A simple cat class """
+      def __init__(self, name):
+          self._name = name
+      def speak(self):
+          return "Meow!"
+
+  def get_pet(pet = "dog"):
+      """ The factory method """
+      pets = dict(dog=Dog("Hope"), cat=Cat("Peace"))
+      return pets[pet]
+
+  d = get_pet("dog")
+  print(d.speak())
+
+  c = get_pet("cat")
+  print(c.speak())
+  ```
   
-  
+  - this example illustrates the use of the **factory pattern**, with this pattern, it is easy to add more objects
+  - the implementation above is not a conventional **factory pattern** implememented in other OOP language since that implementation used some conveniences of Python.
+
+
   
   
   
