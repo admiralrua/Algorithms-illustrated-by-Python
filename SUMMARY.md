@@ -49,6 +49,7 @@
   * [Python](preparation/python-language.md)
   * [C/C++](preparation/c-c++.md)
 * [Miscellaneous](misc/miscellaneous.md)
+  * [Design pattern for SE](misc/design_pattern.md)
   * [Syllabus to practice](misc/syllabus.md)
   * [Brief userguide for Git](misc/git_userguide.md)
   * [Text-to-speech with Python](misc/tts_python.md)
