@@ -3,10 +3,26 @@ This note is a kind of summary note of **Python: Design patterns** given by Jung
 # Understanding Design Pattern
 
 ## What and Why
-- well-known solutions for recurring problems
-- no need to reinvent
-- systematic reuse of ideas or best practices yields lower cost and higher quality
-
+- consistency of the code: same problems are solved by same solution with minimal modification of code
+  - well-known solutions for recurring problems
+    - decreasing a risk of making errors
+    - increasing a possibility of detecting erros since many coders will look into the design pattern implemented
+  - cost-saving
+    - no need to reinvent
+    - systematic reuse of ideas or best practices yields lower cost and higher quality
+- scaling up or enforcing the usage of design patterns
+  - by software architecture: identifying patterns to be used throughtout software in a coherent manner
+  - by frameworks: a collection of design patterns
+- a safe lock for:
+  - completeness: how much the solution meet the requirements and how flexible it is for potential customizaton and extension
+  - correctness
+  - coupling: to which degree software elements are related, strong coupling means change in one element leads to a significant effort to address change in other elements -> less coupling is desriable
+  - cohesion: how independent the software element is -> more cohesion is better
+  - simplicity and generality trade-offs
+    - generality -> more functionality, too complex
+    - simplicity -> an easy learning curve for practitioners
+- a repository of Python implementation of design patterns can be found [here](https://github.com/faif/python-patterns)
+    
 
 ## Important characteristics
 - language neutral
@@ -90,7 +106,7 @@ A pattern language consists of:
 
 
 # Creational patterns
-Popular creational patterns consists of four types:
+Popular creational patterns consists of five types:
 - factory
 - abstract factory
 - singleton
@@ -210,6 +226,35 @@ Popular creational patterns consists of four types:
     # invoke the utility method to show the details of our pet
     shop.show_pet()     
     ```
-  - More information and/or example can be found [here](https://refactoring.guru/design-patterns/abstract-factory/python/example) and [here](https://en.wikipedia.org/wiki/Abstract_factory_pattern).
+- More information and/or example can be found [here](https://refactoring.guru/design-patterns/abstract-factory/python/example) and [here](https://en.wikipedia.org/wiki/Abstract_factory_pattern).
+
+
+## Singleton
+
+
+## Builder
+
+
+## Prototype
   
+
+# Structural patterns
+Popular structural patterns consists of five types:
+- decorator
+- proxy
+- adapter
+- composite
+- bridge
   
+
+# Behavioural patterns
+Popular behavioural patterns consists of five types:
+- observer
+- visitor
+- iterator
+- strategy
+- chain of responsibility
+
+
+
+
