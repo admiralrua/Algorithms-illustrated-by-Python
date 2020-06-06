@@ -1,4 +1,4 @@
-This note is a kind of summary note of **Python: Design patterns" given by Jungwoo Ryoo in [LinkedIn Learning](https://www.linkedin.com/learning/python-design-patterns).
+This note is a kind of summary note of **Python: Design patterns** given by Jungwoo Ryoo in [LinkedIn Learning](https://www.linkedin.com/learning/python-design-patterns).
 
 # Understanding Design Pattern
 
@@ -40,10 +40,10 @@ This note is a kind of summary note of **Python: Design patterns" given by Jungw
     - methods: represent behaviours of the entity 
 - Inheritance
   - establishes a relationship between two classes as **parent** and **child**
-  - child class
-    - **keeps** the attributes and methods of its parents
-    - **adds** new attributes and methods of its own
-    - **overrides** the existing methods of its parent
+  - **child** class
+    - *keeps* the attributes and methods of its parents
+    - *adds* new attributes and methods of its own
+    - *overrides* the existing methods of its parent
 - Polymorphism
   - relies on inheritance
   - allows child classes to be instantiated and treated as the same type as its parent
