@@ -88,16 +88,19 @@ A pattern language consists of:
     - are similar but different, the differences should be clearly desribed
 
 
+
 # Creational patterns
 Popular creational patterns consists of four types:
 - factory
+- abstract factory
 - singleton
 - builder
 - prototype
 
+
 ## Factory
 - encapsulates object creation, i.e. objects specifying in creating other objects
-- is useful when you have 
+- is useful when the client has: 
   - uncertainties in types of objects eventually used in the system
   - decisions to make rearding what classes to use at runtime
   - scenario: a pet shop originally sells dogs, but in the near future will sells also cats -> objects to handle both dogs and cats, for example how the object speaks ("woof"- vs "meow"-sound), the true nature of the object only reveals in the runtime
@@ -106,20 +109,25 @@ Popular creational patterns consists of four types:
   ```python
   class Dog:
       """ A simple dog class """
+      
       def __init__(self, name):
           self._name = name
+          
       def speak(self):
           return "Woof!"
 
   class Cat:
       """ A simple cat class """
+      
       def __init__(self, name):
           self._name = name
+          
       def speak(self):
           return "Meow!"
 
   def get_pet(pet = "dog"):
       """ The factory method """
+      
       pets = dict(dog=Dog("Hope"), cat=Cat("Peace"))
       return pets[pet]
 
@@ -134,6 +142,71 @@ Popular creational patterns consists of four types:
   - the implementation above is not a conventional **factory pattern** implememented in other OOP language since that implementation used some conveniences of Python.
 
 
+## Abstract factory
+- is useful when the client:
+  - expects to create a family of multiple related objects at a given time
+  - but doesnt have to know which family it is until runtime
+  - scenario: a pet shop with a dog factory and a cat factory with their corresponding attributes such as foods
+  - solution:
+    - abstract factory: pet factory
+    - concrete factory: dog factory and cat factory
+    - abstract product: normally it is an inheritance type classes but since Python is a dynamic-type language and thereforce did not require abstract classes
+    - concrete product: dog and dog food, cat and cat food
+- example:
+
+  ```python
+  class Dog:
+      """ One of the objects to be returned """
+      
+      def __init__(self, name="default"):
+          self._name = name
+          
+      def speak(self):
+          return "Woof!"
+          
+      def __str__(self):
+          return "Dog."
+          
+  class DogFactory:
+      """ Concrete Factory """
+      
+      def get_pet(self):
+          """ Returns a Dog object """
+          
+          return Dog()
+          
+      def get_food(self):
+          """ Returns a Dog Food object """
+          
+          return "Dog Food!"
+
+  class PetStore:
+      """ PetStore houses our Abstract Factory """
+      
+      def __init__(self, pet_factory=None):
+          """ pet_factory is our Abstract Factory """
+          
+          self._pet_factory = pet_factory
+          
+      def show_pet(self):
+          """ Utility method to display the details of the objects return by the DogFactory """
+          
+          pet = self._pet_factory.get_pet()
+          pet_food = self._pet_factory.get_food()
+          
+          print("Our pet is '{}'!".format(pet))
+          print("Our pet says hello by '{}'".format(pet.speak()))
+          print("Its food is '{}'!".format(pet_food))
+
+  # create a Concrete Factory
+  factory = DogFactory()
+  
+  # create a pet store housing Abstract Factory
+  shop = PetStore(factory)
+  
+  # invoke the utility method to show the details of our pet
+  shop.show_pet()     
+  ```
   
   
   
