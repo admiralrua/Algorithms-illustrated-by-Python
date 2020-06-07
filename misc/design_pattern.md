@@ -347,6 +347,7 @@ Popular creational patterns consists of five types:
   - create a prototypical instance first
   - clone it whenever you need replica
 - example:
+
   ```python
   import copy
 
@@ -402,6 +403,7 @@ Popular creational patterns consists of five types:
   c3 = prototype.clone(name = 'Toyota')
   print(c3)
   ```
+  
 - More information can be found [here](https://www.geeksforgeeks.org/prototype-method-python-design-patterns/) and [here](https://refactoring.guru/design-patterns/prototype/python/example).
 
 # Structural patterns
@@ -418,6 +420,7 @@ Popular structural patterns consists of five types:
 - in Python, implementing decorator is straightforward due to Python's built-in language feature, i.e. functions are also objects
 - some other patterns such as proxy, adapter, composite and strategy are related to the decorator pattern
 - example:
+
   ```python
   from functools import wraps
 
@@ -460,6 +463,7 @@ Popular structural patterns consists of five types:
   print(hello_world_dec.__name__)
   print(hello_world_dec.__doc__)
   ```
+  
 - More information can be found [here](https://refactoring.guru/design-patterns/decorator) 
   
 
