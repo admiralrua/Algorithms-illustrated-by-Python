@@ -246,7 +246,7 @@ Popular creational patterns consists of five types:
 
   class Singleton(Borg):          # inherits from Borg class
       """ This class now shores all its attributes among its various instances """
-      """ This makes the singleton objects an OO global variable               """
+      """ This makes the singleton object an Object-Oriented global variable   """
 
       def __init__(self, **kwargs):
           Borg.__init__(self)
@@ -269,7 +269,72 @@ Popular creational patterns consists of five types:
 
 
 ## Builder
+- a telescoping constructor entiled parent
+- is used when SE wants to build a complex object using excessive number of constructors
+- intends to separate the construction of a complex object from its representation
+- scenario: building cars by first buil numerous components and then assemble them
+- solution: builder design pattern brings an order to this process to remove complexity through four different roles
+  - *director* builds a product using the builder object
+  - *abstract builder* provides all necessary interfaces required in building an object
+  - *concrete builder* inherits from abstract builder and implemetns the details of the interfaces for specific types of products
+  - *product* represents an object being built
+- builder design pattern does not rely on polymorphism as (abstract) factory design pattern
+- the focus of builder design pattern is reducing the complexity in building a complex object through divide-and-conquer strategy
+- example:
+  ```python
+  class Director():
+      """ Director """
+      def __init__(self, builder):
+          self._builder = builder
 
+      def construct_car(self):
+          self._builder.create_new_car()
+          self._builder.add_model()
+          self._builder.add_engine()
+          self._builder.add_tires()
+
+      def get_car(self):
+          return self._builder.car
+
+
+  class Builder():
+      """ Abstract builder """
+      def __init__(self):
+          self.car = None
+
+      def create_new_car(self):
+          self.car = Car()
+
+
+  class SkyLarkBuilder(Builder):
+      """ Concrete builder -> provides parts and tools to work on the parts """
+      def add_model(self):
+          self.car.model = "SkyLark"
+
+      def add_engine(self):
+          self.car.engine = "Turbo engine"
+
+      def add_tires(self):
+          self.car.tires = "HighSpeed tires"
+
+
+  class Car():
+      """ Product """
+      def __init__(self):
+          self.model = None
+          self.engine = None
+          self.tires = None
+
+      def __str__(self):
+          return '{} | {} | {}'.format(self.model, self.engine, self.tires)
+
+
+  builder = SkyLarkBuilder()
+  director = Director(builder)
+  director.construct_car()
+  car = director.get_car()
+  print(car)
+  ```
 
 ## Prototype
   
