@@ -283,61 +283,63 @@ Popular creational patterns consists of five types:
 - builder design pattern does not rely on polymorphism as (abstract) factory design pattern
 - the focus of builder design pattern is reducing the complexity in building a complex object through divide-and-conquer strategy
 - example:
-  ```python
-  class Director():
-      """ Director """
-      def __init__(self, builder):
-          self._builder = builder
 
-      def construct_car(self):
-          self._builder.create_new_car()
-          self._builder.add_model()
-          self._builder.add_engine()
-          self._builder.add_tires()
+```python
 
+class Director():
+    """ Director """
+    def __init__(self, builder):
+        self._builder = builder
 
-      def get_car(self):
-          return self._builder.car
+    def construct_car(self):
+        self._builder.create_new_car()
+        self._builder.add_model()
+        self._builder.add_engine()
+        self._builder.add_tires()
 
 
-  class Builder():
-      """ Abstract builder """
-      def __init__(self):
-          self.car = None
-
-      def create_new_car(self):
-          self.car = Car()
+    def get_car(self):
+        return self._builder.car
 
 
-  class SkyLarkBuilder(Builder):
-      """ Concrete builder -> provides parts and tools to work on the parts """
-      def add_model(self):
-          self.car.model = "SkyLark"
+class Builder():
+    """ Abstract builder """
+    def __init__(self):
+        self.car = None
 
-      def add_engine(self):
-          self.car.engine = "Turbo engine"
-
-      def add_tires(self):
-          self.car.tires = "HighSpeed tires"
+    def create_new_car(self):
+        self.car = Car()
 
 
-  class Car():
-      """ Product """
-      def __init__(self):
-          self.model = None
-          self.engine = None
-          self.tires = None
+class SkyLarkBuilder(Builder):
+    """ Concrete builder -> provides parts and tools to work on the parts """
+    def add_model(self):
+        self.car.model = "SkyLark"
 
-      def __str__(self):
-          return '{} | {} | {}'.format(self.model, self.engine, self.tires)
+    def add_engine(self):
+        self.car.engine = "Turbo engine"
+
+    def add_tires(self):
+        self.car.tires = "HighSpeed tires"
 
 
-  builder = SkyLarkBuilder()
-  director = Director(builder)
-  director.construct_car()
-  car = director.get_car()
-  print(car)
-  ```
+class Car():
+    """ Product """
+    def __init__(self):
+        self.model = None
+        self.engine = None
+        self.tires = None
+
+    def __str__(self):
+        return "{} | {} | {}".format(self.model, self.engine, self.tires)
+
+
+builder = SkyLarkBuilder()
+director = Director(builder)
+director.construct_car()
+car = director.get_car()
+print(car)
+```
 
 ## Prototype
 - clones objects from a prototypical instance
@@ -349,61 +351,61 @@ Popular creational patterns consists of five types:
   - clone it whenever you need replica
 - example:
 
-  ```python
-  import copy
+```python
+import copy
 
-  class Prototype:
-      """ A factory to store different prototypes """
+class Prototype:
+    """ A factory to store different prototypes """
 
-      def __init__(self):
-          """ create a dictionary object containing objects that will be cloned """
-          self._objects = dict()
+    def __init__(self):
+        """ create a dictionary object containing objects that will be cloned """
+        self._objects = dict()
 
-      def register_object(self, name, obj):
-          """ register an object to be cloned """
-          self._objects[name] = obj
+    def register_object(self, name, obj):
+        """ register an object to be cloned """
+        self._objects[name] = obj
 
-      def unregister_object(self, name):
-          """ unregister an object """
-          del self._objects[name]
+    def unregister_object(self, name):
+        """ unregister an object """
+        del self._objects[name]
 
-      def clone(self, name):
-          """ clone a registered object and update its attributes """
-          obj = copy.deepcopy(self._objects.get(name))
-          return obj
-
-
-  class Product:
-      def __str__(self):
-          return '{} | {} | {}'.format(self.name, self.color, self.options)
+    def clone(self, name):
+        """ clone a registered object and update its attributes """
+        obj = copy.deepcopy(self._objects.get(name))
+        return obj
 
 
-  class Car(Product):
-      def __init__(self, name, color, option):
-          self.name = name
-          self.color = color
-          self.options = option
+class Product:
+    def __str__(self):
+        return '{} | {} | {}'.format(self.name, self.color, self.options)
 
 
-  # create a prototypical instance
-  skylark = Car(name = 'SkyLark', color = 'Black', option = 'Ex')  
-  tesla   = Car(name = 'Tesla', color = 'Matt Black', option = 'Lux')  
-  toyota  = Car(name = 'Toyota', color = 'Bluish Black', option = 'Nor')    
+class Car(Product):
+    def __init__(self, name, color, option):
+        self.name = name
+        self.color = color
+        self.options = option
 
-  # registering
-  prototype = Prototype()
-  prototype.register_object('SkyLark',skylark)
-  prototype.register_object('Tesla',tesla)
-  prototype.register_object('Toyota',toyota)
 
-  # cloning
-  c1 = prototype.clone(name = 'SkyLark')
-  print(c1)
-  c2 = prototype.clone(name = 'Tesla')
-  print(c2)
-  c3 = prototype.clone(name = 'Toyota')
-  print(c3)
-  ```
+# create a prototypical instance
+skylark = Car(name = 'SkyLark', color = 'Black', option = 'Ex')  
+tesla   = Car(name = 'Tesla', color = 'Matt Black', option = 'Lux')  
+toyota  = Car(name = 'Toyota', color = 'Bluish Black', option = 'Nor')    
+
+# registering
+prototype = Prototype()
+prototype.register_object('SkyLark',skylark)
+prototype.register_object('Tesla',tesla)
+prototype.register_object('Toyota',toyota)
+
+# cloning
+c1 = prototype.clone(name = 'SkyLark')
+print(c1)
+c2 = prototype.clone(name = 'Tesla')
+print(c2)
+c3 = prototype.clone(name = 'Toyota')
+print(c3)
+```
   
 - More information can be found [here](https://www.geeksforgeeks.org/prototype-method-python-design-patterns/) and [here](https://refactoring.guru/design-patterns/prototype/python/example).
 
@@ -422,48 +424,48 @@ Popular structural patterns consists of five types:
 - some other patterns such as proxy, adapter, composite and strategy are related to the decorator pattern
 - example:
 
-  ```python
-  from functools import wraps
+```python
+from functools import wraps
 
-  def make_blink(function):
-      """ define the decorator """
+def make_blink(function):
+    """ define the decorator """
 
-      # this makes the decorator transparent in terms of its name and docstring
-      @wraps(function)
+    # this makes the decorator transparent in terms of its name and docstring
+    @wraps(function)
 
-      # define the inner function
-      def decorator():
-          # grab the return value of the function being decoratored
-          ret = function()
+    # define the inner function
+    def decorator():
+        # grab the return value of the function being decoratored
+        ret = function()
 
-          # add new functionality to the function being decorated
-          return "<blink> " + ret + " </blink>"
-      return decorator
-
-
-  # apply the decorator here
-  @make_blink
-  def hello_world_dec():
-      """ original function """
-
-      return "Hello, World!"
+        # add new functionality to the function being decorated
+        return "<blink> " + ret + " </blink>"
+    return decorator
 
 
-  def hello_world():
-      """ original function """
+# apply the decorator here
+@make_blink
+def hello_world_dec():
+    """ original function """
 
-      return "Hello, World!"
-
-
-  # check the result of decorating
-  print(hello_world())    
-  print(hello_world_dec())    
+    return "Hello, World!"
 
 
-  # check if the function name and docstring are still the same as those of the function being decorater
-  print(hello_world_dec.__name__)
-  print(hello_world_dec.__doc__)
-  ```
+def hello_world():
+    """ original function """
+
+    return "Hello, World!"
+
+
+# check the result of decorating
+print(hello_world())    
+print(hello_world_dec())    
+
+
+# check if the function name and docstring are still the same as those of the function being decorater
+print(hello_world_dec.__name__)
+print(hello_world_dec.__doc__)
+```
   
 - More information can be found [here](https://refactoring.guru/design-patterns/decorator) 
   
