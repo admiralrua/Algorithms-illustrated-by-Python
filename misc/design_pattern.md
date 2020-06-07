@@ -434,7 +434,6 @@ Popular structural patterns consists of five types:
 
           # add new functionality to the function being decorated
           return "<blink> " + ret + " </blink>"
-
       return decorator
 
 
