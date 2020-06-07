@@ -1,4 +1,4 @@
-This note is a kind of summary note of **Python: Design patterns** given by Jungwoo Ryoo in [LinkedIn Learning](https://www.linkedin.com/learning/python-design-patterns).
+This note is a kind of summary note of **Python: Design patterns** given by Jungwoo Ryoo in [LinkedIn Learning](https://www.linkedin.com/learning/python-design-patterns). More details information and example can be found in [tutorialspoint](https://www.tutorialspoint.com/python_design_patterns/index.htm).
 
 # Understanding Design Pattern
 
@@ -400,6 +400,7 @@ Popular creational patterns consists of five types:
   c3 = prototype.clone(name = 'Toyota')
   print(c3)
   ```
+- More information can be found [here](https://www.geeksforgeeks.org/prototype-method-python-design-patterns/) and [here](https://refactoring.guru/design-patterns/prototype/python/example).
 
 # Structural patterns
 Popular structural patterns consists of five types:
