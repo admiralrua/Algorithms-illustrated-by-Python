@@ -123,6 +123,7 @@ Popular creational patterns consists of five types:
   - decisions to make rearding what classes to use at runtime
   - scenario: a pet shop originally sells dogs, but in the near future will sells also cats -> objects to handle both dogs and cats, for example how the object speaks ("woof"- vs "meow"-sound), the true nature of the object only reveals in the runtime
 - example:
+
   ```python
   class Dog:
       """ A simple dog class """
@@ -159,6 +160,7 @@ Popular creational patterns consists of five types:
   c = get_pet("cat3")
   print(c.speak())
   ```  
+  
   - this example illustrates the use of the **factory pattern**, with this pattern, it is easy to add more objects
   - the implementation above is not a conventional **factory pattern** implememented in other OOP language since that implementation used some conveniences of Python.
 - More information can be found [here](https://refactoring.guru/design-patterns/factory-method/python/example)
@@ -175,6 +177,7 @@ Popular creational patterns consists of five types:
     - abstract product: normally it is an inheritance type classes but since Python is a dynamic-type language and thereforce did not require abstract classes
     - concrete product: dog and dog food, cat and cat food
 - example:
+
     ```python
     class Dog:
         """ One of the objects to be returned """
@@ -228,6 +231,7 @@ Popular creational patterns consists of five types:
     # invoke the utility method to show the details of our pet
     shop.show_pet()     
     ```
+    
 - More information and/or example can be found [here](https://refactoring.guru/design-patterns/abstract-factory/python/example) and [here](https://en.wikipedia.org/wiki/Abstract_factory_pattern).
 
 
@@ -237,6 +241,7 @@ Popular creational patterns consists of five types:
 - is used as an information cache and shared by multiple objects/elements of a software
 - a popular implementation of the singleton is the Borg design pattern
 - example:
+
   ```python
   class Borg:
       """ Borg class making class attributes global """
@@ -283,6 +288,7 @@ Popular creational patterns consists of five types:
 - builder design pattern does not rely on polymorphism as (abstract) factory design pattern
 - the focus of builder design pattern is reducing the complexity in building a complex object through divide-and-conquer strategy
 - example:
+
   ```python
   class Director():
       """ Director """
