@@ -1,4 +1,6 @@
-This note is a kind of summary note of **Python: Design patterns** given by Jungwoo Ryoo in [LinkedIn Learning](https://www.linkedin.com/learning/python-design-patterns). More details information and example can be found in [tutorialspoint](https://www.tutorialspoint.com/python_design_patterns/index.htm).
+This note is a kind of summary note for knowledge from different sources such as **Python: Design patterns** given by Jungwoo Ryoo in [LinkedIn Learning](https://www.linkedin.com/learning/python-design-patterns), [tutorialspoint](https://www.tutorialspoint.com/python_design_patterns/index.htm) and [refactoring](https://refactoring.guru/design-patterns/python).
+
+This note is on-going developed in the sense that the topics being covered are given in titles only and the corresponding content of each title will be given later (i.e. when I encounter or use it in real-life).
 
 # Understanding Design Pattern
 
@@ -409,6 +411,57 @@ Popular structural patterns consists of five types:
 - adapter
 - composite
 - bridge
+
+
+## Decorator
+- adds additional features to an existing object dynamically without using subclassing
+- in Python, implementing decorator is straightforward due to Python's built-in language feature, i.e. functions are also objects
+- some other patterns such as proxy, adapter, composite and strategy are related to the decorator pattern
+- example:
+  ```python
+  from functools import wraps
+
+  def make_blink(function):
+      """ define the decorator """
+
+      # this makes the decorator transparent in terms of its name and docstring
+      @wraps(function)
+
+      # define the inner function
+      def decorator():
+          # grab the return value of the function being decoratored
+          ret = function()
+
+          # add new functionality to the function being decorated
+          return "<blink> " + ret + " </blink>"
+
+      return decorator
+
+
+  # apply the decorator here
+  @make_blink
+  def hello_world_dec():
+      """ original function """
+
+      return "Hello, World!"
+
+
+  def hello_world():
+      """ original function """
+
+      return "Hello, World!"
+
+
+  # check the result of decorating
+  print(hello_world())    
+  print(hello_world_dec())    
+
+
+  # check if the function name and docstring are still the same as those of the function being decorater
+  print(hello_world_dec.__name__)
+  print(hello_world_dec.__doc__)
+  ```
+- More information can be found [here](https://refactoring.guru/design-patterns/decorator) 
   
 
 # Behavioural patterns
