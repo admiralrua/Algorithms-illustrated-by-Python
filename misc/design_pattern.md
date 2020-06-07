@@ -123,43 +123,45 @@ Popular creational patterns consists of five types:
   - decisions to make rearding what classes to use at runtime
   - scenario: a pet shop originally sells dogs, but in the near future will sells also cats -> objects to handle both dogs and cats, for example how the object speaks ("woof"- vs "meow"-sound), the true nature of the object only reveals in the runtime
 - example:
-  ```python
-  class Dog:
-      """ A simple dog class """
 
-      def __init__(self, name):
-          self._name = name
+```python
+class Dog:
+    """ A simple dog class """
 
-      def speak(self):
-          return self._name + ": Woof!"
+    def __init__(self, name):
+        self._name = name
 
-  class Cat:
-      """ A simple cat class """
+    def speak(self):
+        return self._name + ": Woof!"
 
-      def __init__(self, name):
-          self._name = name
+class Cat:
+    """ A simple cat class """
 
-      def speak(self):
-          return self._name + ": Meow!"
+    def __init__(self, name):
+        self._name = name
 
-  def get_pet(pet = "dog1"):
-      """ The factory method """
+    def speak(self):
+        return self._name + ": Meow!"
 
-      pets = dict(dog1=Dog("Hope"),
-                  dog2=Dog("Alpha"),
-                  dog3=Dog("Bravo"),
-                  cat1=Cat("Peace"),
-                  cat2=Cat("Cheetah"),
-                  cat3=Cat("Dennish"))
-      return pets[pet]
+def get_pet(pet = "dog1"):
+    """ The factory method """
+
+    pets = dict(dog1=Dog("Hope"),
+                dog2=Dog("Alpha"),
+                dog3=Dog("Bravo"),
+                cat1=Cat("Peace"),
+                cat2=Cat("Cheetah"),
+                cat3=Cat("Dennish"))
+    return pets[pet]
 
 
-  d = get_pet("dog1")
-  print(d.speak())
+d = get_pet("dog1")
+print(d.speak())
 
-  c = get_pet("cat3")
-  print(c.speak())  
-  ```
+c = get_pet("cat3")
+print(c.speak())  
+```
+
   - this example illustrates the use of the **factory pattern**, with this pattern, it is easy to add more objects
   - the implementation above is not a conventional **factory pattern** implememented in other OOP language since that implementation used some conveniences of Python.
 - More information can be found [here](https://refactoring.guru/design-patterns/factory-method/python/example)
@@ -176,60 +178,62 @@ Popular creational patterns consists of five types:
     - abstract product: normally it is an inheritance type classes but since Python is a dynamic-type language and thereforce did not require abstract classes
     - concrete product: dog and dog food, cat and cat food
 - example:
-  ```python
-  class Dog:
-      """ One of the objects to be returned """
 
-      def __init__(self, name="default"):
-          self._name = name
+```python
+class Dog:
+    """ One of the objects to be returned """
 
-      def speak(self):
-          return "Woof!"
+    def __init__(self, name="default"):
+        self._name = name
 
-      def __str__(self):
-          return "Dog."
+    def speak(self):
+        return "Woof!"
 
-  class DogFactory:
-      """ Concrete Factory """
+    def __str__(self):
+        return "Dog."
 
-      def get_pet(self):
-          """ Returns a Dog object """
+class DogFactory:
+    """ Concrete Factory """
 
-          return Dog()
+    def get_pet(self):
+        """ Returns a Dog object """
 
-      def get_food(self):
-          """ Returns a Dog Food object """
+        return Dog()
 
-          return "Dog Food!"
+    def get_food(self):
+        """ Returns a Dog Food object """
 
-  class PetStore:
-      """ PetStore houses our Abstract Factory """
+        return "Dog Food!"
 
-      def __init__(self, pet_factory=None):
-          """ pet_factory is our Abstract Factory """
+class PetStore:
+    """ PetStore houses our Abstract Factory """
 
-          self._pet_factory = pet_factory
+    def __init__(self, pet_factory=None):
+        """ pet_factory is our Abstract Factory """
 
-      def show_pet(self):
-          """ Utility method to display the details of the objects return by the DogFactory """
+        self._pet_factory = pet_factory
 
-          pet = self._pet_factory.get_pet()
-          pet_food = self._pet_factory.get_food()
+    def show_pet(self):
+        """ Utility method to display the details of the objects return by the DogFactory """
 
-          print("Our pet is '{}'!".format(pet))
-          print("Our pet says hello by '{}'".format(pet.speak()))
-          print("Its food is '{}'!".format(pet_food))
+        pet = self._pet_factory.get_pet()
+        pet_food = self._pet_factory.get_food()
+
+        print("Our pet is '{}'!".format(pet))
+        print("Our pet says hello by '{}'".format(pet.speak()))
+        print("Its food is '{}'!".format(pet_food))
 
 
-  # create a Concrete Factory
-  factory = DogFactory()
+# create a Concrete Factory
+factory = DogFactory()
 
-  # create a pet store housing Abstract Factory
-  shop = PetStore(factory)
+# create a pet store housing Abstract Factory
+shop = PetStore(factory)
 
-  # invoke the utility method to show the details of our pet
-  shop.show_pet()
-  ```
+# invoke the utility method to show the details of our pet
+shop.show_pet()
+```
+  
 - More information and/or example can be found [here](https://refactoring.guru/design-patterns/abstract-factory/python/example) and [here](https://en.wikipedia.org/wiki/Abstract_factory_pattern).
 
 
@@ -239,37 +243,38 @@ Popular creational patterns consists of five types:
 - is used as an information cache and shared by multiple objects/elements of a software
 - a popular implementation of the singleton is the Borg design pattern
 - example:
-  ```python
-  class Borg:
-      """ Borg class making class attributes global """
 
-      _shared_state = dict()      # attribute dictionary
+```python
+class Borg:
+    """ Borg class making class attributes global """
 
-      def __init__(self):
-          self.__dict__ = self._shared_state
+    _shared_state = dict()      # attribute dictionary
 
-  class Singleton(Borg):          # inherits from Borg class
-      """ This class now shores all its attributes among its various instances """
-      """ This makes the singleton objects an OO global variable               """
+    def __init__(self):
+        self.__dict__ = self._shared_state
 
-      def __init__(self, **kwargs):
-          Borg.__init__(self)
+class Singleton(Borg):          # inherits from Borg class
+    """ This class now shores all its attributes among its various instances """
+    """ This makes the singleton objects an OO global variable               """
 
-          # update the attribute dictionary by inserting a new key-value pair
-          self._shared_state.update(**kwargs)
+    def __init__(self, **kwargs):
+        Borg.__init__(self)
 
-      def __str__(self):
-          # return the attribute dictionary for printing
-          return str(self._shared_state)
+        # update the attribute dictionary by inserting a new key-value pair
+        self._shared_state.update(**kwargs)
 
-  # let's create a singleton object and add our first acronym
-  x = Singleton(http = "hyper text transfer protocal")
-  print(x)
+    def __str__(self):
+        # return the attribute dictionary for printing
+        return str(self._shared_state)
 
-  # let's create another singleton object and see if it refers to the same attribute dictionary
-  x = Singleton(snmp = "simple network management protocal")
-  print(x)
-  ```
+# let's create a singleton object and add our first acronym
+x = Singleton(http = "hyper text transfer protocal")
+print(x)
+
+# let's create another singleton object and see if it refers to the same attribute dictionary
+x = Singleton(snmp = "simple network management protocal")
+print(x)
+```
 
 
 ## Builder
@@ -285,61 +290,63 @@ Popular creational patterns consists of five types:
 - builder design pattern does not rely on polymorphism as (abstract) factory design pattern
 - the focus of builder design pattern is reducing the complexity in building a complex object through divide-and-conquer strategy
 - example:
-  ```python
-  class Director():
-      """ Director """
-      def __init__(self, builder):
-          self._builder = builder
 
-      def construct_car(self):
-          self._builder.create_new_car()
-          self._builder.add_model()
-          self._builder.add_engine()
-          self._builder.add_tires()
+```python
+class Director():
+    """ Director """
+    def __init__(self, builder):
+        self._builder = builder
 
-
-      def get_car(self):
-          return self._builder.car
+    def construct_car(self):
+        self._builder.create_new_car()
+        self._builder.add_model()
+        self._builder.add_engine()
+        self._builder.add_tires()
 
 
-  class Builder():
-      """ Abstract builder """
-      def __init__(self):
-          self.car = None
-
-      def create_new_car(self):
-          self.car = Car()
+    def get_car(self):
+        return self._builder.car
 
 
-  class SkyLarkBuilder(Builder):
-      """ Concrete builder -> provides parts and tools to work on the parts """
-      def add_model(self):
-          self.car.model = "SkyLark"
+class Builder():
+    """ Abstract builder """
+    def __init__(self):
+        self.car = None
 
-      def add_engine(self):
-          self.car.engine = "Turbo engine"
-
-      def add_tires(self):
-          self.car.tires = "HighSpeed tires"
+    def create_new_car(self):
+        self.car = Car()
 
 
-  class Car():
-      """ Product """
-      def __init__(self):
-          self.model = None
-          self.engine = None
-          self.tires = None
+class SkyLarkBuilder(Builder):
+    """ Concrete builder -> provides parts and tools to work on the parts """
+    def add_model(self):
+        self.car.model = "SkyLark"
 
-      def __str__(self):
-          return '{} | {} | {}'.format(self.model, self.engine, self.tires)
+    def add_engine(self):
+        self.car.engine = "Turbo engine"
+
+    def add_tires(self):
+        self.car.tires = "HighSpeed tires"
 
 
-  builder = SkyLarkBuilder()
-  director = Director(builder)
-  director.construct_car()
-  car = director.get_car()
-  print(car)
-  ```
+class Car():
+    """ Product """
+    def __init__(self):
+        self.model = None
+        self.engine = None
+        self.tires = None
+
+    def __str__(self):
+        return '{} | {} | {}'.format(self.model, self.engine, self.tires)
+
+
+builder = SkyLarkBuilder()
+director = Director(builder)
+director.construct_car()
+car = director.get_car()
+print(car)
+```
+
 
 ## Prototype
 - clones objects from a prototypical instance
@@ -350,61 +357,62 @@ Popular creational patterns consists of five types:
   - create a prototypical instance first
   - clone it whenever you need replica
 - example:
-  ```python
-  import copy
 
-  class Prototype:
-      """ A factory to store different prototypes """
+```python
+import copy
 
-      def __init__(self):
-          """ create a dictionary object containing objects that will be cloned """
-          self._objects = dict()
+class Prototype:
+    """ A factory to store different prototypes """
 
-      def register_object(self, name, obj):
-          """ register an object to be cloned """
-          self._objects[name] = obj
+    def __init__(self):
+        """ create a dictionary object containing objects that will be cloned """
+        self._objects = dict()
 
-      def unregister_object(self, name):
-          """ unregister an object """
-          del self._objects[name]
+    def register_object(self, name, obj):
+        """ register an object to be cloned """
+        self._objects[name] = obj
 
-      def clone(self, name):
-          """ clone a registered object and update its attributes """
-          obj = copy.deepcopy(self._objects.get(name))
-          return obj
+    def unregister_object(self, name):
+        """ unregister an object """
+        del self._objects[name]
 
-
-  class Product:
-      def __str__(self):
-          return '{} | {} | {}'.format(self.name, self.color, self.options)
+    def clone(self, name):
+        """ clone a registered object and update its attributes """
+        obj = copy.deepcopy(self._objects.get(name))
+        return obj
 
 
-  class Car(Product):
-      def __init__(self, name, color, option):
-          self.name = name
-          self.color = color
-          self.options = option
+class Product:
+    def __str__(self):
+        return '{} | {} | {}'.format(self.name, self.color, self.options)
 
 
-  # create a prototypical instance
-  skylark = Car(name = 'SkyLark', color = 'Black', option = 'Ex')
-  tesla   = Car(name = 'Tesla', color = 'Matt Black', option = 'Lux')
-  toyota  = Car(name = 'Toyota', color = 'Bluish Black', option = 'Nor')
+class Car(Product):
+    def __init__(self, name, color, option):
+        self.name = name
+        self.color = color
+        self.options = option
 
-  # registering
-  prototype = Prototype()
-  prototype.register_object('SkyLark',skylark)
-  prototype.register_object('Tesla',tesla)
-  prototype.register_object('Toyota',toyota)
 
-  # cloning
-  c1 = prototype.clone(name = 'SkyLark')
-  print(c1)
-  c2 = prototype.clone(name = 'Tesla')
-  print(c2)
-  c3 = prototype.clone(name = 'Toyota')
-  print(c3)
-  ```
+# create a prototypical instance
+skylark = Car(name = 'SkyLark', color = 'Black', option = 'Ex')
+tesla   = Car(name = 'Tesla', color = 'Matt Black', option = 'Lux')
+toyota  = Car(name = 'Toyota', color = 'Bluish Black', option = 'Nor')
+
+# registering
+prototype = Prototype()
+prototype.register_object('SkyLark',skylark)
+prototype.register_object('Tesla',tesla)
+prototype.register_object('Toyota',toyota)
+
+# cloning
+c1 = prototype.clone(name = 'SkyLark')
+print(c1)
+c2 = prototype.clone(name = 'Tesla')
+print(c2)
+c3 = prototype.clone(name = 'Toyota')
+print(c3)
+```
   
 - More information can be found [here](https://www.geeksforgeeks.org/prototype-method-python-design-patterns/) and [here](https://refactoring.guru/design-patterns/prototype/python/example).
 
@@ -422,49 +430,51 @@ Popular structural patterns consists of five types:
 - in Python, implementing decorator is straightforward due to Python's built-in language feature, i.e. functions are also objects
 - some other patterns such as proxy, adapter, composite and strategy are related to the decorator pattern
 - example:
-  ```python
-  from functools import wraps
 
-  def make_blink(function):
-      """ define the decorator """
+```python
+from functools import wraps
 
-      # this makes the decorator transparent in terms of its name and docstring
-      @wraps(function)
+def make_blink(function):
+    """ define the decorator """
 
-      # define the inner function
-      def decorator():
-          # grab the return value of the function being decoratored
-          ret = function()
+    # this makes the decorator transparent in terms of its name and docstring
+    @wraps(function)
 
-          # add new functionality to the function being decorated
-          return "<blink> " + ret + " </blink>"
+    # define the inner function
+    def decorator():
+        # grab the return value of the function being decoratored
+        ret = function()
 
-      return decorator
+        # add new functionality to the function being decorated
+        return "<blink> " + ret + " </blink>"
 
-
-  # apply the decorator here
-  @make_blink
-  def hello_world_dec():
-      """ original function """
-
-      return "Hello, World!"
+    return decorator
 
 
-  def hello_world():
-      """ original function """
+# apply the decorator here
+@make_blink
+def hello_world_dec():
+    """ original function """
 
-      return "Hello, World!"
-
-
-  # check the result of decorating
-  print(hello_world())
-  print(hello_world_dec())
+    return "Hello, World!"
 
 
-  # check if the function name and docstring are still the same as those of the function being decorater
-  print(hello_world_dec.__name__)
-  print(hello_world_dec.__doc__)
-  ```
+def hello_world():
+    """ original function """
+
+    return "Hello, World!"
+
+
+# check the result of decorating
+print(hello_world())
+print(hello_world_dec())
+
+
+# check if the function name and docstring are still the same as those of the function being decorater
+print(hello_world_dec.__name__)
+print(hello_world_dec.__doc__)
+```
+
 - More information can be found [here](https://refactoring.guru/design-patterns/decorator) 
   
 
