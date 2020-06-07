@@ -1,6 +1,6 @@
 This note is a kind of summary note for knowledge from different sources such as **Python: Design patterns** given by Jungwoo Ryoo in [LinkedIn Learning](https://www.linkedin.com/learning/python-design-patterns), [tutorialspoint](https://www.tutorialspoint.com/python_design_patterns/index.htm) and [refactoring](https://refactoring.guru/design-patterns/python).
 
-This note is on-going developed in the sense that the topics being covered are given in titles only and the corresponding content of each title will be given later (i.e. when I encounter or use it in real-life).
+This note is on-going developed in the sense that the topics being covered are given in titles only and the corresponding content of each title will be given later.
 
 # Understanding Design Pattern
 
