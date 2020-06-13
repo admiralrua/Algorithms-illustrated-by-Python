@@ -17,3 +17,5 @@ So, if you want left alignment for the symbols, the descriptions, and the condit
 ```
 
 By adding **\quad** we separate the columns. It wouldn't be necessary to specify them on all rows, but doing so spares to guess what is the widest entry.
+
+More detailed information for **alignat** can be found [here](http://texdoc.net/texmf-dist/doc/latex/amsmath/amsldoc.pdf).
