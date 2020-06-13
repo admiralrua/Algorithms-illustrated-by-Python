@@ -52,4 +52,5 @@
   * [Syllabus to practice](misc/syllabus.md)
   * [Brief note on Design patterns](misc/design_pattern.md)
   * [Brief userguide for Git](misc/git_userguide.md)
+  * [Tips/tricks in Latex](misc/tips_latex.md)
   * [Text-to-speech with Python](misc/tts_python.md)
